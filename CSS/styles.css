@@ -39,6 +39,22 @@
     --category-color: lightgray !important;
 }
 
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    perspective: 1px; /* Creates a faux-3D effect for parallax scrolling */
+    transform-style: preserve-3d; /* Keeps child elements in 3D space */
+    overflow-x: hidden;
+    overflow-y: scroll; /* Enables vertical scrolling */
+}
+
 html, body {
     background-color: var(--bg-color);
     color: var(--font-color);
@@ -50,6 +66,7 @@ nav.navbar {
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid var(--font-color);
     background-color: var(--nav-bg-color);
+    z-index: 1000;
 }
 
 .navbar a {
@@ -93,7 +110,7 @@ nav.navbar {
     width: 100%;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .nav-buttons {
@@ -154,7 +171,65 @@ nav.navbar {
     color: white;
 }
 
-.title {
+.section1, .section2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d; /* Maintain 3D transforms for child elements */
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(-1px) scale(2);
+    z-index: -2;
+    pointer-events: none;
+}
+
+.section1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/mountains.png") top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    /* Consider adding transform and/or filter for more depth if desired */
+}
+
+.section1 .text {
+    top: 10%;
+    transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 10%);
+    z-index: 1;
+    position: absolute;
+    /* Slightly behind the foreground layer, larger scale adds parallax emphasis.
+       The translate moves the text horizontally and vertically for positioning */
+}
+
+.section2 {
+    background: #00ccff; /* Solid background for second section */
+}
+
+.text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(1, 1.1); 
+    /* Centers text perfectly using translate(-50%, -50%) and stretches it slightly taller */
+    font-family: 'Tahoma';
+    font-size: 8vw;
+    color: white;
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.3),   /* Subtle dark shadow for legibility */
+        5px 5px 70px rgba(255, 255, 255, 0.5); /* Glowing soft white shadow for emphasis */
+}
+
+/* .title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,18 +242,18 @@ nav.navbar {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
-.title h1 {
+/* .title h1 {
     font-family: 'Graphik Arts';
     font-size: 8rem;
     color: var(--font-color);
     text-align: center;
     margin: 0;
     padding: 0;
-}
+} */
 
-.title .skills-container .text-wrapper p {
+/* .title .skills-container .text-wrapper p {
     font-family: 'Agrandir-GrandHeavy';
     color: var(--font-color) !important;
     font-size: 1rem;
@@ -188,22 +263,22 @@ nav.navbar {
     align-items: center;
     justify-content: center;
     line-height: 0;
-}
+} */
 
-.skills-container {
+/* .skills-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-}
+} */
 
-.text-wrapper p {
+/* .text-wrapper p {
     font-family: 'Agrandir-GrandHeavy';
     letter-spacing: 2.25px;
     margin: 0 10px;
     text-align: center;
-}
+} */
 
-.title .year {
+/* .title .year {
     font-family: 'Montserrat';
     font-size: 1.5rem;
     color: var(--bg-color);
@@ -212,7 +287,7 @@ nav.navbar {
     border-radius: 50px;
     text-align: center;
     text-decoration: none;
-}
+} */
 
 .copyright p {
     margin: 0px 10px 0px 10px;

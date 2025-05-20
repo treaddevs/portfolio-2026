@@ -1,9 +1,9 @@
 import { projects } from './projects.js';
 
-const year = document.getElementById("year");
-const date = new Date();
-const currentYear = date.getFullYear();
-year.textContent = currentYear;
+// const year = document.getElementById("year");
+// const date = new Date();
+// const currentYear = date.getFullYear();
+// year.textContent = currentYear;
 
 const thisYear = document.getElementById("current-year");
 const thisDate = new Date();
