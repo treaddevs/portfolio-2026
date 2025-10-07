@@ -1,0 +1,66 @@
+.hero {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    width: 40vw;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    z-index: 1;
+    top: 35%;
+    margin-left: 10%;
+}
+
+.role {
+    font-size: 6rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.plus {
+    color: #929292;
+}
+
+.dynamic-role-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dynamic-role {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding-left: 0.5rem;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+}
+
+.wipe,
+.primary-wipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #00c3ff;
+    z-index: 2;
+    animation: none;
+    pointer-events: none;
+}
+
+@keyframes wipe-in-out {
+  0% { width: 0%; left: 0%; }
+  40% { width: 100%; left: 0%; }
+  60% { width: 100%; left: 0%; }
+  100% { width: 0%; left: 100%; }
+}

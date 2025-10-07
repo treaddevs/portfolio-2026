@@ -39,10 +39,10 @@
                 </button>
                 <div class="collapse navbar-collapse order-3 order-lg-2 justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#home" data-target="#home">Home</a>
-                        <a class="nav-link" href="#projects" data-target="#projects">Projects</a>
-                        <a class="nav-link" href="#about" data-target="#about">About Me</a>
-                        <a class="nav-link" href="#contact" data-target="#contact">Contact</a>                    
+                        <a class="nav-link" href="index.html#home" data-target="#home">Home</a>
+                        <a class="nav-link" href="index.html#projects" data-target="#projects">Projects</a>
+                        <a class="nav-link" href="index.html#about" data-target="#about">About Me</a>
+                        <a class="nav-link" href="index.html#contact" data-target="#contact">Contact</a>                    
                     </div>
                     <div class="d-flex d-lg-none justify-content-start align-items-center gap-3 px-3 pt-3 mt-auto">
                         <a class="nav-link" href="https://www.linkedin.com/in/sam-treadwell-70b548272/" target="_blank">
@@ -92,55 +92,63 @@
         </nav>
     </div>
 
-    <div class="home" id="home">
-        <div class="title">
-            <h2 class="role">
-                <span class="dynamic-role-container">
-                    <span class="primary-wipe"></span>
-                    <span class="primary-role">Designer</span>
-                </span>
-            </h2>
-            <h2 class="role">
-                <span class="dynamic-role-container">
-                    <span class="wipe"></span>
-                    <span class="dynamic-role"></span>
-                    <span id="role-measurer" style="visibility:hidden; position:absolute; white-space:nowrap;"></span>
-                </span>
-            </h2>  
-        </div>
-        <video autoplay muted loop playsinline id="bg-video">
-            <source id="video-source" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <!-- PROJECT HERO -->
+    <header class="project-hero text-center py-5">
+      <h1 class="display-4">Navimental</h1>
+      <p class="lead">Design + Development for a Startup Supporting Parents</p>
+    </header>
 
-    <div class="projects" id="projects"></div>
+    <!-- MAIN PROJECT CONTENT -->
+    <main class="container py-5">
+      <section class="mb-5">
+        <h2 class="h3">Overview</h2>
+        <p>
+          Navimental is a startup helping parents of children struggling with
+          cognitive and behavioral challenges connect with professional support,
+          manage journal entries, visualize progress, and access additional aid
+          to better navigate their journey.
+        </p>
+      </section>
 
-    <div class="about" id="about">
-        <div class="about-text">
-            <h2>Hi there</h2>
-            <p>
-                I'm Sam, a creative technologist passionate about delivering human-centric web applications that scale. 
-                I enjoy bridging the gap between product design and development to create intuitive and engaging user experiences. 
-                My <a href="/Files/Tech Resume.pdf" class="resume" target="_blank">resume</a> highlights my professional experiences and education, including the tech stack and tools I'm most familiar with.
-                <br><br>
-                In my spare time I enjoy outdoor adventures, games, and music. 
-                I'm always open to learning about new technologies, startups, and opportunities for collaboration, 
-                so feel free to reach out!
-                <br><br>
-            <button class="about-btn" onclick="window.location.href='contact.html'">Contact me</button>
-        </div>
+      <section class="mb-5">
+        <h2 class="h3">My Contributions</h2>
+        <ul>
+          <li>
+            Designed intuitive journal entry flows for parents to log changes in
+            their child’s behavior and progress.
+          </li>
+          <li>
+            Developed the frontend interface with accessibility and ease of use
+            as priorities.
+          </li>
+          <li>Created data visualizations to track progress over time.</li>
+          <li>
+            Collaborated with the startup team to iterate quickly on UX/UI
+            decisions.
+          </li>
+        </ul>
+      </section>
 
-        <div class="about-img">
-            <span class="wipe"></span>
-            <img src="/Images/headshot.jpeg" alt="Sam Treadwell">
-        </div>
-    </div>
+      <section class="mb-5">
+        <h2 class="h3">Highlights</h2>
+        <p>
+          I combined UX design and frontend development to help parents gain
+          confidence and clarity in supporting their children. The platform is
+          built with compassion and usability at its core.
+        </p>
+      </section>
+
+      <section class="text-center">
+        <a href="index.html#projects" class="btn btn-primary page-btn"
+          >← Back to Projects</a
+        >
+      </section>
+    </main>
 
     <div class="footer">
-        <div class="copyright">
-            <p>&copy; <span id="current-year"></span> Sam Treadwell</p>
-        </div>
+      <div class="copyright">
+        <p>&copy; <span id="current-year"></span> Sam Treadwell</p>
+      </div>
     </div>
 
     <script>
@@ -155,5 +163,5 @@
     <script type="module" src="./JS/role.js" defer></script>
     <script type="module" src="./JS/theme.js" defer></script>
     <script type="module" src="./JS/index.js" defer></script>
-</body>
+  </body>
 </html>
