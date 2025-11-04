@@ -1,4 +1,4 @@
-const roles = ["Developer", "Prototyper", "Animator"];
+const roles = ["Developer", "Prototyper", "Innovator"];
 const measurer = document.getElementById("role-measurer");
 
 const roleEl = document.querySelector(".dynamic-role");

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam Treadwell | Designer + Developer</title>
+    <title>Sam Treadwell | Product Designer + Developer</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="./CSS/role.css">
-    <link rel="stylesheet" href="./CSS/theme.css">
-    <link rel="stylesheet" href="./CSS/fonts.css">
-    <link rel="preload" href="./Fonts/Agrandir-GrandHeavy.otf" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./Fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/role.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="preload" href="./fonts/Agrandir-GrandHeavy.otf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Sam Treadwell | Designer + Developer"/>
     <meta property="og:description" content="Hi I'm Sam Treadwell, a UX/UI Designer, Frontend Developer, and Creative Technologist specializing in delivering intuitive and engaging user experiences."/>
@@ -21,12 +21,12 @@
     <meta property="og:type" content="website"/>
    
     <!-- Favicon -->
-    <link rel="icon" href="https://www.samtreadwell.com/Icons/space-invaders.svg" type="image/svg+xml" alt="Space Invaders icon">
+    <link rel="icon" href="https://www.samtreadwell.com/icons/space-invaders.svg" type="image/svg+xml" alt="Space Invaders icon">
 </head>
 <body>
     <div class="sticky-nav">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid justify-content-between align-items-center d-flex">
+            <div class="navbar-container">
                 <button 
                     class="navbar-toggler" 
                     type="button" data-bs-toggle="collapse" 
@@ -37,26 +37,31 @@
                     >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse order-3 order-lg-2 justify-content-center" id="navbarNavAltMarkup">
+                
+                <div class="navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="#home" data-target="#home">Home</a>
                         <a class="nav-link" href="#projects" data-target="#projects">Projects</a>
-                        <a class="nav-link" href="#about" data-target="#about">About Me</a>
-                        <a class="nav-link" href="#contact" data-target="#contact">Contact</a>                    
+                        <a class="nav-link" href="#about" data-target="#about">About</a>
+                        <a class="nav-link" href="contact.html" data-target="#contact">Contact</a>                    
                     </div>
-                    <div class="d-flex d-lg-none justify-content-start align-items-center gap-3 px-3 pt-3 mt-auto">
+                    
+                    <!-- Mobile social icons -->
+                    <div class="social-mobile">
                         <a class="nav-link" href="https://www.linkedin.com/in/sam-treadwell-70b548272/" target="_blank">
-                            <img class="social-icon linkedin" src="/SVG/linkedin-white.svg" width="24" height="24" alt="LinkedIn" />
+                            <img class="social-icon linkedin" src="/svg/linkedin.svg" width="24" height="24" alt="LinkedIn" />
                         </a>
                         <a class="nav-link" href="https://www.figma.com/@SamTreadwell" target="_blank">
-                            <img class="social-icon figma" src="/SVG/figma.svg" width="24" height="24" alt="Figma" />
+                            <img class="social-icon figma" src="/svg/figma.svg" width="24" height="24" alt="Figma" />
                         </a>
                         <a class="nav-link" href="https://github.com/treaddevs" target="_blank">
-                            <img class="social-icon github" src="/SVG/github-white.svg" width="24" height="24" alt="GitHub" />
+                            <img class="social-icon github" src="/svg/github.svg" width="24" height="24" alt="GitHub" />
                         </a>
                     </div>
                 </div>
-                <div class="order-2 order-lg-3">
+
+                <!-- Theme toggle -->
+                <div class="theme-toggle-container">
                     <button id="theme-toggle" class="btn-reset theme-toggle icon-button" title="Toggles light & dark" aria-label="auto" aria-live="polite">
                         <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
                             <mask class="moon" id="moon-mask">
@@ -77,15 +82,17 @@
                         </svg>
                     </button> 
                 </div>
-                <div class="social-vertical d-none d-lg-flex flex-column position-fixed start-0 top-50 translate-middle-y ps-3">
+
+                <!-- Desktop social icons -->
+                <div class="social-desktop">
                     <a class="nav-link" href="https://www.linkedin.com/in/sam-treadwell-70b548272/" target="_blank">
-                        <img class="social-icon linkedin" src="/SVG/linkedin-white.svg" width="24" height="24" alt="LinkedIn" />
+                        <img class="social-icon linkedin" src="/svg/linkedin.svg" width="24" height="24" alt="LinkedIn" />
                     </a>
                     <a class="nav-link" href="https://www.figma.com/@SamTreadwell" target="_blank">
-                        <img class="social-icon figma" src="/SVG/figma.svg" width="24" height="24" alt="Figma" />
+                        <img class="social-icon figma" src="/svg/figma.svg" width="24" height="24" alt="Figma" />
                     </a>
                     <a class="nav-link" href="https://github.com/treaddevs" target="_blank">
-                        <img class="social-icon github" src="/SVG/github-white.svg" width="24" height="24" alt="GitHub" />
+                        <img class="social-icon github" src="/svg/github.svg" width="24" height="24" alt="GitHub" />
                     </a>
                 </div>
             </div>
@@ -94,6 +101,7 @@
 
     <div class="home" id="home">
         <div class="title">
+            <h2 class="name">SAM TREADWELL</h2>
             <h2 class="role">
                 <span class="dynamic-role-container">
                     <span class="primary-wipe"></span>
@@ -118,22 +126,22 @@
 
     <div class="about" id="about">
         <div class="about-text">
-            <h2>Hi there</h2>
+            <h2>Hi there!</h2>
             <p>
-                I'm Sam, a creative technologist passionate about delivering human-centric web applications that scale. 
-                I enjoy bridging the gap between product design and development to create intuitive and engaging user experiences. 
-                My <a href="/Files/Tech Resume.pdf" class="resume" target="_blank">resume</a> highlights my professional experiences and education, including the tech stack and tools I'm most familiar with.
+                I'm Sam – a creative technologist who enjoys bridging product design and frontend development to build intuitive and engaging digital experiences.
+                I'm passionate about bringing ideas to life through user-focused design systems to deliver accessible and scalable web applications.
                 <br><br>
-                In my spare time I enjoy outdoor adventures, games, and music. 
-                I'm always open to learning about new technologies, startups, and opportunities for collaboration, 
+                My <a href="/files/Resume.pdf" class="resume" target="_blank">resume</a> highlights my professional experiences and education, including the tech stack and tools I'm most familiar with.
+                I'm open to learning about new startups, technologies, and opportunities for collaboration, 
                 so feel free to reach out!
                 <br><br>
-            <button class="about-btn" onclick="window.location.href='contact.html'">Contact me</button>
+            </p>
+            <button class="contact-btn" onclick="window.location.href='contact.html'">Contact me <img src="/svg/paper-plane.svg" width="30" height="30"/></button>
         </div>
 
-        <div class="about-img">
+        <div class="headshot-img">
             <span class="wipe"></span>
-            <img src="/Images/headshot.jpeg" alt="Sam Treadwell">
+            <img src="/images/headshot.jpeg" alt="Sam Treadwell">
         </div>
     </div>
 
@@ -151,9 +159,10 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./JS/projects.js" defer></script>
-    <script type="module" src="./JS/role.js" defer></script>
-    <script type="module" src="./JS/theme.js" defer></script>
-    <script type="module" src="./JS/index.js" defer></script>
+    <script type="module" src="/js/projects.js" defer></script>
+    <script type="module" src="/js/role.js" defer></script>
+    <script type="module" src="/js/theme.js" defer></script>
+    <script type="module" src="/js/index.js" defer></script>
 </body>
 </html>
+  

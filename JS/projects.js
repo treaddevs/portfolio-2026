@@ -1,33 +1,33 @@
 export const projects = [
   {
     type: "laptop",
-    tabImg: "/SVG/tab.svg",
+    tabImg: "/svg/tab.svg",
     title: "Mental Healthcare Data Visualization",
-    desc: `Designing and developing for a <a href="https://www.navimental.com/" target="_blank">startup</a> helping parents of children struggling with cognitive and behavioral challenges connect with professional support, manage journal entries to keep track of changes, visualize progress, and access additional aid to better navigate their journey`,
-    titleImg: "/Images/navi.png",
-    topImg: "/Images/navi-top.png",
-    bottomImg: "/Images/navi-bottom.png",
+    desc: "Designing and developing for a startup helping parents of children struggling with cognitive and behavioral challenges",
+    titleImg: "/image/navi.png",
+    topImg: "/images/navi-top.png",
+    bottomImg: "/images/navi-bottom.png",
     reverse: false,
     page: "navimental.html"
   },
   {
     type: "phone",
-    tabImg: "/SVG/tab.svg",
+    tabImg: "/svg/tab.svg",
     title: "AI-integrated Chatbot",
     desc: `Training and configuring an AI-powered chatbot agent to propose project ideas, offer recipe suggestions, and respond to other requests for information on a product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank">webpage</a>`,
-    topImg: "/Images/chatbot-1.png",
-    bottomImg: "/Images/chatbot-2.png",
+    topImg: "/images/chatbot-1.png",
+    bottomImg: "/images/chatbot-2.png",
     reverse: true,
-    page: "chatbot.html"
+    page: "via.html"
   },
   {
     type: "laptop",
-    tabImg: "/SVG/tab.svg",
+    tabImg: "/svg/tab.svg",
     title: "Communication App for ESOL Educators",
-    desc: `Building a full-stack application solution for the City of Portland, Maine's <a href="https://www.portlandmaine.gov/1537/ESOL-Collaborative" target="_blank">ESOL Collaborative</a> allowing users to instant message, share information, and request resources`,
-    titleImg: "/Images/e",
-    topImg: "/Images/esol-top.png",
-    bottomImg: "/Images/esol-bottom.png",
+    desc: `Building a full-stack application solution for the City of Portland, Maine's <a href="https://www.portlandmaine.gov/1537/ESOL-Collaborative" target="_blank">ESOL Collaborative</a>`,
+    titleImg: "/images/e",
+    topImg: "/images/esol-top.png",
+    bottomImg: "/images/esol-bottom.png",
     reverse: false,
     page: "esol.html"
   },
@@ -38,7 +38,7 @@ const tabAnimation = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.add("show");
         tabAnimation.unobserve(entry.target);
       }
     });
@@ -72,9 +72,9 @@ projects.forEach((project) => {
       <img class="tab" src="${project.tabImg}"/>
       <h2>${project.title}</h2>
       <p>${project.desc}</p>
-      <button class="page-btn" data-page="${project.page}">
+      <button class="project-btn" data-page="${project.page}">
         <span>View project</span>
-        <img class="new-window" src="/SVG/new-window.svg">
+        <img class="new-window" src="/svg/new-window.svg">
       </button>
     </div>
   `;
@@ -111,9 +111,9 @@ projects.forEach((project) => {
 
   projectsContainer.appendChild(section);
 
-  const pageBtn = section.querySelector(".page-btn");
-  if (pageBtn && project.page) {
-    pageBtn.addEventListener("click", () => {
+  const projectBtn = section.querySelector(".project-btn");
+  if (projectBtn && project.page) {
+    projectBtn.addEventListener("click", () => {
       window.location.href = project.page;
     });
   }

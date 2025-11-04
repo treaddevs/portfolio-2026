@@ -1,0 +1,236 @@
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transform: translateZ(-1px) scale(2);
+  z-index: -2;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.hero-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-tab {
+  display: inline-block;
+  width: 350px;
+  margin-bottom: 50px;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.page-tab.show {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+.page-title,
+.page-desc {
+  opacity: 0;
+  transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.page-btn {
+  opacity: 0;
+  transition: opacity 3.5s ease, transform 3.5s ease;
+}
+
+.page-title.show {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.page-desc.show {
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+.page-btn.show {
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+.logo {
+  height: 300px;
+  width: 300px;
+  filter: drop-shadow(0 4px 20px rgba(30, 30, 30, 0.3));
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.logo.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.page-body {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  padding: 0 10vw;
+  background-color: var(--bg-color);
+}
+
+.back-container {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+}
+
+.hero-intro {
+  margin-top: 2rem;
+  color: var(--text-color);
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.page-section img,
+.page-section video {
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: "Urbanist-SemiBold";
+  font-size: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.page-desc {
+  font-family: "Urbanist";
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.page-btn {
+  font-size: 24px;
+  color: var(--font-color);
+  text-decoration: none;
+  border: 2px solid;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  background-color: var(--font-color);
+  border-color: var(--font-color);
+  color: var(--bg-color);
+}
+
+.back-btn {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  border: none;
+  background-color: #00c3ff;;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #00c3ffe3;
+}
+
+.section-video {
+  border-radius: 15px;
+  width: 100%;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 20px rgba(30, 30, 30, 0.3));
+}
+
+.section-image {
+  border-radius: 15px;
+  width: 75%;
+  margin: 1rem auto;
+  filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));
+}
+
+.section-heading {
+  font-family: "Urbanist-SemiBold";
+  font-size: 50px;
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.section-text {
+  font-family: "Urbanist";
+  font-size: 24px;
+  color: var(--font-color-secondary);
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.section-text ol {
+  display: block;
+  font-size: 22px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.section-text ol li {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 15px;
+  margin: 5px 0;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.chatbot-btn {
+  font-size: 'Urbanist';
+  text-decoration: none;
+  color: white;
+  background-color: #E79003;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));
+}
+
+.chatbot-btn:hover {
+  background-color: #d78500;
+}
+
+.dark-mode .section-text ol li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.light-mode .section-text ol li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .section-text ol li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+

@@ -1,3 +1,11 @@
+.light-mode {
+  --theme-btn-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode {
+  --theme-btn-color: rgba(0, 0, 0, 0.1) !important;
+}
+
 .theme-toggle {
   --icon-fill-moon: #999999;
   --icon-fill-moon-hover: #7e7e7e;
@@ -8,13 +16,14 @@
   padding: 0.5rem;
   border: none;
   border-radius: 50%;
-  background: transparent;
+  background: var(--theme-btn-color);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
   position: relative;
+  z-index: 3001;
 }
 
 .sun-and-moon {
@@ -46,7 +55,7 @@
 
 /* === Hover Effects === */
 .theme-toggle:hover {
-  box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.75);
 }
 
 .theme-toggle:hover .sun-and-moon > .sun {

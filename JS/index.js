@@ -10,10 +10,8 @@ const savedTheme = localStorage.getItem("theme") || "dark";
 let isDarkMode = savedTheme === "dark";
 
 updateVideoSource();
-updateIcons();
 updateNavbarToggler();
 
-// Event listner
 lightDarkMode.addEventListener("click", toggleTheme);
 
 function toggleTheme() {
@@ -26,10 +24,8 @@ function toggleTheme() {
 
     updateVideoSource();
     updateNavbarToggler();
-    updateIcons();
 }
 
-// Helper functions
 function updateNavbarToggler() {
     const navbar = document.querySelector('.navbar');
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -41,24 +37,6 @@ function updateNavbarToggler() {
     if (navbarToggler) {
         navbarToggler.style.backgroundColor = 'var(--toggler-bg-color)';
     }
-}
-
-function updateIcons() {
-    const allIcons = document.querySelectorAll('.social-icon');
-
-    allIcons.forEach(icon => {
-        const isLinkedIn = icon.src.includes('linkedin');
-        const isFigma = icon.src.includes('figma');
-        const isGitHub = icon.src.includes('github');
-
-        if (isLinkedIn) {
-            icon.src = isDarkMode ? '/SVG/linkedin-white.svg' : '/SVG/linkedin-black.svg';
-        } else if (isFigma) {
-            icon.src = '/SVG/figma-black.svg';
-        } else if (isGitHub) {
-            icon.src = isDarkMode ? '/SVG/github-white.svg' : '/SVG/github-black.svg';
-        }
-    });
 }
 
 function updateVideoSource() {
@@ -73,3 +51,81 @@ function updateVideoSource() {
     }
     video.load();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const headshot = document.querySelector(".headshot-img");
+    if (!headshot) return;
+
+    const wipe = headshot.querySelector(".wipe");
+    const img = headshot.querySelector("img");
+    let hasRevealed = false;
+
+    const revealHeadshot = () => {
+        if (hasRevealed) return;
+        hasRevealed = true;
+
+        wipe.style.animation = "wipe-in-out 1.8s ease-in-out forwards";
+
+        setTimeout(() => {
+            img.style.opacity = "1";
+        }, 400);
+        
+        wipe.addEventListener(
+            "animationend",
+            () => {
+                wipe.style.display = "none";
+            },
+            { once: true }
+        );
+    };
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && !hasRevealed) {
+                    revealHeadshot();
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.4 }
+    );
+
+    observer.observe(headshot);
+});
+
+const navbarCollapse = document.getElementById("navbarNavAltMarkup");
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+let menuOpen = false;
+
+navbarToggler.addEventListener("click", () => {
+    menuOpen = !menuOpen;
+
+    if (menuOpen) {
+        navbarCollapse.classList.add("show");
+        document.body.classList.add("nav-open");
+    } else {
+        navbarCollapse.classList.remove("show");
+        document.body.classList.remove("nav-open");
+    }
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (menuOpen) {
+            navbarCollapse.classList.remove("show");
+            document.body.classList.remove("nav-open");
+            menuOpen = false;
+        }
+    });
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 991) {
+        document.body.classList.remove("nav-open");
+        navbarCollapse.classList.remove("show");
+        menuOpen = false;
+    }
+});
