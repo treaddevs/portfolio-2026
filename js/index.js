@@ -45,9 +45,9 @@ function updateVideoSource() {
     if (!videoSource || !video) return;
 
     if (isDarkMode) {
-        videoSource.src = '/Videos/golden-dust.mp4';
+        videoSource.src = '/videos/golden-dust.mp4';
     } else {
-        videoSource.src = '/Videos/golden-dust-negate.mp4';
+        videoSource.src = '/videos/golden-dust-negate.mp4';
     }
     video.load();
 }

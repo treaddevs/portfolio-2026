@@ -97,11 +97,13 @@ projects.forEach((project) => {
   } else if (project.type === "phone") {
     media = `
       <div class="phone-container">
-        <div class="phone-top">
-          <img src="${project.topImg}" alt="Chatbot conversation"> 
-        </div>
-        <div class="phone-bottom">
-          <img src="${project.bottomImg}" alt="Chatbot logo">
+        <div class="phone-wrapper">
+          <div class="phone-top">
+            <img src="${project.topImg}" alt="Chatbot conversation"> 
+          </div>
+          <div class="phone-bottom">
+            <img src="${project.bottomImg}" alt="Chatbot logo">
+          </div>
         </div>
       </div>
     `;

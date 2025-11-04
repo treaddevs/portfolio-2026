@@ -54,11 +54,7 @@
   transition-delay: 0.2s;
 }
 
-.page-desc.show {
-  opacity: 1;
-  transition-delay: 0.4s;
-}
-
+.page-desc.show,
 .page-btn.show {
   opacity: 1;
   transition-delay: 0.4s;

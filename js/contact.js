@@ -137,3 +137,19 @@ const tabAnimation = new IntersectionObserver(
 
 const tabImg = document.querySelector(".contact-tab");
 if (tabImg) tabAnimation.observe(tabImg);
+
+// Intersection Observer for .contact-title .contact-inputs .message-btn
+const textAnimation = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            textAnimation.unobserve(entry.target);
+            }
+        });
+    }, 
+    { threshold: 0.5 }
+);
+document.querySelectorAll(".contact-title, .contact-inputs, .message-btn").forEach(el => {
+    textAnimation.observe(el);
+});
