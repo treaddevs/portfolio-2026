@@ -2,9 +2,8 @@ export const projects = [
   {
     type: "laptop",
     tabImg: "/svg/tab.svg",
-    title: "Mental Healthcare Data Visualization",
+    title: "Mental Healthcare<br>Data Visualization",
     desc: "Designing and developing for a startup helping parents of children struggling with cognitive and behavioral challenges",
-    titleImg: "/image/navi.png",
     topImg: "/images/navi-top.png",
     bottomImg: "/images/navi-bottom.png",
     reverse: false,
@@ -23,9 +22,8 @@ export const projects = [
   {
     type: "laptop",
     tabImg: "/svg/tab.svg",
-    title: "Communication App for ESOL Educators",
+    title: "Communication App for<br>ESOL Educators",
     desc: `Building a full-stack application solution for the City of Portland, Maine's <a href="https://www.portlandmaine.gov/1537/ESOL-Collaborative" target="_blank">ESOL Collaborative</a>`,
-    titleImg: "/images/e",
     topImg: "/images/esol-top.png",
     bottomImg: "/images/esol-bottom.png",
     reverse: false,
@@ -73,8 +71,10 @@ projects.forEach((project) => {
       <h2>${project.title}</h2>
       <p>${project.desc}</p>
       <button class="project-btn" data-page="${project.page}">
-        <span>View project</span>
-        <img class="new-window" src="/svg/new-window.svg">
+        <div class="project-btn-wrapper">
+          <span>View project</span>
+          <img class="new-window" src="/svg/new-window.svg">
+        </div>
       </button>
     </div>
   `;

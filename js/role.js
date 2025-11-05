@@ -68,3 +68,19 @@ async function cycleRoles() {
 })();
 
 // console.log(`[${performance.now().toFixed(0)}ms] initial load`);
+
+// Intersection Observer for name
+const nameAnimation = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                nameAnimation.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.5 }
+);
+
+const nameText = document.querySelector(".name");
+if (nameText) nameAnimation.observe(nameText);

@@ -119,10 +119,11 @@ nav.navbar {
 
 .theme-toggle-container {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
-  z-index: 3000;
+  z-index: 9999;
   order: 3;
 }
 
@@ -182,13 +183,8 @@ nav.navbar {
   width: 100%;
   min-height: 100vh;
   padding: 0 10vw;
-  transform-style: preserve-3d; 
-}
-
-.name {
-  font-family: 'Montserrat-Medium';
-  color: #929292;
-  letter-spacing: 0.12rem;
+  transform-style: preserve-3d;
+  overflow: hidden; 
 }
 
 #bg-video {
@@ -230,7 +226,7 @@ nav.navbar {
 .projects section {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 6rem;
   align-items: stretch;
   flex-wrap: wrap;
   padding-top: 150px;
@@ -287,7 +283,7 @@ nav.navbar {
 .desc h2 {
   font-family: 'Urbanist-SemiBold';
   color: var(--font-color);
-  font-size: 50px;
+  font-size: clamp(36px, 8vw, 50px);
   margin-bottom: 20px;
 }
 
@@ -311,15 +307,21 @@ nav.navbar {
   background-color: #00c3ff;
   border: none;
   border-radius: 6px;
-  gap: 0.4em;
+  width: clamp(300px, 68vw, 364.75px);
   align-items: center;
-  padding: 10px 100px;
+  justify-content: center;
+  padding: 10px clamp(67.635px, 15.33vw, 100px);
   cursor: pointer;
   transition: transform 0.2s ease, font-size 0.2s ease;
 }
 
 .project-btn:hover {
   background-color: rgba(0, 195, 255, 0.85);
+}
+
+.project-btn-wrapper {
+  align-items: center;
+  gap: 0.4em;
 }
 
 .project-btn .new-window {
@@ -402,14 +404,15 @@ nav.navbar {
 
 .phone-container {
   display: flex;
-  flex-wrap: wrap;
   min-height: 830px;
 }
 
 .phone-wrapper {
   position: relative;
-  width: 600px;
+  width: 100%;
   flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -467,7 +470,7 @@ nav.navbar {
   align-items: center;
   margin: 150px 0;
   padding: 0 10vw;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .about-text {
@@ -477,7 +480,7 @@ nav.navbar {
 
 .about-text h2 {
   font-family: 'Urbanist-SemiBold';
-  font-size: 50px;
+  font-size: clamp(36px, 8vw, 50px);
 }
 
 .about-text p {
@@ -493,6 +496,7 @@ nav.navbar {
   border: none;
   border-radius: 6px;
   background-color: #00c3ff;
+  cursor: pointer;
 }
 
 .contact-btn:hover {
@@ -590,8 +594,8 @@ nav.navbar {
   border: none;
   border-radius: 6px;
   background-color: rgba(0, 195, 255, 0.85);
-  cursor: pointer;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .message-btn::before {

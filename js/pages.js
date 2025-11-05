@@ -55,7 +55,7 @@ export const pages = {
         tabImg: "/svg/tab.svg",
         title: "AI-integrated<br>Chatbot",
         heroImage: "/images/chatbot-gradient.png",
-        heroDesc: "I worked at the VIA Agency – developing web<br>components for the redesigned company website<br>and building a chatbot for a client",
+        heroDesc: "I worked for the VIA Agency – developing web<br>components for the redesigned company website<br>and building a chatbot for a client",
         logo: "/images/chatbot-logo.png",
         heroLink: "https://www.theviaagency.com/",
         sections: [
@@ -103,7 +103,7 @@ export const pages = {
         tabImg: "/svg/tab.svg",
         title: "Communication App<br>for ESOL Educators",
         heroImage: "/images/esol-gradient.png",
-        heroDesc: "This capstone project provided Portland, Maine's ESOL Collaborative<br>a centralized communication platform",
+        heroDesc: "This project provided Portland, Maine's ESOL Collaborative<br>with a centralized platform for communication",
         logo: "/images/esol-logo.png",
         heroLink: "https://www.theviaagency.com/",
         sections: [
