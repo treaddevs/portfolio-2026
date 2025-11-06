@@ -401,26 +401,14 @@ nav.navbar {
 .phone-container {
   display: flex;
   position: relative;
-  /* height: calc(
-    100% + clamp(112.5px, 30vw, 225px)
-  ); */
-  height: 830.25px;
+  height: calc(
+    (clamp(262.5px, 70vw, 525px) / 0.496) - clamp(112.5px, 30vw, 225px)
+  );
   flex: 1 1 525px;
   order: 2;
   box-sizing: border-box;
   margin: 0 auto;
 }
-
-/* .phone-wrapper {
-  position: relative;
-  margin: 0 auto;
-} */
-
-/* .phone-inner {
-  display: flex;
-  width: clamp(262.5px, 70vw, 525px);
-  height: 100%;
-} */
 
 .phone-top,
 .phone-bottom {
