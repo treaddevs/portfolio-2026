@@ -98,11 +98,13 @@ projects.forEach((project) => {
     media = `
       <div class="phone-container">
         <div class="phone-wrapper">
-          <div class="phone-top">
-            <img src="${project.topImg}" alt="Chatbot conversation"> 
-          </div>
-          <div class="phone-bottom">
-            <img src="${project.bottomImg}" alt="Chatbot logo">
+          <div class="phone-inner">
+            <div class="phone-top">
+              <img src="${project.topImg}" alt="Chatbot conversation"> 
+            </div>
+            <div class="phone-bottom">
+              <img src="${project.bottomImg}" alt="Chatbot logo">
+            </div>
           </div>
         </div>
       </div>
@@ -187,3 +189,63 @@ const phoneObserver = new IntersectionObserver(
 );
 
 phoneAnimations.forEach((section) => phoneObserver.observe(section));
+
+
+
+
+
+
+// // Intersection Observer for Phones
+// const phoneAnimations = document.querySelectorAll(".phone-container");
+
+// phoneAnimations.forEach((container) => {
+//   const phoneTop = container.querySelector(".phone-top");
+//   const phoneBottom = container.querySelector(".phone-bottom");
+
+//   phoneTop.classList.add("init");
+//   phoneBottom.classList.add("init");
+// });
+
+// const phoneObserver = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         const phoneTop = entry.target.querySelector(".phone-top");
+//         const phoneBottom = entry.target.querySelector(".phone-bottom");
+
+//         void phoneTop.offsetWidth;
+
+//         phoneTop.classList.remove("init");
+//         phoneTop.classList.add("animate");
+
+//         phoneBottom.classList.remove("init");
+//         phoneBottom.classList.add("animate");
+
+//         const delay = 2600;
+//         setTimeout(() => {
+//           adjustPhoneContainerHeight(entry.target);
+//         }, delay);
+
+//         phoneObserver.unobserve(entry.target);
+//       }
+//     });
+//   },
+//   { threshold: 0.5 }
+// );
+
+// phoneAnimations.forEach((section) => phoneObserver.observe(section));
+
+// function adjustPhoneContainerHeight(container) {
+//   const bottomPhone = container.querySelector(".phone-bottom");
+//   if (!bottomPhone) return;
+
+//   const img = bottomPhone.querySelector("img");
+//   if (!img.complete) return; // optional, ensure image loaded
+
+//   const imgHeight = img.offsetHeight;
+//   const style = getComputedStyle(bottomPhone);
+//   const matrix = new DOMMatrix(style.transform);
+//   const translateY = matrix.m42;
+
+//   container.style.height = `${imgHeight + translateY}px`;
+// }

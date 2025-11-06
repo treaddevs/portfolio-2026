@@ -330,10 +330,15 @@ nav.navbar {
   transition: transform 0.2s ease;
 }
 
-.laptop-container,
-.phone-container {
+.laptop-container {
+  display: flex;
   position: relative;
-  flex: 1 1 300px;
+  flex: 1 1 300px; /* Adjust 300px to laptop width */
+  perspective: 1200px;
+  justify-content: center;
+  align-items: center;
+  /* overflow: visible; */
+  margin: 0 auto;
   order: 2;
   box-sizing: border-box;
 }
@@ -342,15 +347,6 @@ nav.navbar {
 .projects .phone-container img {
   max-width: 100%;
   height: auto;
-}
-
-.laptop-container {
-  display: flex;
-  perspective: 1200px;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
-  margin: 0 auto;
 }
 
 .laptop {
@@ -404,22 +400,32 @@ nav.navbar {
 
 .phone-container {
   display: flex;
-  min-height: 830px;
-}
-
-.phone-wrapper {
   position: relative;
-  width: 100%;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
+  /* height: calc(
+    100% + clamp(112.5px, 30vw, 225px)
+  ); */
+  height: 830.25px;
+  flex: 1 1 525px;
+  order: 2;
+  box-sizing: border-box;
   margin: 0 auto;
 }
+
+/* .phone-wrapper {
+  position: relative;
+  margin: 0 auto;
+} */
+
+/* .phone-inner {
+  display: flex;
+  width: clamp(262.5px, 70vw, 525px);
+  height: 100%;
+} */
 
 .phone-top,
 .phone-bottom {
   position: absolute;
-  width: 300px;
+  width: clamp(150px, 40vw, 300px);
   opacity: 0;
   transition: transform 2s ease, opacity 2s ease;
 }
@@ -459,7 +465,10 @@ nav.navbar {
 
 .phone-bottom.animate {
   opacity: 1;
-  transform: translate(225px, 225px); 
+  transform: translate(
+    clamp(112.5px, 30vw, 225px), 
+    clamp(112.5px, 30vw, 225px)
+  ); 
   transition: transform 2.3s ease, opacity 2.3s ease;
   transition-delay: 0.3s;
 }
@@ -508,10 +517,10 @@ nav.navbar {
 }
 
 .headshot-img {
-  flex: 1;
   display: flex;
-  justify-self: center;
+  flex: 1;
   position: relative;
+  justify-self: center;
   max-width: 400px;
 }
 
@@ -705,8 +714,23 @@ nav.navbar {
   font-family: 'Montserrat';
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1232px) {
+  .phone-wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
 
+  .phone-inner {
+    display: flex;
+    width: clamp(262.5px, 70vw, 525px);
+    height: 100%;
+  }
+
+  .headshot-container {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 991px) {
