@@ -197,7 +197,7 @@ nav.navbar {
   transform: translateZ(-1px) scale(2);
   z-index: -2;
   pointer-events: none;
-  filter: blur(5px);
+  filter: blur(3px);
 }
 
 .home::after {
@@ -303,6 +303,9 @@ nav.navbar {
 .project-btn {
   display: inline-flex;
   align-self: flex-start;
+  font-family: 'Urbanist';
+  color: black;
+  text-decoration: none;
   margin-top: auto;
   background-color: #00c3ff;
   border: none;
@@ -333,7 +336,7 @@ nav.navbar {
 .laptop-container {
   display: flex;
   position: relative;
-  flex: 1 1 300px; /* Adjust 300px to laptop width */
+  flex: 1 1 300px;
   perspective: 1200px;
   justify-content: center;
   align-items: center;

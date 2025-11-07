@@ -5,11 +5,13 @@ export const pages = {
         heroImage: "/images/navi-gradient.png",
         heroDesc: "I worked for Navimental, a foundational platform<br>addressing youth mental health challenges",
         logo: "/images/navi-logo.png",
+        logoAlt: "Navimental stars logo",
         heroLink: "https://navimental.com",
         sections: [
             {
                 type: "video",
                 src: "/videos/navi-demo.mp4",
+                alt: "Video of Navimental journal data dashboard"
             },
             {
                 heading: "The problem",
@@ -17,7 +19,8 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/navi-journal-entry.png"
+                src: "/images/navi-journal-entry.png",
+                alt: "Navimental data entry form for journal"
             },
             {
                 heading: "Journal dashboard",
@@ -36,10 +39,12 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/navi-streak.png",
+                alt: "Hot streak for posting journal entries"
             },
             {
                 type: "image",
                 src: "/images/navi-dashboard.png",
+                alt: "Navimental journal data dashboard"
             },
             {
                 heading: "Project partners",
@@ -48,6 +53,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/navi-partners.png",
+                alt: "Partnering with Maine's leading organizations: MaineHealth, Northern Light Health, Maine Venture Fund, Northeastern University's Roux Institute"
             },
         ]
     },
@@ -57,11 +63,13 @@ export const pages = {
         heroImage: "/images/chatbot-gradient.png",
         heroDesc: "I worked for the VIA Agency – developing web<br>components for the redesigned company website<br>and building a chatbot for a client",
         logo: "/images/chatbot-logo.png",
+        logoAlt: "Boredom-Blaster chatbot robot head logo",
         heroLink: "https://www.theviaagency.com/",
         sections: [
             {
                 type: "video",
                 src: "/videos/via-demo.mp4",
+                alt: "Video of The VIA Agency's new website and my coding contributions"
             },
             {
                 heading: "The challenge",
@@ -70,6 +78,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/chatbot-figma.png",
+                alt: "Chatbot mockup design in Figma"
             },
             {
                 heading: "Product development",
@@ -78,6 +87,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/botpress.png",
+                alt: "Screenshot of building on Botpress platform"
             },
             {
                 heading: "Completed chatbot",
@@ -96,6 +106,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/chatbot-poster.png",
+                alt: "Image of full chatbot robot logo with chat bubbles next to the chatbot user interface displayed on an iPhone screen"
             },
         ]
     },
@@ -105,11 +116,13 @@ export const pages = {
         heroImage: "/images/esol-gradient.png",
         heroDesc: "This project provided Portland, Maine's ESOL Collaborative<br>with a centralized platform for communication",
         logo: "/images/esol-logo.png",
+        logoAlt: "Portland Maine ESOL Collaborative chat bubbles logo",
         heroLink: "https://github.com/treaddevs/esol-app/tree/main",
         sections: [
             {
                 type: "video",
                 src: "/videos/esol-demo.mp4",
+                alt: "Video of the Communication App for ESOL Educators"
             },
             {
                 heading: "The problem",
@@ -126,6 +139,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/esol-collaborative.png",
+                alt: "Portland Maine ESOL Collaborative logo"
             },
             {
                 heading: "Communication",
@@ -134,6 +148,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/esol-home.png",
+                alt: "Screenshot of app homepage feed"
             },
             {
                 heading: "Resource sharing",
@@ -142,10 +157,12 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/esol-drag-drop.png",
+                alt: "Screenshot of drag-and-drop file behavior for uploading"
             },
             {
                 type: "image",
                 src: "/images/esol-media.png",
+                alt: "Screenshot of posts with picture and video attachments"
             },
             {
                 heading: "Scheduling",
@@ -154,6 +171,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/esol-chat.png",
+                alt: "Screenshot of users chatting in messages using the Stream Chat software development kit"
             },
         ]
     }

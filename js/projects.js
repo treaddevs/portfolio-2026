@@ -86,10 +86,10 @@ projects.forEach((project) => {
       <div class="laptop-container">
         <div class="laptop">
           <div class="top">
-            <img src="${project.topImg}" alt="laptop screen">
+            <img src="${project.topImg}" alt="Project user interface displayed on Macbook laptop screen that animates and folds up">
           </div>
           <div class="bottom">
-            <img src="${project.bottomImg}" alt="laptop base">
+            <img src="${project.bottomImg}" alt="Macbook laptop keyboard">
           </div>
         </div>
       </div>
@@ -100,10 +100,10 @@ projects.forEach((project) => {
         <div class="phone-wrapper">
           <div class="phone-inner">
             <div class="phone-top">
-              <img src="${project.topImg}" alt="Chatbot conversation"> 
+              <img src="${project.topImg}" alt="Boredom-Blaster chatbot logo displayed on iPhone"> 
             </div>
             <div class="phone-bottom">
-              <img src="${project.bottomImg}" alt="Chatbot logo">
+              <img src="${project.bottomImg}" alt="Chatbot user interface displayed on iPhone">
             </div>
           </div>
         </div>

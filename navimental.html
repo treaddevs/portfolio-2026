@@ -10,79 +10,71 @@
     <link rel="stylesheet" href="./css/theme.css">
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="preload" href="./fonts/Agrandir-GrandHeavy.otf" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+    <link rel="preload" href="./fonts/Montserrat-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+    <link rel="preload" href="./fonts/Urbanist-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+    <link rel="preload" href="./fonts/Montserrat-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
 </head>
 <body class="navimental-page">
     <div class="sticky-nav">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="navbar-container">
-                <button 
-                    class="navbar-toggler" 
-                    type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNavAltMarkup" 
-                    aria-controls="navbarNavAltMarkup" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-                    >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="index.html#home" data-target="#home">Home</a>
-                        <a class="nav-link" href="index.html#projects" data-target="#projects">Projects</a>
-                        <a class="nav-link" href="index.html#about" data-target="#about">About</a>
-                        <a class="nav-link" href="contact.html" data-target="#contact">Contact</a>                    
+                    <a class="nav-link" href="index.html#home" data-target="#home">Home</a>
+                    <a class="nav-link" href="index.html#projects" data-target="#projects">Projects</a>
+                    <a class="nav-link" href="index.html#about" data-target="#about">About</a>
+                    <a class="nav-link" href="contact.html" data-target="#contact">Contact</a>
                     </div>
-                    
-                    <!-- Mobile social icons -->
+
                     <div class="social-mobile">
-                        <a class="nav-link" href="https://www.linkedin.com/in/sam-treadwell-70b548272/" target="_blank">
-                            <img class="social-icon linkedin" src="/svg/linkedin.svg" width="24" height="24" alt="LinkedIn" />
-                        </a>
-                        <a class="nav-link" href="https://www.figma.com/@SamTreadwell" target="_blank">
-                            <img class="social-icon figma" src="/svg/figma.svg" width="24" height="24" alt="Figma" />
-                        </a>
-                        <a class="nav-link" href="https://github.com/treaddevs" target="_blank">
-                            <img class="social-icon github" src="/svg/github.svg" width="24" height="24" alt="GitHub" />
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Theme toggle -->
-                <div class="theme-toggle-container">
-                    <button id="theme-toggle" class="btn-reset theme-toggle icon-button" title="Toggles light & dark" aria-label="auto" aria-live="polite">
-                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-                            <mask class="moon" id="moon-mask">
-                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                                <circle class="mask-circle" cx="24" cy="10" r="6" fill="black" />
-                            </mask>
-                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-                            <g class="sun-beams" stroke="currentColor">
-                                <line x1="12" y1="1" x2="12" y2="3" />
-                                <line x1="12" y1="21" x2="12" y2="23" />
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                                <line x1="1" y1="12" x2="3" y2="12" />
-                                <line x1="21" y1="12" x2="23" y2="12" />
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                            </g>
-                        </svg>
-                    </button> 
-                </div>
-
-                <!-- Desktop social icons -->
-                <div class="social-desktop">
                     <a class="nav-link" href="https://www.linkedin.com/in/sam-treadwell-70b548272/" target="_blank">
-                        <img class="social-icon linkedin" src="/svg/linkedin.svg" width="24" height="24" alt="LinkedIn" />
+                        <img class="social-icon linkedin" src="/svg/linkedin.svg" width="24" height="24" alt="LinkedIn"/>
                     </a>
                     <a class="nav-link" href="https://www.figma.com/@SamTreadwell" target="_blank">
-                        <img class="social-icon figma" src="/svg/figma.svg" width="24" height="24" alt="Figma" />
+                        <img class="social-icon figma" src="/svg/figma.svg" width="24" height="24" alt="Figma"/>
                     </a>
                     <a class="nav-link" href="https://github.com/treaddevs" target="_blank">
-                        <img class="social-icon github" src="/svg/github.svg" width="24" height="24" alt="GitHub" />
+                        <img class="social-icon github" src="/svg/github.svg" width="24" height="24" alt="GitHub"/>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="theme-toggle-container">
+                    <button id="theme-toggle" class="btn-reset theme-toggle icon-button" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" mask-type="luminance">
+                        <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+                        <circle class="mask-circle" cx="18" cy="10" r="6" fill="black"/>
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" fill="currentColor"/>
+                        <g class="sun-beams" stroke="currentColor">
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </g>
+                    </svg>
+                    </button>
+                </div>
+
+                <div class="social-desktop">
+                    <a class="nav-link" href="https://www.linkedin.com/in/sam-treadwell-70b548272/" target="_blank">
+                    <img class="social-icon linkedin" src="/svg/linkedin.svg" width="24" height="24" alt="LinkedIn"/>
+                    </a>
+                    <a class="nav-link" href="https://www.figma.com/@SamTreadwell" target="_blank">
+                    <img class="social-icon figma" src="/svg/figma.svg" width="24" height="24" alt="Figma"/>
+                    </a>
+                    <a class="nav-link" href="https://github.com/treaddevs" target="_blank">
+                    <img class="social-icon github" src="/svg/github.svg" width="24" height="24" alt="GitHub"/>
                     </a>
                 </div>
             </div>
@@ -91,7 +83,7 @@
     
     <div class="home" id="home">
       <div class="hero-container">
-        <img class="hero" alt="background gradient"/>
+        <img class="hero" alt="background gradient" alt="Background gradient color"/>
       </div>
     </div>
 
@@ -116,10 +108,8 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="/js/projects.js" defer></script>
-    <script type="module" src="/js/page.js" defer></script>
-    <script type="module" src="/js/role.js" defer></script>
-    <script type="module" src="/js/theme.js" defer></script>
     <script type="module" src="/js/index.js" defer></script>
+    <script type="module" src="/js/theme.js" defer></script>
+    <script type="module" src="/js/page.js" defer></script>
   </body>
 </html>

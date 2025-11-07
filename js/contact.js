@@ -114,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (validity.email && validity.message) {
             console.log("Form submitted successfully!");
-            // Show success message under the message field
             showSuccess(messageInput, "Message sent!");
         } else {
             console.warn("Form submission blocked. Please fix errors.");

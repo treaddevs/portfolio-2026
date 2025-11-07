@@ -164,7 +164,6 @@
 .section-image {
   border-radius: 15px;
   width: 75%;
-  /* margin: 1rem auto; */
   filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));
 }
 
@@ -172,7 +171,6 @@
   font-family: "Urbanist-SemiBold";
   font-size: 50px;
   width: 60%;
-  /* margin: 1rem auto; */
 }
 
 .section-text {
@@ -180,7 +178,6 @@
   font-size: 24px;
   color: var(--font-color-secondary);
   width: 60%;
-  /* margin: 1rem auto; */
 }
 
 .section-text ol {

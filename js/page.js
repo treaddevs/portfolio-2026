@@ -33,7 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             </div>
             <div class="hero-right">
-                <img class="logo" src="${pageData.logo}"/>
+                <img 
+                    class="logo" 
+                    src="${pageData.logo}"
+                    alt="${pageData.logoAlt || pageData.title.replace(/<br>/g, ' ' ) + 'logo'}"
+                />
             </div>
         `;
 
@@ -57,13 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
             video.loop = true;
             video.playsInline = true;
             video.classList.add("section-video"); 
+            
+            // Accessibility for video
+            if (section.alt) video.setAttribute("aria-label", section.alt);
+
             sectionEl.appendChild(video);
         }
 
         if (section.type === "image") {
             const img = document.createElement("img");
             img.src = section.src;
-            img.alt = section.heading || "Project image";
+            img.alt = section.alt || section.heading || "Project image";
             img.classList.add("section-image");
             sectionEl.appendChild(img);
         }

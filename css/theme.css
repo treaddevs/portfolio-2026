@@ -98,6 +98,8 @@
   }
 
   [data-theme="dark"] .sun-and-moon > .sun {
+    mask: url(#moon-mask);
+    -webkit-mask: url(#moon-mask);
     transform: scale(1.75);
     transition: transform 0.25s cubic-bezier(0.25, 0, 0.3, 1);
   }
