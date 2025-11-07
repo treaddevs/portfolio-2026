@@ -1,7 +1,3 @@
-/* .hero-container {
-  justify-content: center;
-} */
-
 .hero {
   position: absolute;
   top: 0;
@@ -204,7 +200,7 @@
 }
 
 .chatbot-btn {
-  font-size: 'Urbanist';
+  font-size: clamp(18px, 4vw, 24px);
   text-decoration: none;
   color: white;
   background-color: #E79003;
@@ -239,31 +235,12 @@ iframe[name="fab"],
   z-index: 1;
 }
 
-@media (max-width: 1600px) {
-  /* .page-title {
-    font-size: 85px;
-  } */
-
-  /* .logo {
-    height: 255px;
-    width: 255px;
-  } */
-}
-
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 991px) {
   .section-heading,
   .section-image,
   .section-text {
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
-
 }
 
 @media (max-width: 480px) {
@@ -275,8 +252,4 @@ iframe[name="fab"],
   .esol-page .page-title {
     font-size: 32px;
   }
-}
-
-@media (max-width: 320px) {
-
 }

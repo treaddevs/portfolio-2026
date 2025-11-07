@@ -337,7 +337,6 @@ nav.navbar {
   perspective: 1200px;
   justify-content: center;
   align-items: center;
-  /* overflow: visible; */
   margin: 0 auto;
   order: 2;
   box-sizing: border-box;
@@ -350,7 +349,7 @@ nav.navbar {
 }
 
 .laptop {
-  width: 950px;
+  width: clamp(300px, 70vw, 950px);
   transform-style: preserve-3d;
 }
 
@@ -778,16 +777,4 @@ nav.navbar {
     overflow: hidden;
     position: fixed;
   }
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 480px) {
-
-}
-
-@media (max-width: 320px) {
-
 }

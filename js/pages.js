@@ -9,7 +9,7 @@ export const pages = {
         sections: [
             {
                 type: "video",
-                src: "/videos/navi-demo-2.mp4",
+                src: "/videos/navi-demo.mp4",
             },
             {
                 heading: "The problem",
@@ -105,11 +105,11 @@ export const pages = {
         heroImage: "/images/esol-gradient.png",
         heroDesc: "This project provided Portland, Maine's ESOL Collaborative<br>with a centralized platform for communication",
         logo: "/images/esol-logo.png",
-        heroLink: "https://www.theviaagency.com/",
+        heroLink: "https://github.com/treaddevs/esol-app/tree/main",
         sections: [
             {
                 type: "video",
-                src: "/videos/esol-demo-2.mp4",
+                src: "/videos/esol-demo.mp4",
             },
             {
                 heading: "The problem",
