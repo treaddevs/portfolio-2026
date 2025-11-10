@@ -581,7 +581,7 @@ nav.navbar {
   border: none;
   border-radius: 6px;
   outline: none;
-  padding: 1rem 1.25rem;
+  padding: clamp(0.75rem, 2vh, 1rem) clamp(1rem, 3vh, 1.25rem);
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
