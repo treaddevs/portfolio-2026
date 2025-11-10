@@ -568,7 +568,7 @@ nav.navbar {
 
 .contact-title h2 {
   font-family: 'Urbanist-SemiBold';
-  font-size: 50px;
+  font-size: clamp(40px, 6vh, 50px);
 }
 
 .contact-title hr {
