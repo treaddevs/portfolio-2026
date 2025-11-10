@@ -56,8 +56,8 @@
 }
 
 .logo {
-  height: clamp(255px, 20vw, 300px);
-  width: clamp(255px, 20vw, 300px);
+  height: clamp(150px, 20vw, 300px);
+  width: clamp(150px, 20vw, 300px);
   filter: drop-shadow(0 4px 20px rgba(30, 30, 30, 0.3));
   opacity: 0;
   transform: translateY(50px);
@@ -241,6 +241,14 @@ iframe[name="fab"],
 }
 
 @media (max-width: 480px) {
+  .page-tab {
+    margin-bottom: 25px;
+  }
+
+  .hero-content {
+    gap: 2rem;
+  }
+
   .page-title,
   .section-heading {
     font-size: 36px;
