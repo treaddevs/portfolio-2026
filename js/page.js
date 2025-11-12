@@ -141,4 +141,3 @@ document.addEventListener("DOMContentLoaded", () => {
     const logoImg = document.querySelector(".logo");
     if (logoImg) logoAnimation.observe(logoImg);
 });
-

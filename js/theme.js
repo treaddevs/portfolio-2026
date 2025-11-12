@@ -55,4 +55,4 @@ window
 	.addEventListener('change', ({matches:isDark}) => {
 	theme.value = isDark ? 'dark' : 'light'
 	setPreference()
-})
+});

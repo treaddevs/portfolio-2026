@@ -130,7 +130,6 @@ projects.forEach((project) => {
   });
 });
 
-
 // Intersection Observer for Laptops
 const laptopAnimation = document.querySelectorAll(".laptop-container");
 
@@ -146,14 +145,13 @@ laptopAnimation.forEach((scene) => {
           laptopBottom.classList.add("show");
         }, 1000);
 
-        observer.unobserve(entry.target);
+        laptopObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
 
   laptopObserver.observe(scene);
 });
-
 
 // Intersection Observer for Phones
 const phoneAnimations = document.querySelectorAll(".phone-container");
