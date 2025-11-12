@@ -19,7 +19,7 @@ function toggleTheme() {
     document.documentElement.classList.toggle('dark-mode', isDarkMode);
     document.documentElement.classList.toggle('light-mode', !isDarkMode);
 
-    document.querySelector('#theme-toggler')?.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    document.querySelector('#theme-toggle')?.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 
     updateVideoSource();
@@ -44,12 +44,12 @@ function updateVideoSource() {
     const video = document.getElementById('bg-video');
     if (!videoSource || !video) return;
 
-    if (isDarkMode) {
-        videoSource.src = '/videos/golden-dust.mp4';
-    } else {
-        videoSource.src = '/videos/golden-dust-negate.mp4';
+    const newSrc = isDarkMode ? '/videos/golden-dust.mp4' : '/videos/golden-dust-negate.mp4'
+
+    if (video.src !== new URL(newSrc, window.location.href).href) {
+        videoSource.src = newSrc;
+        video.load();
     }
-    video.load();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
