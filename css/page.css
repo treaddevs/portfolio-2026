@@ -13,7 +13,7 @@
 .hero-content {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
   align-items: stretch;
   flex-wrap: wrap;
 }
@@ -243,10 +243,6 @@ iframe[name="fab"],
 @media (max-width: 480px) {
   .page-tab {
     margin-bottom: 25px;
-  }
-
-  .hero-content {
-    gap: 2rem;
   }
 
   .page-title,
