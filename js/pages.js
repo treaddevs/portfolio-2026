@@ -57,6 +57,125 @@ export const pages = {
             },
         ]
     },
+        canopy: {
+        tabImg: "/svg/tab.svg",
+        title: "Mobile Banking App",
+        heroImage: "/images/canopy-gradient.png",
+        heroDesc: "I designed onboarding, account access, and transaction<br>user interfaces and screen flows for a mobile banking application",
+        logo: "/images/canopy-logo.png",
+        logoAlt: "Canopy Banking logo",
+        heroLink: "https://www.figma.com/board/WUE8RneYcQNQmPTElQTUuo/Canopy-Banking-App?node-id=0-1&t=ZhAkmDOMkfc4gNzJ-1",
+        sections: [
+            {
+                type: "video",
+                src: "/videos/canopy-demo.mp4",
+                alt: "Video of Figma presentation showing Canopy App screens presented on iPhone 16 devices"
+            },
+            {
+                heading: "Product design",
+                text: `I conducted this product design case study to create high-fidelity screen flows for a mobile banking mobile application. This project is comprised of sections for onboarding, account screens for checking and savings, and multiple transactions desirable for an online banking experience.`,
+            },
+            {
+                type: "image",
+                src: "/images/canopy-debit-card.png",
+                alt: "Canopy debit card"
+            },
+            {
+                heading: "Onboarding",
+                text: `Account sign up starts with a few onboarding screens to pitch the product and encourage users to commit to their initial curiosity about the app. After this, users provide basic account set up informaiton including a username, phone number, email, and password to sign up. When the user is ready to log in they can select the checkbox to be remembered in the system which enables Face ID to expedite the sign in process.`,
+            },
+            {
+                type: "image",
+                src: "/images/canopy-onboarding.png",
+                alt: "Canopy onboarding screens including sign up and sign in interfaces"
+            },
+            {
+                heading: "Canopy checking",
+                text: `From the account screen users can access their checking account by clicking on the arrow to the right of their checking account balance. The second screen displays checking account information including the most recent and pending transactions. Using the navigation bar below the Available Balance modal users can select the Insights button to access analytics and trends related to their spending habits.`,
+            },
+            {
+                type: "image",
+                src: "/images/canopy-checking.png",
+                alt: "Canopy account screens including account balance, checking, and spending insights screens"
+            },
+            {
+                heading: "Canopy savings",
+                text: `From the account screen users can access their savings account by clicking on the arrow to the right of their savings acocunt balance. The second screen displays savings account information including the most recent and pending deposits. The last screen shows the users set Savings Goal entries which, for this user, includes an existing car loan and home down payment.`,
+            },
+            {
+                type: "image",
+                src: "/images/canopy-savings.png",
+                alt: "Canopy account screens including account balance, savings, and spending goal screens"
+            },
+            {
+                heading: "Transactions",
+                text: `This series of user interface screens shows many of the available transactions including: deposits, money transfers, bill pay, card management, and application settings. Checks can be deposited utilizing the camera buttons. Money can be transferred from the Account Balance or by linking an external bank account. Bill Pay enables reoccuring bill payment transactions which are visible below the input fields. Card management allows users to freeze their card, report card issues, and reset their PIN. Lastly, the More button's menu is comprised of many relevant application settings, features, and additional products.`,
+            },
+            {
+                type: "image",
+                src: "/images/canopy-nav.png",
+                alt: "Nav bar buttons for deposit, transfer, bill pay, insights, and card"
+            },
+            {
+                type: "image",
+                src: "/images/canopy-transactions.png",
+                alt: "Transaction screens for depositing checks, transferring money, bill pay, card managment, and menu settings"
+            },
+        ]
+    },
+        solana: {
+        tabImg: "/svg/tab.svg",
+        title: "Home Solar<br>Dashboard UI",
+        heroImage: "/images/solana-gradient.png",
+        heroDesc: "I created a solar dashboard to display<br>controls and check on system operations",
+        logo: "/images/solana-logo.png",
+        logoAlt: "Solar home logo",
+        heroLink: "https://www.figma.com/board/sEIZQN6ilYyNPCUMOeAWxs/Home-Solar-App?node-id=0-1&t=tJj9TqlUsaUHv2B5-1",
+        sections: [
+            {
+                type: "image",
+                src: "/images/solana.png",
+                alt: "Dashboard display with controls as widgets in user interface"
+            },
+            {
+                heading: "Centralized control",
+                text: "Any complex system requires easy access to relevant information and the ability to quickly adjust controls as needed. This home solar dashboard leverages widget-based architecture for increased customization and control. This comprehensive display allows users to compare and contrast multiple data points, allowing operators to respond to system conditions and make immediate decisions."
+            },
+            {
+                type: "image",
+                src: "/images/solar-worker.png",
+                alt: "Photo of man installing solar panels on the roof of a multi-unit building"
+            },
+            {
+                heading: "Key metrics",
+                text: `
+                    The dashboard tracks important information, including: 
+                    <ol>
+                        <li>Power Generation</li>
+                        <li>Current State</li>
+                        <li>Temperature</li>
+                        <li>Weather Forecast</li>
+                        <li>Metering</li>
+                    </ol>
+                    I designed the solar dashboard to display these inputs in an overview panel, helping operators view live system feedback, monitor conditions, and make informed decisions.
+                `,
+            },
+            {
+                type: "image",
+                src: "/images/solar-carport.png",
+                alt: "Solar panels over a carport with a white SUV parked underneath"
+            },
+            {
+                heading: "Adaptability",
+                text: "The success of a software solution is dependent on it's ability to adapt to and address user needs. This design offers both a plethora of useful insights, and the ability to control the display inputs. This combination makes the system adaptable for users to make modifications and customize their experience."
+            },
+            {
+                type: "image",
+                src: "/images/solar-farm.png",
+                alt: "Solar panels on farmland with Fall foliage in background"
+            },
+        ]
+    },
     via: {
         tabImg: "/svg/tab.svg",
         title: "AI-integrated<br>Chatbot",
@@ -64,7 +183,7 @@ export const pages = {
         heroDesc: "I worked for the VIA Agency – developing web<br>components for the redesigned company website<br>and building a chatbot for a client",
         logo: "/images/chatbot-logo.png",
         logoAlt: "Boredom-Blaster chatbot robot head logo",
-        heroLink: "https://www.theviaagency.com/",
+        heroLink: "https://www.theviaagency.com",
         sections: [
             {
                 type: "video",

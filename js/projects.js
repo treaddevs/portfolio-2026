@@ -12,6 +12,25 @@ export const projects = [
   {
     type: "phone",
     tabImg: "/svg/tab.svg",
+    title: "Mobile Banking App",
+    desc: "Constructing screen flows, user interfaces, and interactions for a personalized banking mobile banking app experience",
+    topImg: "/images/canopy-1.png",
+    bottomImg: "/images/canopy-2.png",
+    reverse: true,
+    page: "canopy.html"
+  },
+  {
+    type: "desktop",
+    tabImg: "/svg/tab.svg",
+    title: "Home Solar<br>Dashboard UI",
+    desc: "Creating a data dashboard to display information and gain insights for a home solar system's web application",
+    singleImg: "/images/solana.png",
+    reverse: false,
+    page: "solana.html"
+  },
+  {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
     title: "AI-integrated Chatbot",
     desc: `Training and configuring an AI-powered chatbot agent to propose project ideas, offer recipe suggestions, and respond to other requests for information on a product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank">webpage</a>`,
     topImg: "/images/chatbot-1.png",
@@ -100,12 +119,20 @@ projects.forEach((project) => {
         <div class="phone-wrapper">
           <div class="phone-inner">
             <div class="phone-top">
-              <img src="${project.topImg}" alt="Boredom-Blaster chatbot logo displayed on iPhone"> 
+              <img src="${project.topImg}" alt="Logo for project displayed on iPhone 16"> 
             </div>
             <div class="phone-bottom">
-              <img src="${project.bottomImg}" alt="Chatbot user interface displayed on iPhone">
+              <img src="${project.bottomImg}" alt="Primary project user interface displayed on iPhone 16">
             </div>
           </div>
+        </div>
+      </div>
+    `;
+  } else if (project.type === "desktop") {
+    media = `
+      <div class="desktop-container">
+        <div class="desktop">
+          <img src="${project.singleImg}" alt="Primary project user interface displayed on desktop">
         </div>
       </div>
     `;
@@ -187,3 +214,24 @@ const phoneObserver = new IntersectionObserver(
 );
 
 phoneAnimations.forEach((section) => phoneObserver.observe(section));
+
+// Intersection Observer for Desktop
+const desktopAnimation = document.querySelectorAll(".desktop-container");
+
+desktopAnimation.forEach((scene) => {
+  const desktop = scene.querySelector(".desktop");
+
+  const desktopObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          desktop.classList.add("show");
+        }, 1000);
+
+        desktopObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  desktopObserver.observe(scene);
+});
