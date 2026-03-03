@@ -240,7 +240,7 @@ nav.navbar {
   color: var(--font-color);
 }
 
-.projects-title {
+.work-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,8 +249,15 @@ nav.navbar {
   padding-top: 250px;
 }
 
-.projects-title h2 {
+.work-type h2 {
+  opacity: 0;
+  transition: opacity 2.5s ease, transform 2.5s ease;
   font-size: clamp(36px, 10vw, 85px);
+}
+
+.work-type h2.show {
+  opacity: 1;
+  transition-delay: 0.3s;
 }
 
 .plus-text {

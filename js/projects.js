@@ -60,6 +60,21 @@ export const projects = [
   },
 ];
 
+// Intersection Observer for work-type h2
+const workTypeAnimation = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        workTypeAnimation.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+document.querySelectorAll(".work-type h2").forEach(el => {
+  workTypeAnimation.observe(el);
+});
+
 // Intersection Observer for Tab
 const tabAnimation = new IntersectionObserver(
   (entries) => {
