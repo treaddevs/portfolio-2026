@@ -240,6 +240,23 @@ nav.navbar {
   color: var(--font-color);
 }
 
+.projects-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'GABRWFFR';
+  padding-top: 250px;
+}
+
+.projects-title h2 {
+  font-size: clamp(36px, 10vw, 85px);
+}
+
+.plus-text {
+  color: #00c3ff;
+}
+
 .projects {
   position: relative;
   align-items: stretch;
@@ -274,6 +291,46 @@ nav.navbar {
 .tab.show {
   transform: rotateX(0deg);
   opacity: 1;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  font-family: 'Montserrat-Medium';
+}
+
+.pill {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.category-pill.project {
+  background-color: #e9e4ff; /* light purple */
+  color: #5a3df0;
+}
+
+.category-pill.case-study {
+  background-color: #fff6cc; /* light yellow */
+  color: #b38b00;
+}
+
+.skill-pill {
+  background-color: #f1f1f1;
+  color: #444;
 }
 
 .desc {

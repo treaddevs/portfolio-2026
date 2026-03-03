@@ -3,6 +3,8 @@ export const projects = [
     type: "laptop",
     tabImg: "/svg/tab.svg",
     title: "Mental Healthcare<br>Data Visualization",
+    category: "Project",
+    skills: ["UX Lead", "Product Design", "Data Visualization", "Figma"],
     desc: "Designing and developing for a startup helping parents of children struggling with cognitive and behavioral challenges",
     topImg: "/images/navi-top.png",
     bottomImg: "/images/navi-bottom.png",
@@ -13,6 +15,8 @@ export const projects = [
     type: "phone",
     tabImg: "/svg/tab.svg",
     title: "Mobile Banking App",
+    category: "Case Study",
+    skills: ["Prototyping", "UX/UI", "Brand Identity", "Figma"],
     desc: "Constructing screen flows, user interfaces, and interactions for a personalized banking mobile banking app experience",
     topImg: "/images/canopy-1.png",
     bottomImg: "/images/canopy-2.png",
@@ -23,6 +27,8 @@ export const projects = [
     type: "desktop",
     tabImg: "/svg/tab.svg",
     title: "Home Solar<br>Dashboard UI",
+    category: "Case Study",
+    skills: ["Prototyping", "UX/UI", "Dashboard", "Data Visualization", "Figma"],
     desc: "Creating a data dashboard to display information and gain insights for a home solar system's web application",
     singleImg: "/images/solana.png",
     reverse: false,
@@ -32,6 +38,8 @@ export const projects = [
     type: "phone",
     tabImg: "/svg/tab.svg",
     title: "AI-integrated Chatbot",
+    category: "Project",
+    skills: ["Product Design", "AI", "Chatbot", "Figma", "Botpress", "Vue.js", "Storyblok CMS"],
     desc: `Training and configuring an AI-powered chatbot agent to propose project ideas, offer recipe suggestions, and respond to other requests for information on a product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank">webpage</a>`,
     topImg: "/images/chatbot-1.png",
     bottomImg: "/images/chatbot-2.png",
@@ -42,6 +50,8 @@ export const projects = [
     type: "laptop",
     tabImg: "/svg/tab.svg",
     title: "Communication App for<br>ESOL Educators",
+    category: "Project",
+    skills: ["Project Management", "User Research", "UX/UI", "Full-Stack Development", "React.js", "TypeScript", "Next.js"],
     desc: `Building a full-stack application solution for the City of Portland, Maine's <a href="https://www.portlandmaine.gov/1537/ESOL-Collaborative" target="_blank">ESOL Collaborative</a>`,
     topImg: "/images/esol-top.png",
     bottomImg: "/images/esol-bottom.png",
@@ -84,10 +94,20 @@ projects.forEach((project) => {
   const section = document.createElement("section");
   section.className = project.reverse ? "reverse" : "";
 
+  const skillPills = (project.skills || [])
+    .map(skill => `<span class="pill skill-pill">${skill}</span>`)
+    .join("");
+
   const desc = `
     <div class="desc">
       <img class="tab" src="${project.tabImg}"/>
       <h2>${project.title}</h2>
+      <div class="items-container">
+        <span class="pill category-pill ${project.category === "Case Study" ? "case-study" : "project"}">
+          ${project.category}
+        </span>
+        ${skillPills}
+      </div>
       <p>${project.desc}</p>
       <button class="project-btn" data-page="${project.page}">
         <div class="project-btn-wrapper">
