@@ -88,6 +88,18 @@ const tabAnimation = new IntersectionObserver(
   { threshold: 0.5 }
 );
 
+// Intersection Observer for pills-container
+const pillsAnimation = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        pillsAnimation.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 }
+);
+
 // Intersection Observer for .desc h2, p, button
 const textAnimation = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -117,7 +129,7 @@ projects.forEach((project) => {
     <div class="desc">
       <img class="tab" src="${project.tabImg}"/>
       <h2>${project.title}</h2>
-      <div class="items-container">
+      <div class="pills-container">
         <span class="pill category-pill ${project.category === "Case Study" ? "case-study" : "project"}">
           ${project.category}
         </span>
@@ -186,6 +198,11 @@ projects.forEach((project) => {
 
   const tabImg = section.querySelector(".tab");
   if (tabImg) tabAnimation.observe(tabImg);
+
+  const pillsContainer = section.querySelector(".pills-container");
+  if (pillsContainer) {
+    pillsAnimation.observe(pillsContainer);
+  }
 
   document.querySelectorAll(".desc h2, .desc p, .desc button").forEach((el) => {
     textAnimation.observe(el);
