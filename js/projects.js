@@ -138,7 +138,7 @@ projects.forEach((project) => {
       <p>${project.desc}</p>
       <button class="project-btn" data-page="${project.page}">
         <div class="project-btn-wrapper">
-          <span>View project</span>
+          <span>${project.category}</span>
           <img class="new-window" src="/svg/new-window.svg">
         </div>
       </button>
