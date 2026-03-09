@@ -205,6 +205,11 @@ export const pages = {
             },
             {
                 type: "image",
+                src: "/images/chatbot-flowchart.png",
+                alt: "Flowchart diagram of user flow using Botpress chatbot"
+            },
+            {
+                type: "image",
                 src: "/images/botpress.png",
                 alt: "Screenshot of building on Botpress platform"
             },
