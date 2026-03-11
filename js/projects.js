@@ -4,7 +4,7 @@ export const projects = [
     tabImg: "/svg/tab.svg",
     title: "Mental Healthcare<br>Data Visualization",
     category: "Project",
-    skills: ["Product Design Lead", "User Research", "UX/UI", "Design Systems", "Data Visualization", "Brand Identity", "Figma"],
+    skills: ["Product Design Lead", "User Research", "UX/UI", "Data Visualization", "Brand Identity", "Figma"],
     desc: "Designing and developing for a startup helping parents of children struggling with cognitive and behavioral challenges",
     topImg: "/images/navi-top.png",
     bottomImg: "/images/navi-bottom.png",

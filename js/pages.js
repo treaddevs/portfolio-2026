@@ -47,6 +47,35 @@ export const pages = {
                 alt: "Navimental journal data dashboard"
             },
             {
+                heading: "Testimonials",
+                text: "Insights gathered through user research, interviews, and stakeholder feedback that helped shape and refine the final product experience."
+            },
+            {
+                type: "image",
+                src: "/images/navi-testimonial.png",
+                alt: "Navimental testimonial: Everything I wish I had when raising my daughter"
+            },
+            {
+                type: "image",
+                src: "/images/navi-peer-sessions.png",
+                alt: "Navimental 1 on 1 peer sessions"
+            },
+            {
+                type: "image",
+                src: "/images/navi-care-plan.png",
+                alt: "Navimental care plan"
+            },
+            {
+                type: "image",
+                src: "/images/navi-parent-community.png",
+                alt: "Navimental parent community"
+            },
+            {
+                type: "image",
+                src: "/images/navi-guides.png",
+                alt: "Navimental guides"
+            },
+            {
                 heading: "Project partners",
                 text: "Navimental has been accepted into the 2025 Future of Healthcare Founder Residency at Northeastern University’s campus in Portland, Maine and is collaborating with several regional partner organizations.",
             },
