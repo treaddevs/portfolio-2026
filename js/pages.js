@@ -111,7 +111,7 @@ export const pages = {
             },
             {
                 heading: "Onboarding",
-                text: `Account sign up starts with a few onboarding screens to pitch the product and encourage users to commit to their initial curiosity about the app. After this, users provide basic account set up informaiton including a username, phone number, email, and password to sign up. When the user is ready to log in they can select the checkbox to be remembered in the system which enables Face ID to expedite the sign in process.`,
+                text: `Account sign up starts with a few onboarding screens to pitch the product and encourage users to commit to their initial curiosity about the app. After this, users provide basic account set up information including a username, phone number, email, and password to sign up. When the user is ready to log in they can select the checkbox to be remembered in the system which enables Face ID to expedite the sign in process.`,
             },
             {
                 type: "image",
@@ -138,7 +138,7 @@ export const pages = {
             },
             {
                 heading: "Transactions",
-                text: `This series of user interface screens shows many of the available transactions including: deposits, money transfers, bill pay, card management, and application settings. Checks can be deposited utilizing the camera buttons. Money can be transferred from the Account Balance or by linking an external bank account. Bill Pay enables reoccuring bill payment transactions which are visible below the input fields. Card management allows users to freeze their card, report card issues, and reset their PIN. Lastly, the More button's menu is comprised of many relevant application settings, features, and additional products.`,
+                text: `This series of user interface screens shows many of the available transactions including: deposits, money transfers, bill pay, card management, and application settings. Checks can be deposited utilizing the camera buttons. Money can be transferred from the Account Balance or by linking an external bank account. Bill Pay enables recurring bill payment transactions which are visible below the input fields. Card management allows users to freeze their card, report card issues, and reset their PIN. Lastly, the More button's menu is comprised of many relevant application settings, features, and additional products.`,
             },
             {
                 type: "image",
@@ -284,7 +284,7 @@ export const pages = {
                     We agreed that our software solution needed to target three main areas: 
                     <ol>
                         <li>Communication</li>
-                        <li>Resouce Sharing</li>
+                        <li>Resource Sharing</li>
                         <li>Scheduling</li>
                     </ol>
                 `,
