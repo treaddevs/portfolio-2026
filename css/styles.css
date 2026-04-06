@@ -220,7 +220,7 @@ nav.navbar {
 }
 
 .cover-img {
-  width: clamp(400px, 46vw, 1200px); /* new */
+  width: clamp(300px, 42vw, 1200px);
   height: auto;
 }
 
@@ -420,7 +420,9 @@ nav.navbar {
 }
 
 .project-btn-wrapper {
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4em;
 }
 
@@ -905,9 +907,3 @@ nav.navbar {
     position: fixed;
   }
 }
-
-/* @media (max-width: 600px) {
-  .cover-img {
-    display: none;
-  }
-} */

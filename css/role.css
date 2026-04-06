@@ -1,6 +1,6 @@
 .name {
     font-family: 'GABRWFFR';
-    font-size: clamp(16px, 4.46vw, 40px); /* new */
+    font-size: clamp(16px, 4.46vw, 40px);
     color: #929292;
     letter-spacing: 0.12rem;
     opacity: 0;
@@ -25,7 +25,6 @@
 .role {
     position: relative;
     display: flex;
-    /* font-size: clamp(56px, 10vw, 112px); */
     font-size: clamp(40px, 10vw, 90px);
     justify-content: center;
     align-items: center;
