@@ -33,4 +33,4 @@ async function animateNameSequentially() {
 
 setTimeout(() => {
     animateNameSequentially();
-}, 800);
+}, 600);
