@@ -86,7 +86,70 @@ export const pages = {
             },
         ]
     },
-        canopy: {
+    pocketchef: {
+        tabImg: "/svg/tab.svg",
+        title: "Recipe & Meal<br>Planning App",
+        heroImage: "/images/pocketchef-gradient.png",
+        heroDesc: "I conducted user research and designed screen flows for<br>a recipe and meal planning application",
+        logo: "/images/pocketchef-logo.png",
+        logoAlt: "Canopy Banking logo",
+        heroLink: "https://www.figma.com/design/LuysxxgvINMgyiW4gxUMeo/Pocket-Chef---Recipe---Meal-Planning-App?node-id=0-1&t=zoeKuFq6kc8XPpc1-1",
+        sections: [
+            {
+                type: "video",
+                src: "/videos/pocketchef-demo.mp4",
+                alt: "Video of Figma presentation showing PocketChef App screens presented on iPhone 16 devices"
+            },
+            {
+                heading: "The Problem",
+                text: `Users currently rely on fragmented and inefficient methods to find, plan, and manage meals, often using general tools like search engines, social media, or ad hoc solutions such as screenshots and printed recipes. This lack of a centralized system leads to disorganized recipe management and inconsistent meal planning habits. At the same time, users face significant friction in decision-making, with time, ingredient availability, and ease of cooking being the most critical constraints.<br><br>
+                Additionally, users struggle during execution: dealing with missing ingredients, complex steps, and recipes that don’t align with their dietary needs. While there is interest in smarter, AI-assisted solutions, trust remains cautious, and users prioritize simplicity, speed, and convenience above all else. Overall, there is a clear opportunity to streamline the entire cooking workflow from discovery to planning, shopping, and cooking into a more intuitive and efficient experience.`,
+            },
+            {
+                type: "image",
+                src: "/images/pocketchef-user-journey.png",
+                alt: "Recipe and meal planning user journey"
+            },
+            {
+                heading: "Survey Insights",
+                text: `The survey results show that recipe discovery and meal planning are fragmented and inconsistent. Most users rely on general tools like Google search, with relatively few using dedicated recipe platforms, highlighting a lack of centralized solutions. Meal planning is also irregular, with many users rarely planning ahead. Across responses, time and convenience emerge as the dominant factors in decision-making, with users prioritizing quick, simple recipes and citing long preparation time as their biggest frustration.<br><br>
+                Users also face significant challenges during cooking and organization, including missing ingredients, complex execution, and disorganized recipe storage (screenshots, printouts, or no system at all). This points to a clear opportunity for a more unified, intuitive system that supports the full cooking workflow. High-value features include ingredient-based recommendations, grocery list generation, and meal planning tools. While users show cautious openness to AI assistance, trust remains limited, reinforcing the need for simple, transparent, and efficiency-focused design.`,
+            },
+            {
+                type: "image",
+                src: "/images/pocketchef-survey-insights.png",
+                alt: "PocketChef recipe & meal planning app survey insights"
+            },
+            {
+                heading: "Onboarding and Discovery",
+                text: `The onboarding flow introduces users to the app with a brief brand introduction followed by dietary preference selection, including restrictions, allergies, and cooking skill level to enable personalization. A profile section allows users to update these settings over time, ensuring recommendations stay relevant.<br><br>
+                In the discovery experience, users browse AI-recommended recipes through an intention-based system rather than traditional categories. Core filters: Fast, Easy, Healthy, Stocked, and Comfort let users quickly express what they want to cook based on context, reducing cognitive load and making recipe selection more intuitive. A “Filter by Ingredients” feature further supports this by generating recipes based on what users already have at home, helping reduce missing-ingredient friction and food waste.<br><br>
+                An Imports screen centralizes external recipe collection, allowing users to save content by scanning photos of handwritten or printed recipes or pasting links from websites and social media. This creates a unified system for storing and organizing recipes that are typically scattered across screenshots, bookmarks, and notes.`,
+            },
+            {
+                type: "image",
+                src: "/images/pocketchef-app-setup.png",
+                alt: "PocketChef setup with user preferences, discovery feed, filter by ingredients, and import screens"
+            },
+            {
+                heading: "Core Features",
+                text: `The app’s core functionality centers around saving recipes and organizing them into personalized cookbooks, creating a structured system for users to collect and revisit meals. Each recipe detail page includes an image, description, ingredient list, and nutrition information displayed through an adjustable donut chart that updates based on serving size. Users can follow step-by-step instructions in a standard view or switch to a guided cooking mode, which improves readability and supports real-time cooking with larger text, timers, and a read-aloud feature that presents instructions sequentially through voice and step cards. This read-aloud functionality also serves as an accessibility feature, supporting users with visual impairments, reading difficulties, or hands-free cooking needs.<br><br>
+                The Meal Planner provides a weekly overview of breakfast, lunch, and dinner through large, interactive recipe cards, making it easy to visualize and adjust meals across the week while reducing decision fatigue. Supporting this, the Grocery List feature automatically compiles ingredients from selected meals and organizes them into categorized, checkable lists, streamlining shopping and ensuring a smooth transition from planning to execution.`,
+            },
+            {
+                type: "image",
+                src: "/images/pocketchef-app-features.png",
+                alt: "PocketChef core features including Recipes with a description, nutrition information, step-by-step instructions and guided mode, and Meal Planner and Grocery List features"
+            },
+            {
+                heading: "Summary",
+                text: `PocketChef is an AI-assisted recipe and meal planning app that unifies the end-to-end cooking experience into a single, streamlined system. It addresses key pain points identified in research: fragmented recipe discovery, inconsistent meal planning, disorganized recipe storage, and friction during cooking caused by missing ingredients, time constraints, and complex execution.<br><br>
+                By connecting discovery, imports, planning, and execution, the app enables users to move seamlessly from finding recipes to cooking them. Intention-based filters (Fast, Easy, Healthy, Stocked, Comfort) and ingredient-based search simplify discovery, while imports centralize external recipes. Meal planning and automated grocery lists reduce planning effort, and guided cooking mode with timers, larger text, and read-aloud accessibility support helps users cook with confidence and minimal friction.<br><br>
+                Overall, PocketChef improves clarity, speed, and organization across the entire cooking workflow, turning a fragmented set of tasks into a cohesive and intuitive experience.`,
+            },
+        ]
+    },
+    canopy: {
         tabImg: "/svg/tab.svg",
         title: "Mobile Banking App",
         heroImage: "/images/canopy-gradient.png",
@@ -152,7 +215,7 @@ export const pages = {
             },
         ]
     },
-        solana: {
+    solana: {
         tabImg: "/svg/tab.svg",
         title: "Home Solar<br>Dashboard UI",
         heroImage: "/images/solana-gradient.png",

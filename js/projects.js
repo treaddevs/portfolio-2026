@@ -11,6 +11,30 @@ export const projects = [
     reverse: false,
     page: "navimental.html"
   },
+    {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
+    title: "Recipe & Meal Planning App",
+    category: "Case Study",
+    skills: ["User Research", "AI", "Prototyping", "Interaction Design", "UX/UI", "Screen Flows", "Brand Identity", "Figma"],
+    desc: "Researching and designing a recipe and meal planning app",
+    topImg: "/images/pocketchef-1.png",
+    bottomImg: "/images/pocketchef-2.png",
+    reverse: true,
+    page: "pocketchef.html"
+  },
+  {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
+    title: "AI-integrated Chatbot",
+    category: "Project",
+    skills: ["Product Design Lead", "AI", "Chatbot", "Brand Identity", "Figma", "Botpress", "Vue.js", "Storyblok CMS"],
+    desc: `Training and configuring an AI-powered chatbot agent to propose project ideas, offer recipe suggestions, and respond to other requests for information on a product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank">webpage</a>`,
+    topImg: "/images/chatbot-1.png",
+    bottomImg: "/images/chatbot-2.png",
+    reverse: false,
+    page: "via.html"
+  },
   {
     type: "phone",
     tabImg: "/svg/tab.svg",
@@ -33,18 +57,6 @@ export const projects = [
     singleImg: "/images/solana.png",
     reverse: false,
     page: "solana.html"
-  },
-  {
-    type: "phone",
-    tabImg: "/svg/tab.svg",
-    title: "AI-integrated Chatbot",
-    category: "Project",
-    skills: ["Product Design Lead", "AI", "Chatbot", "Brand Identity", "Figma", "Botpress", "Vue.js", "Storyblok CMS"],
-    desc: `Training and configuring an AI-powered chatbot agent to propose project ideas, offer recipe suggestions, and respond to other requests for information on a product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank">webpage</a>`,
-    topImg: "/images/chatbot-1.png",
-    bottomImg: "/images/chatbot-2.png",
-    reverse: true,
-    page: "via.html"
   },
   {
     type: "laptop",
