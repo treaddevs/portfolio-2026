@@ -142,15 +142,20 @@ export const pages = {
                 alt: "PocketChef core features including Recipes with a description, nutrition information, step-by-step instructions and guided mode, and Meal Planner and Grocery List features"
             },
             {
-                heading: "Summary",
-                text: `PocketChef is an AI-assisted recipe and meal planning app that unifies the end-to-end cooking experience into a single, streamlined system. It addresses key pain points identified in research: fragmented recipe discovery, inconsistent meal planning, disorganized recipe storage, and friction during cooking caused by missing ingredients, time constraints, and complex execution.<br><br>
-                By connecting discovery, imports, planning, and execution, the app enables users to move seamlessly from finding recipes to cooking them. Intention-based filters (Fast, Easy, Healthy, Stocked, Comfort) and ingredient-based search simplify discovery, while imports centralize external recipes. Meal planning and automated grocery lists reduce planning effort, and guided cooking mode with timers, larger text, and read-aloud accessibility support helps users cook with confidence and minimal friction.<br><br>
-                Overall, PocketChef improves clarity, speed, and organization across the entire cooking workflow, turning a fragmented set of tasks into a cohesive and intuitive experience.`,
+                heading: "Design System",
+                text: `The PocketChef design system establishes a consistent and scalable foundation through clearly defined components, styles, and semantic design tokens. It includes a structured token system covering color (e.g., color.primary.500, color.text.secondary), a 4px spacing scale (spacing.1–spacing.12), typography, and border radius (radius.sm through radius.full). Typography is standardized using Poppins ExtraBold for branding, Lexend across a full heading scale (H1–H6), and Plus Jakarta Sans for body text, ensuring clarity and hierarchy across the interface. The color system incorporates brand tones like Harvest Orange and Primary Yellow, alongside neutral backgrounds, text hierarchies, UI element colors, and gradients for headers and buttons.<br><br>
+                Built on top of these tokens, the system includes reusable UI components such as buttons (primary, secondary, disabled), recipe cards, pills for dietary tags, a navigation bar with clear selected states, and timeline/progress indicators. This cohesive system not only ensures visual consistency and accessibility but also supports efficient design iteration and seamless developer handoff, making the product easier to scale and maintain.`,
             },
             {
                 type: "image",
                 src: "/images/pocketchef-design-system.png",
                 alt: "PocketChef design system"
+            },
+            {
+                heading: "Summary",
+                text: `PocketChef is an AI-assisted recipe and meal planning app that unifies the end-to-end cooking experience into a single, streamlined system. It addresses key pain points identified in research: fragmented recipe discovery, inconsistent meal planning, disorganized recipe storage, and friction during cooking caused by missing ingredients, time constraints, and complex execution.<br><br>
+                By connecting discovery, imports, planning, and execution, the app enables users to move seamlessly from finding recipes to cooking them. Intention-based filters (Fast, Easy, Healthy, Stocked, Comfort) and ingredient-based search simplify discovery, while imports centralize external recipes. Meal planning and automated grocery lists reduce planning effort, and guided cooking mode with timers, larger text, and read-aloud accessibility support helps users cook with confidence and minimal friction.<br><br>
+                Overall, PocketChef improves clarity, speed, and organization across the entire cooking workflow, turning a fragmented set of tasks into a cohesive and intuitive experience.`,
             },
         ]
     },
