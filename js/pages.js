@@ -147,6 +147,11 @@ export const pages = {
                 By connecting discovery, imports, planning, and execution, the app enables users to move seamlessly from finding recipes to cooking them. Intention-based filters (Fast, Easy, Healthy, Stocked, Comfort) and ingredient-based search simplify discovery, while imports centralize external recipes. Meal planning and automated grocery lists reduce planning effort, and guided cooking mode with timers, larger text, and read-aloud accessibility support helps users cook with confidence and minimal friction.<br><br>
                 Overall, PocketChef improves clarity, speed, and organization across the entire cooking workflow, turning a fragmented set of tasks into a cohesive and intuitive experience.`,
             },
+            {
+                type: "image",
+                src: "/images/pocketchef-design-system.png",
+                alt: "PocketChef design system"
+            },
         ]
     },
     canopy: {
