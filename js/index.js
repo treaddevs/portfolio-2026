@@ -129,3 +129,29 @@ window.addEventListener("resize", () => {
         menuOpen = false;
     }
 });
+
+const emailBtn = document.querySelector(".email");
+const toast = document.querySelector("#toast");
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 1500);
+}
+
+emailBtn.addEventListener("click", async (e) => {
+  e.preventDefault();
+
+  const email = "s.treadwell11@gmail.com";
+
+  try {
+    await navigator.clipboard.writeText(email);
+    showToast("Email copied!");
+  } catch (err) {
+    console.error("Copy failed", err);
+    showToast("Failed to copy");
+  }
+});

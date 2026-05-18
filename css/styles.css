@@ -8,8 +8,8 @@
 .light-mode {
   --bg-color: white !important;
   --font-color: black !important;
-  --font-color-secondary: #505050 !important;
-  --nav-color-hover: #bfbfbf !important;
+  --font-color-secondary: #3b3b3b !important;
+  --nav-color-hover: #7b7b7b !important;
   --toggler-bg-color: hsl(0, 0%, 91%, 0.85) !important;
   --toggler-focus-bg-color: #444 !important;
   --nav-bg-color: rgba(255, 255, 255, 0.001) !important; 
@@ -94,7 +94,7 @@ nav.navbar {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 5rem;
+  gap: 3rem;
   width: 100%;
 }
 
@@ -123,7 +123,6 @@ nav.navbar {
   background-color: var(--nav-bg-color) !important; 
   backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px); 
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .theme-toggle-container {
@@ -182,6 +181,39 @@ nav.navbar {
 
 .light-mode .social-icon {
   filter: none;
+}
+
+.toast {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--font-color);
+  color: var(--bg-color);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: 'Urbanist';
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.resume-icon,
+.email-icon {
+  transition: transform 0.3s ease;
+}
+
+.resume-icon:hover,
+.email-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .home {
@@ -283,10 +315,6 @@ nav.navbar {
 .projects section.reverse {
   flex-direction: row-reverse;
   flex-wrap: wrap;
-}
-
-.projects {
-  transition: all 0.6s ease;
 }
 
 .show-more-wrapper {
