@@ -220,7 +220,7 @@ nav.navbar {
 }
 
 .cover-img {
-  width: clamp(300px, 42vw, 1200px);
+  width: clamp(250px, 35vw, 1200px);
   height: auto;
 }
 
@@ -427,19 +427,23 @@ nav.navbar {
   transition-delay: 0.4s;
 }
 
+.desc-content {
+  margin-bottom: 50px;
+}
+
 .project-btn {
-  display: inline-flex;
+  display: flex;
   align-self: flex-start;
   font-family: 'Urbanist';
   color: black;
   text-decoration: none;
   margin-top: auto;
+  align-items: center;
+  justify-content: center;
   background-color: #00c3ff;
   border: none;
   border-radius: 6px;
   width: clamp(300px, 68vw, 364.75px);
-  align-items: center;
-  justify-content: center;
   padding: 10px clamp(67.635px, 15.33vw, 100px);
   cursor: pointer;
   transition: transform 0.2s ease, font-size 0.2s ease;
@@ -465,7 +469,7 @@ nav.navbar {
 .laptop-container {
   display: flex;
   position: relative;
-  flex: 1 1 300px;
+  flex: 1 1 250px;
   perspective: 1200px;
   justify-content: center;
   align-items: center;
@@ -482,7 +486,7 @@ nav.navbar {
 }
 
 .laptop {
-  width: clamp(300px, 70vw, 950px);
+  width: clamp(300px, 45vw, 950px);
   transform-style: preserve-3d;
 }
 
@@ -522,18 +526,29 @@ nav.navbar {
   display: flex;
   position: relative;
   height: calc(
-    (clamp(262.5px, 70vw, 525px) / 0.496) - clamp(112.5px, 30vw, 225px)
+    (clamp(206.25px, 45vw, 311.5px) / 0.490786981) - clamp(56.25px, 12.5vw, 85.5px)
   );
-  flex: 1 1 525px;
+  flex: 1 1 437px;
   order: 2;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
+.phone-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.phone-inner {
+  display: flex;
+  width: clamp(262.5px, 28vw, 399px);
+  height: 100%;
+}
+
 .phone-top,
 .phone-bottom {
   position: absolute;
-  width: clamp(150px, 40vw, 300px);
+  width: clamp(150px, 40vw, 228px);
   opacity: 0;
   transition: transform 2s ease, opacity 2s ease;
 }
@@ -545,26 +560,16 @@ nav.navbar {
   object-fit: contain;
 }
 
-.phone-top {
-   z-index: 1;
-}
-
 .phone-top.init {
-  transform: translateY(100%);
-}
-
-.phone-bottom.init {
   transform: translateY(100%);
 }
 
 .phone-top.animate {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .phone-bottom {
-  z-index: 2;
-  transform: translateY(0);
+  z-index: 1;
 }
 
 .phone-bottom.init {
@@ -574,8 +579,8 @@ nav.navbar {
 .phone-bottom.animate {
   opacity: 1;
   transform: translate(
-    clamp(112.5px, 30vw, 225px), 
-    clamp(112.5px, 30vw, 225px)
+    clamp(112.5px, 25vw, 171px), 
+    clamp(56.25px, 12.5vw, 85.5px)
   ); 
   transition: transform 2.3s ease, opacity 2.3s ease;
   transition-delay: 0.3s;
@@ -594,7 +599,7 @@ nav.navbar {
 }
 
 .desktop {
-  width: clamp(300px, 70vw, 950px);
+  width: clamp(300px, 45vw, 950px);
   transform-style: preserve-3d;
   opacity: 0;
   transition: opacity 1.5s ease;
@@ -859,17 +864,6 @@ nav.navbar {
 @media (max-width: 1232px) {
   .cover-img {
     display: none;
-  }
-
-  .phone-wrapper {
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .phone-inner {
-    display: flex;
-    width: clamp(262.5px, 70vw, 525px);
-    height: 100%;
   }
 
   .headshot-container {

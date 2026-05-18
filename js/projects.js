@@ -2,7 +2,7 @@ export const projects = [
   {
     type: "laptop",
     tabImg: "/svg/tab.svg",
-    title: "Navimental -<br>Mental Healthcare<br>Data Visualization",
+    title: "Navimental -<br>Mental Health<br>Dashboard",
     category: "Project",
     skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
     desc: "Translating user data into actionable wellness insights.",
@@ -26,18 +26,6 @@ export const projects = [
   {
     type: "phone",
     tabImg: "/svg/tab.svg",
-    title: "Boredom-Blaster -<br>AI-Powered Chatbot",
-    category: "Project",
-    skills: ["Product Design", "UX/UI", "AI", "Branding", "Web Development"],
-    desc: "Building an AI-powered conversational product discovery experience.",
-    topImg: "/images/chatbot-1.png",
-    bottomImg: "/images/chatbot-2.png",
-    reverse: false,
-    page: "via.html"
-  },
-  {
-    type: "phone",
-    tabImg: "/svg/tab.svg",
     title: "Canopy -<br>Mobile Banking App",
     category: "Case Study",
     skills: ["Product Design", "UX/UI", "Branding"],
@@ -46,6 +34,18 @@ export const projects = [
     bottomImg: "/images/canopy-2.png",
     reverse: false,
     page: "canopy.html"
+  },
+  {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
+    title: "Boredom-Blaster -<br>AI-Powered Chatbot",
+    category: "Project",
+    skills: ["Product Design", "UX/UI", "AI", "Branding", "Web Development"],
+    desc: "Building an AI-powered conversational product discovery experience.",
+    topImg: "/images/chatbot-1.png",
+    bottomImg: "/images/chatbot-2.png",
+    reverse: false,
+    page: "via.html"
   },
   {
     type: "desktop",
@@ -61,7 +61,7 @@ export const projects = [
   {
     type: "laptop",
     tabImg: "/svg/tab.svg",
-    title: "ESOL Collaborative -<br>Communication App<br>for Language Educators",
+    title: "Communication App for Language Educators",
     category: "Project",
     skills: ["Product Design", "User Research", "UX/UI", "Full-Stack Development"],
     desc: "Supporting multilingual learning through accessible educator communication workflows.",
@@ -169,12 +169,13 @@ function renderProjects(projectArray) {
 
     const desc = `
       <div class="desc">
-        <img class="tab" src="${project.tabImg}"/>
-        <h2>${project.title}</h2>
-        <p>${project.desc}</p>
-
-        <div class="pills-container">
-          ${skillPills}
+        <div class="desc-content">
+          <img class="tab" src="${project.tabImg}"/>
+          <h2>${project.title}</h2>
+          <p>${project.desc}</p>
+          <div class="pills-container">
+            ${skillPills}
+          </div>
         </div>
 
         <button class="project-btn" data-page="${project.page}">
