@@ -62,6 +62,15 @@
     pointer-events: none;
 }
 
+.cover-img {
+    opacity: 0;
+    transition: opacity 4.25s ease, transform 4.25s ease;
+}
+
+.cover-img.show {
+    opacity: 1;
+}
+
 @keyframes wipe-in-out {
   0% { width: 0%; left: 0%; }
   40% { width: 100%; left: 0%; }

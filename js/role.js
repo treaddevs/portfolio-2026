@@ -67,8 +67,6 @@ async function cycleRoles() {
     cycleRoles();
 })();
 
-// console.log(`[${performance.now().toFixed(0)}ms] initial load`);
-
 // Intersection Observer for name
 const nameAnimation = new IntersectionObserver(
     (entries) => {
@@ -84,3 +82,21 @@ const nameAnimation = new IntersectionObserver(
 
 const nameText = document.querySelector(".name");
 if (nameText) nameAnimation.observe(nameText);
+
+// Intersection Observer for cover-img
+const coverImgAnimation = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                coverImgAnimation.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.5 }
+);
+
+const coverImg = document.querySelector(".cover-img");
+if (coverImg) coverImgAnimation.observe(coverImg);
+
+// console.log(`[${performance.now().toFixed(0)}ms] initial load`);
