@@ -39,7 +39,8 @@
 }
 
 .page-title,
-.page-desc {
+.page-desc,
+.project-meta {
   opacity: 0;
   transition: opacity 2.5s ease, transform 2.5s ease;
 }
@@ -50,14 +51,40 @@
 }
 
 .page-desc.show,
-.page-btn.show  {
+.page-btn.show,
+.project-meta.show {
   opacity: 1;
   transition-delay: 0.4s;
 }
 
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(8px, 2vw, 18px);
+  gap: 0.35rem;
+}
+
+.meta-label {
+  font-family: 'Urbanist-SemiBold';
+  text-transform: uppercase;
+}
+
+.meta-value {
+  font-family: 'Urbanist';
+  color: var(--font-color);
+}
+
 .logo {
-  height: clamp(150px, 20vw, 300px);
-  width: clamp(150px, 20vw, 300px);
+  height: clamp(125px, 20vw, 300px);
+  width: clamp(125px, 20vw, 300px);
   filter: drop-shadow(0 4px 20px rgba(30, 30, 30, 0.3));
   opacity: 0;
   transform: translateY(50px);
@@ -108,18 +135,18 @@
 
 .page-title {
   font-family: "Urbanist-SemiBold";
-  font-size: clamp(50px, 6vw, 100px);
+  font-size: clamp(50px, 4vw, 100px);
   margin-bottom: 0.5rem;
 }
 
 .page-desc {
   font-family: "Urbanist";
-  font-size: clamp(24px, 2vw, 32px);
+  font-size: clamp(16px, 1.75vw, 32px);
   margin-bottom: 1.5rem;
 }
 
 .page-btn {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 24px);
   color: var(--font-color);
   text-decoration: none;
   border: 2px solid;

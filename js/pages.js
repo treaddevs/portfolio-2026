@@ -1,9 +1,12 @@
 export const pages = {
     navimental: {
         tabImg: "/svg/tab.svg",
-        title: "Mental Healthcare<br>Data Visualization",
+        title: "Navimental -<br>Mental Health Dashboard",
         heroImage: "/images/navi-gradient.png",
-        heroDesc: "I worked for Navimental, a foundational platform<br>addressing youth mental health challenges",
+        heroDesc: "I worked for Navimental, a platform<br>addressing youth mental health challenges",
+        role: "Product Designer",
+        context: "Freelance Work",
+        timeline: "Sept 2024 – June 2025",
         logo: "/images/navi-logo.png",
         logoAlt: "Navimental stars logo",
         heroLink: "https://navimental.com",
@@ -15,7 +18,7 @@ export const pages = {
             },
             {
                 heading: "The problem",
-                text: "In 2024, Navimental was born during a hackathon. While the initial product framework was in place, the journal section's data display required redesign. This project focused on designing an intuitive dashboard to help users access and visually interpret this information."
+                text: "In 2024, Navimental was born during a hackathon. While the initial product framework was in place, several features were incomplete–including the journal section's dashboard, which required redesign to surface relevant user insights. This project focused on designing an intuitive dashboard to help users access and visually interpret this information."
             },
             {
                 type: "image",
@@ -33,7 +36,7 @@ export const pages = {
                         <li>Symptoms</li>
                         <li>Quick Note</li>
                     </ol>
-                    I redesigned the journal dashboard to visualizes these inputs in a time series format, helping parents track trends, monitor progress, and offer insights to collaborate with family support navigators.
+                    I redesigned the journal dashboard to visualizes these inputs in a time series format, helping parents track trends, monitor progress, and offer insights to discuss with family support navigators.
                 `,
             },
             {
@@ -88,9 +91,12 @@ export const pages = {
     },
     pocketchef: {
         tabImg: "/svg/tab.svg",
-        title: "Recipe & Meal<br>Planning App",
+        title: "PocketChef -<br>Recipe & Meal<br>Planning App",
         heroImage: "/images/pocketchef-gradient.png",
-        heroDesc: "I conducted user research and designed screen flows for<br>a recipe and meal planning application",
+        heroDesc: "I conducted user research and designed<br>screen flows for a recipe and meal planning application",
+        role: "Product Designer",
+        context: "Class Project – AI for HCI",
+        timeline: "January – April 2026",
         logo: "/images/pocketchef-logo.png",
         logoAlt: "Canopy Banking logo",
         heroLink: "https://www.figma.com/design/LuysxxgvINMgyiW4gxUMeo/Pocket-Chef---Recipe---Meal-Planning-App?node-id=0-1&t=zoeKuFq6kc8XPpc1-1",
@@ -161,9 +167,12 @@ export const pages = {
     },
     canopy: {
         tabImg: "/svg/tab.svg",
-        title: "Mobile Banking App",
+        title: "Canopy -<br>Mobile Banking App",
         heroImage: "/images/canopy-gradient.png",
-        heroDesc: "I designed onboarding, account access, and transaction<br>user interfaces and screen flows for a mobile banking application",
+        heroDesc: "I designed onboarding, account access,<br>and transaction user interfaces and screen<br>flows for a mobile banking application",
+        role: "Product Designer",
+        context: "Solo Project",
+        timeline: "January – February 2026",
         logo: "/images/canopy-logo.png",
         logoAlt: "Canopy Banking logo",
         heroLink: "https://www.figma.com/board/WUE8RneYcQNQmPTElQTUuo/Canopy-Banking-App?node-id=0-1&t=ZhAkmDOMkfc4gNzJ-1",
@@ -225,64 +234,14 @@ export const pages = {
             },
         ]
     },
-    solana: {
-        tabImg: "/svg/tab.svg",
-        title: "Home Solar<br>Dashboard UI",
-        heroImage: "/images/solana-gradient.png",
-        heroDesc: "I created a solar dashboard to display<br>controls and check on system operations",
-        logo: "/images/solana-logo.png",
-        logoAlt: "Solar home logo",
-        heroLink: "https://www.figma.com/board/sEIZQN6ilYyNPCUMOeAWxs/Home-Solar-App?node-id=0-1&t=tJj9TqlUsaUHv2B5-1",
-        sections: [
-            {
-                type: "image",
-                src: "/images/solana.png",
-                alt: "Dashboard display with controls as widgets in user interface"
-            },
-            {
-                heading: "Centralized control",
-                text: "Any complex system requires easy access to relevant information and the ability to quickly adjust controls as needed. This home solar dashboard leverages widget-based architecture for increased customization and control. This comprehensive display allows users to compare and contrast multiple data points, allowing operators to respond to system conditions and make immediate decisions."
-            },
-            {
-                type: "image",
-                src: "/images/solar-worker.png",
-                alt: "Photo of man installing solar panels on the roof of a multi-unit building"
-            },
-            {
-                heading: "Key metrics",
-                text: `
-                    The dashboard tracks important information, including: 
-                    <ol>
-                        <li>Power Generation</li>
-                        <li>Current State</li>
-                        <li>Temperature</li>
-                        <li>Weather Forecast</li>
-                        <li>Metering</li>
-                    </ol>
-                    I designed the solar dashboard to display these inputs in an overview panel, helping operators view live system feedback, monitor conditions, and make informed decisions.
-                `,
-            },
-            {
-                type: "image",
-                src: "/images/solar-carport.png",
-                alt: "Solar panels over a carport with a white SUV parked underneath"
-            },
-            {
-                heading: "Adaptability",
-                text: "The success of a software solution is dependent on it's ability to adapt to and address user needs. This design offers both a plethora of useful insights, and the ability to control the display inputs. This combination makes the system adaptable for users to make modifications and customize their experience."
-            },
-            {
-                type: "image",
-                src: "/images/solar-farm.png",
-                alt: "Solar panels on farmland with Fall foliage in background"
-            },
-        ]
-    },
     via: {
         tabImg: "/svg/tab.svg",
-        title: "AI-integrated<br>Chatbot",
+        title: "Boredom-Blaster -<br>AI-Powered Chatbot",
         heroImage: "/images/chatbot-gradient.png",
-        heroDesc: "I worked for the VIA Agency – developing web<br>components for the redesigned company website<br>and building a chatbot for a client",
+        heroDesc: "I worked for the VIA Agency – developing<br>web components for the redesigned<br>company website and building a chatbot<br>for a client",
+        role: "Creative Technologist",
+        context: "Internship",
+        timeline: "May – August 2024",
         logo: "/images/chatbot-logo.png",
         logoAlt: "Boredom-Blaster chatbot robot head logo",
         heroLink: "https://www.theviaagency.com",
@@ -336,11 +295,70 @@ export const pages = {
             },
         ]
     },
+        solana: {
+        tabImg: "/svg/tab.svg",
+        title: "Solana -<br>Home Solar<br>Dashboard UI",
+        heroImage: "/images/solana-gradient.png",
+        heroDesc: "I created a solar dashboard to display<br>controls and check on system operations",
+        role: "UX/UI Designer",
+        context: "Solo Project",
+        timeline: "August 2024",
+        logo: "/images/solana-logo.png",
+        logoAlt: "Solar home logo",
+        heroLink: "https://www.figma.com/board/sEIZQN6ilYyNPCUMOeAWxs/Home-Solar-App?node-id=0-1&t=tJj9TqlUsaUHv2B5-1",
+        sections: [
+            {
+                type: "image",
+                src: "/images/solana.png",
+                alt: "Dashboard display with controls as widgets in user interface"
+            },
+            {
+                heading: "Centralized control",
+                text: "Any complex system requires easy access to relevant information and the ability to quickly adjust controls as needed. This home solar dashboard leverages widget-based architecture for increased customization and control. This comprehensive display allows users to compare and contrast multiple data points, allowing operators to respond to system conditions and make immediate decisions."
+            },
+            {
+                type: "image",
+                src: "/images/solar-worker.png",
+                alt: "Photo of man installing solar panels on the roof of a multi-unit building"
+            },
+            {
+                heading: "Key metrics",
+                text: `
+                    The dashboard tracks important information, including: 
+                    <ol>
+                        <li>Power Generation</li>
+                        <li>Current State</li>
+                        <li>Temperature</li>
+                        <li>Weather Forecast</li>
+                        <li>Metering</li>
+                    </ol>
+                    I designed the solar dashboard to display these inputs in an overview panel, helping operators view live system feedback, monitor conditions, and make informed decisions.
+                `,
+            },
+            {
+                type: "image",
+                src: "/images/solar-carport.png",
+                alt: "Solar panels over a carport with a white SUV parked underneath"
+            },
+            {
+                heading: "Adaptability",
+                text: "The success of a software solution is dependent on it's ability to adapt to and address user needs. This design offers both a plethora of useful insights, and the ability to control the display inputs. This combination makes the system adaptable for users to make modifications and customize their experience."
+            },
+            {
+                type: "image",
+                src: "/images/solar-farm.png",
+                alt: "Solar panels on farmland with Fall foliage in background"
+            },
+        ]
+    },
     esol: {
         tabImg: "/svg/tab.svg",
-        title: "Communication App<br>for ESOL Educators",
+        title: "Communication<br>App for Language<br>Educators",
         heroImage: "/images/esol-gradient.png",
         heroDesc: "This project provided Portland, Maine's ESOL Collaborative<br>with a centralized platform for communication",
+        role: "Fullstack Developer",
+        context: "Capstone Project",
+        timeline: "September 2024 – April 2025",
         logo: "/images/esol-logo.png",
         logoAlt: "Portland Maine ESOL Collaborative chat bubbles logo",
         heroLink: "https://github.com/treaddevs/esol-app/tree/main",

@@ -26,6 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img class="page-tab" src="${pageData.tabImg}"/>
                 <h1 class="page-title">${pageData.title}</h1>
                 <p class="page-desc">${pageData.heroDesc}</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role<br></span>
+                        <span class="meta-value">${pageData.role}</span>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Context<br></span>
+                        <span class="meta-value">${pageData.context}</span>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Duration<br></span>
+                        <span class="meta-value">${pageData.timeline}</span>
+                    </div>
+                </div>
                 ${
                     pageData.heroLink 
                         ? `<a href="${pageData.heroLink}" target="_blank" class="page-btn">Visit website</a>`
@@ -109,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tabImg = document.querySelector(".page-tab");
     if (tabImg) tabAnimation.observe(tabImg);
 
-    // Intersection Observer for .page-title .page-desc .page-btn
+    // Intersection Observer for .page-title .page-desc .page-btn .project-meta
     const textAnimation = new IntersectionObserver(
         (entries) => {
             entries.forEach(entry => {
@@ -121,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 
         { threshold: 0.5 }
     );
-    document.querySelectorAll(".page-title, .page-desc, .page-btn").forEach(el => {
+    document.querySelectorAll(".page-title, .page-desc, .page-btn, .project-meta").forEach(el => {
         textAnimation.observe(el);
     });
 
