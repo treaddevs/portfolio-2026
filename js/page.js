@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             carousel.classList.add("carousel", "slide");
             carousel.setAttribute("id", carouselId);
             carousel.setAttribute("data-bs-ride", "carousel");
-            carousel.setAttribute("data-bs-interval", "3000");
+            carousel.setAttribute("data-bs-interval", "5000");
 
             // Indicators
             const indicators = document.createElement("div");
