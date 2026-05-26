@@ -208,14 +208,14 @@
 .section-heading {
   font-family: "Urbanist-SemiBold";
   font-size: 50px;
-  width: 70%;
+  width: 75%;
 }
 
 .section-text {
   font-family: "Urbanist";
   font-size: 24px;
   color: var(--font-color-secondary);
-  width: 70%;
+  width: 75%;
 }
 
 .section-text ol {

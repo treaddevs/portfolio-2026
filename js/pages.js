@@ -229,81 +229,12 @@ export const pages = {
             },
         ]
     },
-    canopy: {
-        tabImg: "/svg/tab.svg",
-        title: "Canopy -<br>Mobile Banking App",
-        heroImage: "/images/canopy-gradient.png",
-        heroDesc: "I designed onboarding, account access,<br>and transaction user interfaces and screen<br>flows for a mobile banking application",
-        role: "Product Designer",
-        context: "Solo Project",
-        timeline: "January – February 2026",
-        logo: "/images/canopy-logo.png",
-        logoAlt: "Canopy Banking logo",
-        heroLink: "https://www.figma.com/board/WUE8RneYcQNQmPTElQTUuo/Canopy-Banking-App?node-id=0-1&t=ZhAkmDOMkfc4gNzJ-1",
-        sections: [
-            {
-                type: "video",
-                src: "/videos/canopy-demo.mp4",
-                alt: "Video of Figma presentation showing Canopy App screens presented on iPhone 16 devices"
-            },
-            {
-                heading: "Product design",
-                text: `I conducted this product design case study to create high-fidelity screen flows for a mobile banking mobile application. This project is comprised of sections for onboarding, account screens for checking and savings, and multiple transactions desirable for an online banking experience.`,
-            },
-            {
-                type: "image",
-                src: "/images/canopy-debit-card.png",
-                alt: "Canopy debit card"
-            },
-            {
-                heading: "Onboarding",
-                text: `Account sign up starts with a few onboarding screens to pitch the product and encourage users to commit to their initial curiosity about the app. After this, users provide basic account set up information including a username, phone number, email, and password to sign up. When the user is ready to log in they can select the checkbox to be remembered in the system which enables Face ID to expedite the sign in process.`,
-            },
-            {
-                type: "image",
-                src: "/images/canopy-onboarding.png",
-                alt: "Canopy onboarding screens including sign up and sign in interfaces"
-            },
-            {
-                heading: "Canopy checking",
-                text: `From the account screen users can access their checking account by clicking on the arrow to the right of their checking account balance. The second screen displays checking account information including the most recent and pending transactions. Using the navigation bar below the Available Balance modal users can select the Insights button to access analytics and trends related to their spending habits.`,
-            },
-            {
-                type: "image",
-                src: "/images/canopy-checking.png",
-                alt: "Canopy account screens including account balance, checking, and spending insights screens"
-            },
-            {
-                heading: "Canopy savings",
-                text: `From the account screen users can access their savings account by clicking on the arrow to the right of their savings acocunt balance. The second screen displays savings account information including the most recent and pending deposits. The last screen shows the users set Savings Goal entries which, for this user, includes an existing car loan and home down payment.`,
-            },
-            {
-                type: "image",
-                src: "/images/canopy-savings.png",
-                alt: "Canopy account screens including account balance, savings, and spending goal screens"
-            },
-            {
-                heading: "Transactions",
-                text: `This series of user interface screens shows many of the available transactions including: deposits, money transfers, bill pay, card management, and application settings. Checks can be deposited utilizing the camera buttons. Money can be transferred from the Account Balance or by linking an external bank account. Bill Pay enables recurring bill payment transactions which are visible below the input fields. Card management allows users to freeze their card, report card issues, and reset their PIN. Lastly, the More button's menu is comprised of many relevant application settings, features, and additional products.`,
-            },
-            {
-                type: "image",
-                src: "/images/canopy-nav.png",
-                alt: "Nav bar buttons for deposit, transfer, bill pay, insights, and card"
-            },
-            {
-                type: "image",
-                src: "/images/canopy-transactions.png",
-                alt: "Transaction screens for depositing checks, transferring money, bill pay, card managment, and menu settings"
-            },
-        ]
-    },
     via: {
         tabImg: "/svg/tab.svg",
         title: "Boredom-Blaster -<br>AI-Powered Chatbot",
         heroImage: "/images/chatbot-gradient.png",
-        heroDesc: "I worked for the VIA Agency – developing<br>web components for the redesigned<br>company website and building a chatbot<br>for a client",
-        role: "Creative Technologist",
+        heroDesc: "As a Creative Technology Intern at The<br>VIA Agency, I developed web components<br>for the redesigned company website, and<br>built a chatbot for a client.",
+        role: "Creative Technology Intern",
         context: "Internship",
         timeline: "May – August 2024",
         logo: "/images/chatbot-logo.png",
@@ -311,13 +242,30 @@ export const pages = {
         heroLink: "https://www.theviaagency.com",
         sections: [
             {
+                heading: "Responsibilities",
+                text: "I contributed to the redesign of a client-facing website through responsive web component development and supported the design and implementation of an AI-powered chatbot experience. I worked cross-functionally with designers and developers to translate UX requirements into production-ready interfaces."
+            },
+            {
                 type: "video",
                 src: "/videos/via-demo.mp4",
                 alt: "Video of The VIA Agency's new website and my coding contributions"
             },
             {
-                heading: "The challenge",
-                text: `I began my position as Creative Technology Intern at the VIA Agency by developing mobile-friendly web components for the redesigned company website. Once the new site had launched, a company challenge emerged. AI-infused July was a team challege to integrate artificial intelligence in useful ways to enhance advertising.<br><br>Our team chose to build an AI-powered chatbot to assist our client – ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda, in generating in-depth responses to customer's questions, and for embedding on their product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank" style="color: #00c3ff">webpage</a>.`,
+                heading: "The Challenge",
+                text: `I began my position as Creative Technology Intern at The VIA Agency by developing mobile-friendly web components for the redesigned company website. Once the new site had launched, a company challenge emerged – AI-infused July, a team challege to integrate AI in useful ways to enhance advertising.<br><br>Our team chose to build an AI-powered chatbot to assist our client – ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda, in generating in-depth responses to customer's questions, and for embedding on their product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank" style="color: #00c3ff">webpage</a>.`,
+            },
+            {
+                heading: "Problem Framing",
+                text: `Users visiting product pages often have repetitive or unclear questions and limited time to explore detailed content. The challenge was to design a conversational interface that could surface relevant information quickly while feeling engaging, helpful, and on-brand for ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda.`
+            },
+            {
+                type: "image",
+                src: "/images/chatbot-poster.png",
+                alt: "Image of full chatbot robot logo with chat bubbles next to the chatbot user interface displayed on an iPhone screen"
+            },
+            {
+                heading: "Design Approach",
+                text: "I approached the chatbot as a guided conversational experience rather than an open-ended AI tool. The focus was on structuring clear user intents, defining conversation pathways, and ensuring responses stayed aligned with brand tone and product information."
             },
             {
                 type: "image",
@@ -325,8 +273,8 @@ export const pages = {
                 alt: "Chatbot mockup design in Figma"
             },
             {
-                heading: "Product development",
-                text: `I created an initial mockup design in Figma to share with the team. After this was approved, a team member created a logo for the chatbot that we dubbed the "Boredom-Blaster". Development was done using the <a href="https://www.botpress.com/" target="_blank" style="color: #00c3ff">Botpress</a> platform. This involved connecting nodes to direct the flow of the conversation, training the knowledge base to access web page data containing project examples, and adding a policy agent to avoid discussing competitors.`,
+                heading: "Ideation & Flow Exploration",
+                text: "I explored how users might interact with the chatbot by mapping common queries such as product use cases, project suggestions, and general FAQs. These interactions were translated into structured conversation flows using Botpress nodes to ensure predictable and helpful responses."
             },
             {
                 type: "image",
@@ -334,12 +282,16 @@ export const pages = {
                 alt: "Flowchart diagram of user flow using Botpress chatbot"
             },
             {
+                heading: "Build & Implementation",
+                text: `I created an initial mockup design in Figma to share with the team. After this was approved, a team member created a logo for the chatbot that we dubbed the "Boredom-Blaster". Development was done using the <a href="https://www.botpress.com/" target="_blank" style="color: #00c3ff">Botpress</a> platform. This involved connecting nodes to direct the flow of the conversation, training the knowledge base to access web page data containing project examples, and adding a policy agent to avoid discussing competitors.`,
+            },
+            {
                 type: "image",
                 src: "/images/botpress.png",
                 alt: "Screenshot of building on Botpress platform"
             },
             {
-                heading: "Completed chatbot",
+                heading: "Final Chatbot Experience",
                 text: `
                     After adding styling the chatbot was completed. Powered by ChatGPT, it is able propose project ideas, offer recipe suggestions, and respond to other requests for information about ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda. Check out the chat icon embedded at the top of this page, or click below to start a conversation in a new window!<br><br>
                     <a 
@@ -352,14 +304,90 @@ export const pages = {
                     </a>
                 `,
             },
-            {
-                type: "image",
-                src: "/images/chatbot-poster.png",
-                alt: "Image of full chatbot robot logo with chat bubbles next to the chatbot user interface displayed on an iPhone screen"
-            },
         ]
     },
-        solana: {
+    canopy: {
+        tabImg: "/svg/tab.svg",
+        title: "Canopy -<br>Mobile Banking App",
+        heroImage: "/images/canopy-gradient.png",
+        heroDesc: "I designed onboarding, account access,<br>and transaction user interfaces and screen<br>flows for a mobile banking application.",
+        role: "Product Designer",
+        context: "Solo Project",
+        timeline: "January – February 2026",
+        logo: "/images/canopy-logo.png",
+        logoAlt: "Canopy Banking logo",
+        heroLink: "https://www.figma.com/board/WUE8RneYcQNQmPTElQTUuo/Canopy-Banking-App?node-id=0-1&t=ZhAkmDOMkfc4gNzJ-1",
+        sections: [
+            {
+                heading: "Product Overview",
+                text: "Canopy is a mobile banking concept designed to streamline core financial tasks including onboarding, account management, transactions, and savings tracking. The goal was to create a clear, intuitive banking experience that balances usability, trust, and information hierarchy."
+            },
+            {
+                type: "video",
+                src: "/videos/canopy-demo.mp4",
+                alt: "Video of Figma presentation showing Canopy App screens presented on iPhone 16 devices"
+            },
+            {
+                heading: "The Challenge",
+                text: "Designing a mobile banking experience that feels simple, trustworthy, and intuitive while supporting complex financial actions such as transactions, savings management, and account insights. The challenge was to reduce cognitive load while maintaining clarity and control across sensitive financial workflows."
+            },
+            {
+                type: "image",
+                src: "/images/canopy-debit-card.png",
+                alt: "Canopy debit card"
+            },
+            {
+                heading: "Design Approach",
+                text: "I approached the design by prioritizing clarity, hierarchy, and trust. Banking interfaces require high information accuracy and low friction, so I focused on simplifying navigation, structuring financial data clearly, and ensuring users could quickly access key actions without confusion."
+            },
+            {
+                heading: "Onboarding Experience",
+                text: "The onboarding flow introduces users to Canopy and guides them through account creation with a focus on simplicity and trust. Users can sign up using basic credentials and enable Face ID for faster authentication. The flow was designed to reduce friction while maintaining a secure, familiar banking experience."
+            },
+            {
+                type: "image",
+                src: "/images/canopy-onboarding.png",
+                alt: "Canopy onboarding screens including sign up and sign in interfaces"
+            },
+            {
+                heading: "Account Structure & Navigation",
+                text: "The account dashboard organizes checking and savings accounts into a unified overview, allowing users to quickly access balances, recent activity, and financial insights. Navigation was designed to minimize friction between core banking tasks while keeping key actions easily accessible."
+            },
+            {
+                type: "image",
+                src: "/images/canopy-checking.png",
+                alt: "Canopy account screens including account balance, checking, and spending insights screens"
+            },
+            {
+                heading: "Financial Insights",
+                text: "To help users better understand spending behavior, I designed an insights view that surfaces transaction patterns and financial trends. The goal was to transform raw transaction data into simple, actionable summaries without overwhelming the user."
+            },
+            {
+                type: "image",
+                src: "/images/canopy-savings.png",
+                alt: "Canopy account screens including account balance, savings, and spending goal screens"
+            },
+            {
+                heading: "Transactions & Actions",
+                text: "Key banking actions including deposits, transfers, bill pay, and card management were structured into distinct workflows to reduce complexity. Each flow was designed to be predictable and task-focused, ensuring users could complete financial actions quickly and with confidence."
+            },
+            {
+                type: "image",
+                src: "/images/canopy-nav.png",
+                alt: "Nav bar buttons for deposit, transfer, bill pay, insights, and card"
+            },
+            {
+                type: "image",
+                src: "/images/canopy-transactions.png",
+                alt: "Transaction screens for depositing checks, transferring money, bill pay, card managment, and menu settings"
+            },
+            {
+                heading: "Reflection",
+                text: "This project reinforced the importance of clarity and hierarchy in high-trust systems like banking. Even small design decisions such as spacing, labeling, and navigation structure have a major impact on usability. I learned how to simplify complex financial workflows while maintaining functionality and user confidence."
+            }
+        ]
+    },
+    solana: {
         tabImg: "/svg/tab.svg",
         title: "Solana -<br>Home Solar<br>Dashboard UI",
         heroImage: "/images/solana-gradient.png",
