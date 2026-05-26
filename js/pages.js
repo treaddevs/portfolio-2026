@@ -125,7 +125,8 @@ export const pages = {
         title: "PocketChef -<br>Recipe & Meal Planning App",
         heroImage: "/images/pocketchef-gradient.png",
         heroDesc: "I conducted user research and designed<br>end-to-end workflows for an AI-powered<br>recipe discovery and meal planning experience.",
-        role: "Product Designer",        context: "Class Project – AI for HCI",
+        role: "Product Designer",        
+        context: "Class Project – AI for HCI",
         timeline: "January – April 2026",
         logo: "/images/pocketchef-logo.png",
         logoAlt: "Canopy Banking logo",
@@ -389,9 +390,9 @@ export const pages = {
     },
     solana: {
         tabImg: "/svg/tab.svg",
-        title: "Solana -<br>Home Solar<br>Dashboard UI",
+        title: "Solana Solar -<br>Home Energy<br>Dashboard UI",
         heroImage: "/images/solana-gradient.png",
-        heroDesc: "I created a solar dashboard to display<br>controls and check on system operations",
+        heroDesc: "I created a solar dashboard to display<br>controls and check on system operations.",
         role: "UX/UI Designer",
         context: "Solo Project",
         timeline: "August 2024",
@@ -400,13 +401,39 @@ export const pages = {
         heroLink: "https://www.figma.com/board/sEIZQN6ilYyNPCUMOeAWxs/Home-Solar-App?node-id=0-1&t=tJj9TqlUsaUHv2B5-1",
         sections: [
             {
+                heading: "Product Overview",
+                text: "Solana is a home solar dashboard concept designed to help users monitor energy generation, system performance, and environmental conditions in real time. The goal was to create a centralized, intuitive control interface for managing distributed solar data."
+            },
+            {
                 type: "image",
                 src: "/images/solana.png",
                 alt: "Dashboard display with controls as widgets in user interface"
             },
             {
-                heading: "Centralized control",
-                text: "Any complex system requires easy access to relevant information and the ability to quickly adjust controls as needed. This home solar dashboard leverages widget-based architecture for increased customization and control. This comprehensive display allows users to compare and contrast multiple data points, allowing operators to respond to system conditions and make immediate decisions."
+                heading: "The Challenge",
+                text: "Designing a unified dashboard for complex solar system data that allows users to quickly interpret real-time performance metrics, monitor environmental conditions, and adjust system controls without overwhelming cognitive load."
+            },
+            {
+                type: "image",
+                src: "/images/home-energy-monitor.png",
+                alt: "Home energy monitor device"
+            },
+            {
+                heading: "Design Approach",
+                text: "I approached the dashboard by prioritizing clarity, modularity, and real-time readability. Because solar systems generate continuous streams of data, the interface needed to surface key insights quickly while allowing deeper exploration when needed."
+            },
+            {
+                heading: "Visualization Strategy",
+                text: "I focused on translating complex energy and environmental data into readable, glanceable UI components. The design emphasizes hierarchy and modular widgets to ensure users can interpret system performance without needing technical expertise."
+            },
+            {
+                type: "image",
+                src: "/images/dashboard-wireframe.png",
+                alt: "Data dashboard wireframe"
+            },
+            {
+                heading: "System Control & Overview",
+                text: "The dashboard consolidates system controls and performance metrics into a modular widget-based layout. This allows users to quickly access critical information, compare live data points, and respond to system changes efficiently."
             },
             {
                 type: "image",
@@ -414,18 +441,19 @@ export const pages = {
                 alt: "Photo of man installing solar panels on the roof of a multi-unit building"
             },
             {
-                heading: "Key metrics",
+                heading: "System Metrics",
                 text: `
-                    The dashboard tracks important information, including: 
+                    The dashboard tracks key solar system data, including:
                     <ol>
                         <li>Power Generation</li>
-                        <li>Current State</li>
+                        <li>System Status</li>
                         <li>Temperature</li>
-                        <li>Weather Forecast</li>
-                        <li>Metering</li>
+                        <li>Weather Conditions</li>
+                        <li>Energy Metering</li>
                     </ol>
-                    I designed the solar dashboard to display these inputs in an overview panel, helping operators view live system feedback, monitor conditions, and make informed decisions.
-                `,
+                    <br>
+                    These metrics are organized into a unified dashboard view to support real-time monitoring and decision-making.
+                `
             },
             {
                 type: "image",
@@ -433,14 +461,18 @@ export const pages = {
                 alt: "Solar panels over a carport with a white SUV parked underneath"
             },
             {
-                heading: "Adaptability",
-                text: "The success of a software solution is dependent on it's ability to adapt to and address user needs. This design offers both a plethora of useful insights, and the ability to control the display inputs. This combination makes the system adaptable for users to make modifications and customize their experience."
+                heading: "System Adaptability",
+                text: "The dashboard is designed to be flexible, allowing users to customize which metrics are displayed and how information is prioritized. This supports different user needs, from quick monitoring to detailed system analysis."
             },
             {
                 type: "image",
                 src: "/images/solar-farm.png",
                 alt: "Solar panels on farmland with Fall foliage in background"
             },
+            {
+                heading: "Reflection",
+                text: "This project reinforced the importance of hierarchy and simplicity when designing data-heavy interfaces. Even in systems with complex real-time inputs, effective design depends on reducing cognitive load and surfacing only the most relevant information at the right time."
+            }
         ]
     },
     esol: {
@@ -461,7 +493,7 @@ export const pages = {
                 alt: "Video of the Communication App for ESOL Educators"
             },
             {
-                heading: "The problem",
+                heading: "Problem",
                 text: `
                     Our team held several meetings with department leadership and service providers of the <a href="https://www.portlandmaine.gov/1537/ESOL-Collaborative" target="_blank" style="color: #00c3ff">ESOL Collaborative</a> to gather requirements and define the scope of the project. We discussed the difficulties experienced communicating effectively amongst members, the desire for resource sharing, and the issue of consistent data collection – including class attendance.<br><br>
                     We agreed that our software solution needed to target three main areas: 
@@ -487,7 +519,7 @@ export const pages = {
                 alt: "Screenshot of app homepage feed"
             },
             {
-                heading: "Resource sharing",
+                heading: "Resource Sharing",
                 text: `File uploads for posts are supported via <a href="https://uploadthing.com/" target="_blank" style="color: #00c3ff">UploadThing</a>, allowing a maximum file size of 4MB for images and 64MB for videos. Uploading can be achieved by clicking the attachments button or drag-and-dropping media files onto a post. A daily cron job automatically clears any unused or orphaned media files.`,
             },
             {
