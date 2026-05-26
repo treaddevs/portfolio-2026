@@ -219,7 +219,7 @@ nav.navbar {
 .home {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
@@ -245,14 +245,13 @@ nav.navbar {
   position: absolute;
   pointer-events: none;
   display: flex;
-  justify-content: flex-end;
   z-index: 999;
   bottom: 0;
-  right: 0;
+  right: 10vw;
 }
 
 .cover-img {
-  width: clamp(250px, 35vw, 950px);
+  width: clamp(250px, 32vw, 950px);
   height: auto;
 }
 

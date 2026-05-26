@@ -3,7 +3,7 @@ export const pages = {
         tabImg: "/svg/tab.svg",
         title: "Navimental -<br>Mental Health Dashboard",
         heroImage: "/images/navi-gradient.png",
-        heroDesc: "I worked for Navimental, a platform<br>addressing youth mental health challenges",
+        heroDesc: "As Product Designer, I focused on designing the journal dashboard<br>experience, improving usability across key wellness tracking workflows.",
         role: "Product Designer",
         context: "Freelance Work",
         timeline: "Sept 2024 – June 2025",
@@ -12,23 +12,26 @@ export const pages = {
         heroLink: "https://navimental.com",
         sections: [
             {
+                heading: "Responsibilities",
+                text: "I was responsible for dashboard UX strategy, data visualization exploration, wireframing, interface design, and iterative refinement across the journal analytics experience."
+            },
+            {
                 type: "video",
                 src: "/videos/navi-demo.mp4",
                 alt: "Video of Navimental journal data dashboard"
             },
             {
-                heading: "The problem",
-                text: "In 2024, Navimental was born during a hackathon. While the initial product framework was in place, several features were incomplete–including the journal section's dashboard, which required redesign to surface relevant user insights. This project focused on designing an intuitive dashboard to help users access and visually interpret this information."
+                heading: "Problem",
+                text: `In 2024, Navimental emerged from a hackathon focused on addressing youth mental health challenges. 
+                       While the initial product framework was established, the journal dashboard remained incomplete and needed redesign to better organize and visualize behavioral data for parents and family support navigators.
+                       <br><br>
+                       The platform needed a clearer, more approachable way to surface trends, improve usability, and support informed decision-making without feeling overly clinical or data-heavy.
+                       This project focused on designing an intuitive dashboard experience that transformed raw journal data into accessible, actionable insights.`
             },
             {
-                type: "image",
-                src: "/images/navi-journal-entry.png",
-                alt: "Navimental data entry form for journal"
-            },
-            {
-                heading: "Journal dashboard",
+                heading: "Tracked Metrics",
                 text: `
-                    The journal form captures key metrics, including: 
+                    The journal form captures key behavioral and wellness data, including: 
                     <ol>
                         <li>Mood</li>
                         <li>Activities</li>
@@ -36,8 +39,48 @@ export const pages = {
                         <li>Symptoms</li>
                         <li>Quick Note</li>
                     </ol>
-                    I redesigned the journal dashboard to visualizes these inputs in a time series format, helping parents track trends, monitor progress, and offer insights to discuss with family support navigators.
+                    These inputs required thoughtful data visualization and information hierarchy to help parents track trends, monitor progress, and surface actionable insights for conversations with family support navigators.
                 `,
+            },
+            {
+                type: "image",
+                src: "/images/navi-journal-entry.png",
+                alt: "Navimental data entry input form for journal"
+            },
+            {
+                heading: "Design Considerations",
+                text: "Because journal entries were fragmented across multiple inputs, parents and caregivers could struggle to identify meaningful emotional or behavioral patterns over time. The dashboard needed clearer information hierarchy, trend visualization, and a more approachable way to surface insights." 
+            },
+            {
+                type: "image",
+                src: "/images/dashboard-wireframe.png",
+                alt: "Data dashboard wireframe"
+            },
+            {
+                heading: "Competitive Audit",
+                text: `I audited competitor and adjacent wellness dashboard experiences, including <a href="https://www.figma.com/community/file/1387088393212336453" target="_blank" style="color: #00c3ff">Lumio - Mood Tracker App UI Kit</a>, to identify effective visualization patterns for surfacing behavioral trends and insights.`
+            },
+            {
+                type: "image",
+                src: "/images/lumio-ui-kit.png",
+                alt: "Lumio - Mood Tracker App UI Kit on Figma"
+            },
+            {
+                heading: "Design Exploration",
+                text: "I explored multiple approaches for organizing wellness metrics, balancing visual clarity with emotional accessibility. Early iterations experimented with different chart styles, summary cards, mood indicators, and dashboard layouts to determine which combinations surfaced insights most effectively without overwhelming users."
+            },
+            {
+                type: "image",
+                src: "/images/navi-design-iterations.png",
+                alt: "Average mood dial component design iterations"
+            },
+            {
+                heading: "Visualization Strategy",
+                text: "I prioritized lightweight visualizations that emphasized trend recognition over dense analytics. Time-series controls, summary cards, and simplified mood indicators were designed to improve scannability while reducing cognitive overload for caregivers reviewing emotional patterns over time."
+            },
+            {
+                heading: "Final Design",
+                text: "The final dashboard consolidated journal inputs into a structured, approachable analytics experience that helped surface emotional and behavioral trends over time. Through clearer hierarchy, simplified visualizations, and supportive UI patterns, the experience transformed fragmented wellness data into more accessible insights for parents and family support navigators."
             },
             {
                 type: "image",
@@ -50,42 +93,30 @@ export const pages = {
                 alt: "Navimental journal data dashboard"
             },
             {
-                heading: "Testimonials",
-                text: "Insights gathered through user research, interviews, and stakeholder feedback that helped shape and refine the final product experience."
+                heading: "Supporting Features & Testimonials",
+                text: "Insights gathered through user interviews and feedback that helped shape and refine the final product experience."
             },
             {
-                type: "image",
-                src: "/images/navi-testimonial.png",
-                alt: "Navimental testimonial: Everything I wish I had when raising my daughter"
+                type: "carousel",
+                images: [
+                    "/images/navi-peer-sessions.png",
+                    "/images/navi-care-plan.png",
+                    "/images/navi-parent-community.png",
+                    "/images/navi-guides.png"
+                ]
             },
             {
-                type: "image",
-                src: "/images/navi-peer-sessions.png",
-                alt: "Navimental 1 on 1 peer sessions"
-            },
-            {
-                type: "image",
-                src: "/images/navi-care-plan.png",
-                alt: "Navimental care plan"
-            },
-            {
-                type: "image",
-                src: "/images/navi-parent-community.png",
-                alt: "Navimental parent community"
-            },
-            {
-                type: "image",
-                src: "/images/navi-guides.png",
-                alt: "Navimental guides"
-            },
-            {
-                heading: "Project partners",
-                text: "Navimental has been accepted into the 2025 Future of Healthcare Founder Residency at Northeastern University’s campus in Portland, Maine and is collaborating with several regional partner organizations.",
+                heading: "Project Partners",
+                text: "Navimental was accepted into the 2025 Future of Healthcare Founder Residency at Northeastern University’s campus in Portland, Maine in collaboration with several regional partner organizations.",
             },
             {
                 type: "image",
                 src: "/images/navi-partners.png",
                 alt: "Partnering with Maine's leading organizations: MaineHealth, Northern Light Health, Maine Venture Fund, Northeastern University's Roux Institute"
+            },
+            {
+                heading: "Reflection",
+                text: "One of the biggest lessons I learned from this project was the importance of defining clear scope within ambiguous problem spaces. I also learned that even polished early designs are stepping stones toward stronger solutions shaped through feedback and iteration. Effective product design requires adaptability — continuously refining ideas based on user needs, collaboration, and evolving project goals.",
             },
         ]
     },

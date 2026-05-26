@@ -194,6 +194,17 @@
   filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));
 }
 
+.carousel {
+  border-radius: 15px;
+  width: 75%;
+  filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));
+  overflow: hidden;
+}
+
+.carousel-item img {
+    border-radius: 15px;
+}
+
 .section-heading {
   font-family: "Urbanist-SemiBold";
   font-size: 50px;

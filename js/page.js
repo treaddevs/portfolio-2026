@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <div class="meta-item">
-                        <span class="meta-label">Duration<br></span>
+                        <span class="meta-label">Timeline<br></span>
                         <span class="meta-value">${pageData.timeline}</span>
                     </div>
                 </div>
@@ -90,6 +90,80 @@ document.addEventListener("DOMContentLoaded", () => {
             img.alt = section.alt || section.heading || "Project image";
             img.classList.add("section-image");
             sectionEl.appendChild(img);
+        }
+
+        if (section.type === "carousel") {
+            const carouselId = `carousel-${Math.random().toString(36).substr(2, 9)}`;
+
+            const carousel = document.createElement("div");
+            carousel.classList.add("carousel", "slide");
+            carousel.setAttribute("id", carouselId);
+            carousel.setAttribute("data-bs-ride", "carousel");
+            carousel.setAttribute("data-bs-interval", "3000");
+
+            // Indicators
+            const indicators = document.createElement("div");
+            indicators.classList.add("carousel-indicators");
+
+            // Inner
+            const inner = document.createElement("div");
+            inner.classList.add("carousel-inner");
+
+            section.images.forEach((src, index) => {
+                // indicator button
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.setAttribute("data-bs-target", `#${carouselId}`);
+                btn.setAttribute("data-bs-slide-to", index);
+
+                if (index === 0) {
+                    btn.classList.add("active");
+                    btn.setAttribute("aria-current", "true");
+                }
+
+                btn.setAttribute("aria-label", `Slide ${index + 1}`);
+                indicators.appendChild(btn);
+
+                // slide
+                const item = document.createElement("div");
+                item.classList.add("carousel-item");
+
+                if (index === 0) item.classList.add("active");
+
+                const img = document.createElement("img");
+                img.src = src;
+                img.classList.add("d-block", "w-100");
+                img.alt = section.alt || `Slide ${index + 1}`;
+
+                item.appendChild(img);
+                inner.appendChild(item);
+            });
+
+            // Controls
+            const prevBtn = document.createElement("button");
+            prevBtn.classList.add("carousel-control-prev");
+            prevBtn.type = "button";
+            prevBtn.setAttribute("data-bs-target", `#${carouselId}`);
+            prevBtn.setAttribute("data-bs-slide", "prev");
+            prevBtn.innerHTML = `
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            `;
+
+            const nextBtn = document.createElement("button");
+            nextBtn.classList.add("carousel-control-next");
+            nextBtn.type = "button";
+            nextBtn.setAttribute("data-bs-target", `#${carouselId}`);
+            nextBtn.setAttribute("data-bs-slide", "next");
+            nextBtn.innerHTML = `
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            `;
+            carousel.appendChild(indicators);
+            carousel.appendChild(inner);
+            carousel.appendChild(prevBtn);
+            carousel.appendChild(nextBtn);
+            sectionEl.appendChild(carousel);
         }
 
         if (section.heading) {
