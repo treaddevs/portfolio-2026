@@ -170,7 +170,7 @@ function renderProjects(projectArray) {
     const desc = `
       <div class="desc">
         <div class="desc-content">
-          <img class="tab" src="${project.tabImg}"/>
+          <img class="tab" src="${project.tabImg}" alt="Blue tab icon"/>
           <h2>${project.title}</h2>
           <p>${project.desc}</p>
           <div class="pills-container">
@@ -181,7 +181,7 @@ function renderProjects(projectArray) {
         <button class="project-btn" data-page="${project.page}">
           <div class="project-btn-wrapper">
             <span>${project.category}</span>
-            <img class="new-window" src="/svg/new-window.svg">
+            <img class="new-window" src="/svg/new-window.svg" alt="New window icon">
           </div>
         </button>
       </div>
