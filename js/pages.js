@@ -310,7 +310,7 @@ export const pages = {
         tabImg: "/svg/tab.svg",
         title: "Canopy -<br>Mobile Banking App",
         heroImage: "/images/canopy-gradient.png",
-        heroDesc: "I designed onboarding, account access,<br>and transaction user interfaces and screen<br>flows for a mobile banking application.",
+        heroDesc: "I designed end-to-end onboarding,<br>account access, and transaction flows for<br>a mobile banking application.",
         role: "Product Designer",
         context: "Solo Project",
         timeline: "January – February 2026",
