@@ -17,7 +17,7 @@ export const projects = [
     title: "PocketChef -<br>Recipe & Meal<br>Planning App",
     category: "Case Study",
     skills: ["Product Design", "User Research", "UX/UI", "Design Systems"],
-    desc: "Improving recipe and meal planning management.",
+    desc: "Improving recipe discovery and meal planning management.",
     topImg: "/images/pocketchef-1.png",
     bottomImg: "/images/pocketchef-2.png",
     reverse: false,

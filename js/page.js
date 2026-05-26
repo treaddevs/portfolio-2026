@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (section.heading) {
             const heading = document.createElement("h2");
-            heading.textContent = section.heading;
+            heading.innerHTML = section.heading;
             heading.classList.add("section-heading");
             sectionEl.appendChild(heading);
         }

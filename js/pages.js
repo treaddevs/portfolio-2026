@@ -23,7 +23,7 @@ export const pages = {
             {
                 heading: "Problem",
                 text: `In 2024, Navimental emerged from a hackathon focused on addressing youth mental health challenges. 
-                       While the initial product framework was established, the journal dashboard remained incomplete and needed redesign to better organize and visualize behavioral data for parents and family support navigators.
+                       While the initial product framework was established, the unpublished journal dashboard remained incomplete and needed redesign to better organize and visualize behavioral data for parents and family support navigators.
                        <br><br>
                        The platform needed a clearer, more approachable way to surface trends, improve usability, and support informed decision-making without feeling overly clinical or data-heavy.
                        This project focused on designing an intuitive dashboard experience that transformed raw journal data into accessible, actionable insights.`
@@ -122,25 +122,42 @@ export const pages = {
     },
     pocketchef: {
         tabImg: "/svg/tab.svg",
-        title: "PocketChef -<br>Recipe & Meal<br>Planning App",
+        title: "PocketChef -<br>Recipe & Meal Planning App",
         heroImage: "/images/pocketchef-gradient.png",
-        heroDesc: "I conducted user research and designed<br>screen flows for a recipe and meal planning application",
-        role: "Product Designer",
-        context: "Class Project – AI for HCI",
+        heroDesc: "I conducted user research and designed<br>end-to-end workflows for an AI-powered<br>recipe discovery and meal planning experience.",
+        role: "Product Designer",        context: "Class Project – AI for HCI",
         timeline: "January – April 2026",
         logo: "/images/pocketchef-logo.png",
         logoAlt: "Canopy Banking logo",
         heroLink: "https://www.figma.com/design/LuysxxgvINMgyiW4gxUMeo/Pocket-Chef---Recipe---Meal-Planning-App?node-id=0-1&t=zoeKuFq6kc8XPpc1-1",
         sections: [
             {
+                heading: "Responsibilities",
+                text: "I was responsible for conducting user research through survey responses, defining UX strategy, and designing the end-to-end mobile application experience."
+            },
+            {
                 type: "video",
                 src: "/videos/pocketchef-demo.mp4",
                 alt: "Video of Figma presentation showing PocketChef App screens presented on iPhone 16 devices"
             },
             {
-                heading: "The Problem",
-                text: `Users currently rely on fragmented and inefficient methods to find, plan, and manage meals, often using general tools like search engines, social media, or ad hoc solutions such as screenshots and printed recipes. This lack of a centralized system leads to disorganized recipe management and inconsistent meal planning habits. At the same time, users face significant friction in decision-making, with time, ingredient availability, and ease of cooking being the most critical constraints.<br><br>
-                Additionally, users struggle during execution: dealing with missing ingredients, complex steps, and recipes that don’t align with their dietary needs. While there is interest in smarter, AI-assisted solutions, trust remains cautious, and users prioritize simplicity, speed, and convenience above all else. Overall, there is a clear opportunity to streamline the entire cooking workflow from discovery to planning, shopping, and cooking into a more intuitive and efficient experience.`,
+                heading: "Problem",
+                text: `Users often rely on fragmented tools like search engines, social media, screenshots, and printed recipes to discover, save, and manage meals. This creates disorganized workflows, inconsistent planning habits, and friction throughout the cooking process.<br><br>
+                       PocketChef explored how AI-assisted workflows could unify recipe discovery, meal planning, grocery management, and cooking into a more streamlined and personalized experience.`,
+            },
+            {
+                heading: "User Journey",
+                text: `The user journey revealed friction across every stage of the cooking workflow — from endlessly scrolling for recipes and forgetting saved meals to disorganized grocery shopping and stressful cooking experiences.<br><br>
+
+                Common pain points included:
+                <ol>
+                    <li>Recipe overload and decision fatigue</li>
+                    <li>Scattered recipe storage across platforms</li>
+                    <li>Forgotten or duplicate grocery items</li>
+                    <li>Difficulty following recipes while cooking</li>
+                </ol>
+                <br>
+                These insights informed features like guided cooking, ingredient-based search, automatic grocery lists, and centralized recipe organization.`
             },
             {
                 type: "image",
@@ -149,8 +166,8 @@ export const pages = {
             },
             {
                 heading: "Survey Insights",
-                text: `The survey results show that recipe discovery and meal planning are fragmented and inconsistent. Most users rely on general tools like Google search, with relatively few using dedicated recipe platforms, highlighting a lack of centralized solutions. Meal planning is also irregular, with many users rarely planning ahead. Across responses, time and convenience emerge as the dominant factors in decision-making, with users prioritizing quick, simple recipes and citing long preparation time as their biggest frustration.<br><br>
-                Users also face significant challenges during cooking and organization, including missing ingredients, complex execution, and disorganized recipe storage (screenshots, printouts, or no system at all). This points to a clear opportunity for a more unified, intuitive system that supports the full cooking workflow. High-value features include ingredient-based recommendations, grocery list generation, and meal planning tools. While users show cautious openness to AI assistance, trust remains limited, reinforcing the need for simple, transparent, and efficiency-focused design.`,
+                text: `Research revealed that meal planning and recipe management were highly inconsistent across users. Most participants relied on general-purpose tools rather than dedicated cooking platforms, while common frustrations included long preparation times, missing ingredients, and disorganized recipe storage.<br><br>
+                       Users responded most positively to ingredient-based recommendations, grocery list generation, and simplified meal planning tools. While there was cautious openness to AI assistance, users consistently prioritized clarity, speed, and convenience.`,
             },
             {
                 type: "image",
@@ -158,10 +175,27 @@ export const pages = {
                 alt: "PocketChef recipe & meal planning app survey insights"
             },
             {
-                heading: "Onboarding and Discovery",
-                text: `The onboarding flow introduces users to the app with a brief brand introduction followed by dietary preference selection, including restrictions, allergies, and cooking skill level to enable personalization. A profile section allows users to update these settings over time, ensuring recommendations stay relevant.<br><br>
-                In the discovery experience, users browse AI-recommended recipes through an intention-based system rather than traditional categories. Core filters: Fast, Easy, Healthy, Stocked, and Comfort let users quickly express what they want to cook based on context, reducing cognitive load and making recipe selection more intuitive. A “Filter by Ingredients” feature further supports this by generating recipes based on what users already have at home, helping reduce missing-ingredient friction and food waste.<br><br>
-                An Imports screen centralizes external recipe collection, allowing users to save content by scanning photos of handwritten or printed recipes or pasting links from websites and social media. This creates a unified system for storing and organizing recipes that are typically scattered across screenshots, bookmarks, and notes.`,
+                heading: "Design Challenges",
+                text: "One of the primary challenges was balancing feature depth with usability. Because the platform combined recipe discovery, meal planning, grocery management, and AI-assisted recommendations, the experience risked becoming overly complex. The design process focused heavily on simplifying navigation, reducing cognitive load, and maintaining clarity across interconnected workflows."
+            },
+            {
+                heading: "Design Exploration",
+                text: "Early design exploration focused on simplifying the complexity of meal planning into a more approachable and modular experience. I iterated on navigation structure, recipe discovery flows, planner layouts, and grocery management interactions to reduce friction across the end-to-end cooking workflow while maintaining flexibility for different user behaviors."
+            },
+            {
+                type: "image",
+                src: "/images/pocketchef-wireframe-1.png",
+                alt: "Initial versions of PocketChef UI screens for: logo screen, recipes, recipe details, nutrition, and imports"
+            },
+            {
+                type: "image",
+                src: "/images/pocketchef-wireframe-2.png",
+                alt: "Initial versions of PocketChef UI screens for: cookbooks, AI-generated meal plans, diet plans, filter by ingredients, and grocery list"
+            },
+            {
+                heading: `Final Design: Onboarding & Discovery`,
+                text: `The onboarding experience personalizes recommendations through dietary preferences, allergies, and cooking skill level to tailor recipe discovery from the start.<br><br>
+                       Discovery focuses on intention-based browsing through filters like Fast, Easy, Healthy, and Stocked, helping users quickly find contextually relevant meals. Ingredient-based search and recipe imports further simplify discovery by centralizing recipes typically scattered across websites, screenshots, and social media.`,
             },
             {
                 type: "image",
@@ -169,9 +203,9 @@ export const pages = {
                 alt: "PocketChef setup with user preferences, discovery feed, filter by ingredients, and import screens"
             },
             {
-                heading: "Core Features",
-                text: `The app’s core functionality centers around saving recipes and organizing them into personalized cookbooks, creating a structured system for users to collect and revisit meals. Each recipe detail page includes an image, description, ingredient list, and nutrition information displayed through an adjustable donut chart that updates based on serving size. Users can follow step-by-step instructions in a standard view or switch to a guided cooking mode, which improves readability and supports real-time cooking with larger text, timers, and a read-aloud feature that presents instructions sequentially through voice and step cards. This read-aloud functionality also serves as an accessibility feature, supporting users with visual impairments, reading difficulties, or hands-free cooking needs.<br><br>
-                The Meal Planner provides a weekly overview of breakfast, lunch, and dinner through large, interactive recipe cards, making it easy to visualize and adjust meals across the week while reducing decision fatigue. Supporting this, the Grocery List feature automatically compiles ingredients from selected meals and organizes them into categorized, checkable lists, streamlining shopping and ensuring a smooth transition from planning to execution.`,
+                heading: `Final Design: Core Features`,
+                text: `PocketChef centers around recipe saving, personalized cookbooks, meal planning, and guided cooking workflows. Recipe pages include ingredient lists, nutrition information, and adjustable serving sizes, while guided cooking mode improves readability through larger text, timers, and read-aloud instructions.<br><br>
+                       The Meal Planner provides a visual weekly overview for organizing breakfast, lunch, and dinner, while the Grocery List automatically compiles ingredients into categorized, checkable shopping lists to streamline planning and execution.`,
             },
             {
                 type: "image",
@@ -180,8 +214,8 @@ export const pages = {
             },
             {
                 heading: "Design System",
-                text: `The PocketChef design system establishes a consistent and scalable foundation through clearly defined components, styles, and semantic design tokens. It includes a structured token system covering color (e.g., color.primary.500, color.text.secondary), a 4px spacing scale (spacing.1–spacing.12), typography, and border radius (radius.sm through radius.full). Typography is standardized using Poppins ExtraBold for branding, Lexend across a full heading scale (H1–H6), and Plus Jakarta Sans for body text, ensuring clarity and hierarchy across the interface. The color system incorporates brand tones like Harvest Orange and Primary Yellow, alongside neutral backgrounds, text hierarchies, UI element colors, and gradients for headers and buttons.<br><br>
-                Built on top of these tokens, the system includes reusable UI components such as buttons (primary, secondary, disabled), recipe cards, pills for dietary tags, a navigation bar with clear selected states, and timeline/progress indicators. This cohesive system not only ensures visual consistency and accessibility but also supports efficient design iteration and seamless developer handoff, making the product easier to scale and maintain.`,
+                text: `The PocketChef design system established a scalable foundation through semantic design tokens, reusable UI components, and standardized typography, spacing, color, and radius systems. The interface combined Poppins, Lexend, and Plus Jakarta Sans to reinforce hierarchy, readability, and brand identity.<br><br>
+                       Reusable components including buttons, recipe cards, dietary tags, navigation states, and progress indicators helped ensure consistency, accessibility, and efficient iteration across the product experience.`,
             },
             {
                 type: "image",
@@ -189,10 +223,9 @@ export const pages = {
                 alt: "PocketChef design system"
             },
             {
-                heading: "Summary",
-                text: `PocketChef is an AI-assisted recipe and meal planning app that unifies the end-to-end cooking experience into a single, streamlined system. It addresses key pain points identified in research: fragmented recipe discovery, inconsistent meal planning, disorganized recipe storage, and friction during cooking caused by missing ingredients, time constraints, and complex execution.<br><br>
-                By connecting discovery, imports, planning, and execution, the app enables users to move seamlessly from finding recipes to cooking them. Intention-based filters (Fast, Easy, Healthy, Stocked, Comfort) and ingredient-based search simplify discovery, while imports centralize external recipes. Meal planning and automated grocery lists reduce planning effort, and guided cooking mode with timers, larger text, and read-aloud accessibility support helps users cook with confidence and minimal friction.<br><br>
-                Overall, PocketChef improves clarity, speed, and organization across the entire cooking workflow, turning a fragmented set of tasks into a cohesive and intuitive experience.`,
+                heading: "Reflection",
+                text: `PocketChef explored how AI-assisted workflows could simplify the end-to-end cooking experience by unifying recipe discovery, meal planning, grocery management, and guided cooking into a single system.<br><br>
+                       Through research-driven UX decisions, intention-based discovery, accessibility-focused cooking tools, and streamlined planning workflows, the project transformed fragmented cooking behaviors into a more organized and intuitive experience.`,
             },
         ]
     },
