@@ -50,7 +50,7 @@ export const projects = [
   {
     type: "desktop",
     tabImg: "/svg/tab.svg",
-    title: "Solana Solar -<br>Home Energy<br>Dashboard UI",
+    title: "Solana Solar -<br>Home Energy<br>Dashboard",
     category: "Case Study",
     skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
     desc: "Simplifying home solar energy monitoring through real-time data visualization.",

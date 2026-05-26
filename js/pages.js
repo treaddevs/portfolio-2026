@@ -390,7 +390,7 @@ export const pages = {
     },
     solana: {
         tabImg: "/svg/tab.svg",
-        title: "Solana Solar -<br>Home Energy<br>Dashboard UI",
+        title: "Solana Solar -<br>Home Energy Dashboard",
         heroImage: "/images/solana-gradient.png",
         heroDesc: "I created a solar dashboard to display<br>controls and check on system operations.",
         role: "UX/UI Designer",
