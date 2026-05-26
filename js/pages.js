@@ -240,7 +240,7 @@ export const pages = {
         timeline: "May – August 2024",
         logo: "/images/chatbot-logo.png",
         logoAlt: "Boredom-Blaster chatbot robot head logo",
-        heroLink: "https://www.theviaagency.com",
+        heroLink: "https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=4c581baa-e3ee-47c6-a7e3-604474bb3b8f",
         sections: [
             {
                 heading: "Responsibilities",
@@ -253,25 +253,17 @@ export const pages = {
             },
             {
                 heading: "The Challenge",
-                text: `I began my position as Creative Technology Intern at The VIA Agency by developing mobile-friendly web components for the redesigned company website. Once the new site had launched, a company challenge emerged – AI-infused July, a team challege to integrate AI in useful ways to enhance advertising.<br><br>Our team chose to build an AI-powered chatbot to assist our client – ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda, in generating in-depth responses to customer's questions, and for embedding on their product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank" style="color: #00c3ff">webpage</a>.`,
+                text: `I began my position as Creative Technology Intern at The VIA Agency by developing mobile-friendly web components for the redesigned company <a href="https://www.theviaagency.com" target="_blank" style="color: #00c3ff">website</a>. Once the new site had launched, a company challenge emerged – AI-infused July, a team challege to integrate AI in useful ways to enhance advertising.<br><br>
+                       Our team chose to build an AI-powered chatbot to assist our client – ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda, in generating in-depth responses to customer's questions, and for embedding on their product's <a href="https://www.armandhammer.com/en/for-everything-soda" target="_blank" style="color: #00c3ff">webpage</a>.`,
             },
             {
-                heading: "Problem Framing",
+                heading: "Problem",
                 text: `Users visiting product pages often have repetitive or unclear questions and limited time to explore detailed content. The challenge was to design a conversational interface that could surface relevant information quickly while feeling engaging, helpful, and on-brand for ARM & HAMMER<sup style="font-size: 0.7em;">™</sup> Baking Soda.`
             },
             {
                 type: "image",
                 src: "/images/chatbot-poster.png",
                 alt: "Image of full chatbot robot logo with chat bubbles next to the chatbot user interface displayed on an iPhone screen"
-            },
-            {
-                heading: "Design Approach",
-                text: "I approached the chatbot as a guided conversational experience rather than an open-ended AI tool. The focus was on structuring clear user intents, defining conversation pathways, and ensuring responses stayed aligned with brand tone and product information."
-            },
-            {
-                type: "image",
-                src: "/images/chatbot-figma.png",
-                alt: "Chatbot mockup design in Figma"
             },
             {
                 heading: "Ideation & Flow Exploration",
@@ -281,6 +273,15 @@ export const pages = {
                 type: "image",
                 src: "/images/chatbot-flowchart.png",
                 alt: "Flowchart diagram of user flow using Botpress chatbot"
+            },
+            {
+                heading: "Design Approach",
+                text: "I approached the chatbot as a guided conversational experience rather than an open-ended AI tool. The focus was on structuring clear user intents, defining conversation pathways, and ensuring responses stayed aligned with brand tone and product information."
+            },
+            {
+                type: "image",
+                src: "/images/chatbot-figma.png",
+                alt: "Chatbot mockup design in Figma"
             },
             {
                 heading: "Build & Implementation",
@@ -375,7 +376,7 @@ export const pages = {
             {
                 type: "image",
                 src: "/images/canopy-nav.png",
-                alt: "Nav bar buttons for deposit, transfer, bill pay, insights, and card"
+                alt: "Navbar buttons for deposit, transfer, bill pay, insights, and card"
             },
             {
                 type: "image",
