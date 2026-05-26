@@ -479,7 +479,7 @@ export const pages = {
         tabImg: "/svg/tab.svg",
         title: "Communication<br>App for Language<br>Educators",
         heroImage: "/images/esol-gradient.png",
-        heroDesc: "This project provided Portland, Maine's ESOL Collaborative<br>with a centralized platform for communication",
+        heroDesc: "I led this Capstone project to design and<br>develop a centralized communication<br>platform for Portland, Maine’s ESOL<br>Collaborative.",
         role: "Fullstack Developer",
         context: "Capstone Project",
         timeline: "September 2024 – April 2025",
@@ -488,21 +488,29 @@ export const pages = {
         heroLink: "https://github.com/treaddevs/esol-app/tree/main",
         sections: [
             {
+                heading: "Product Overview",
+                text: "The ESOL Communication App is a centralized platform designed for educators and coordinators in Portland, Maine’s ESOL Collaborative. The goal was to improve communication, resource sharing, and scheduling across distributed language education teams."
+            },
+            {
                 type: "video",
                 src: "/videos/esol-demo.mp4",
                 alt: "Video of the Communication App for ESOL Educators"
             },
             {
-                heading: "Problem",
-                text: `
-                    Our team held several meetings with department leadership and service providers of the <a href="https://www.portlandmaine.gov/1537/ESOL-Collaborative" target="_blank" style="color: #00c3ff">ESOL Collaborative</a> to gather requirements and define the scope of the project. We discussed the difficulties experienced communicating effectively amongst members, the desire for resource sharing, and the issue of consistent data collection – including class attendance.<br><br>
-                    We agreed that our software solution needed to target three main areas: 
-                    <ol>
-                        <li>Communication</li>
-                        <li>Resource Sharing</li>
-                        <li>Scheduling</li>
-                    </ol>
-                `,
+                heading: "The Challenge",
+                text: "Designing a unified communication system for educators and coordinators that supports real-time messaging, resource sharing, and scheduling while addressing fragmented workflows and inconsistent information flow across the organization."
+            },
+            {
+                heading: "Discovery & Requirements",
+                text: `Through stakeholder meetings with the ESOL Collaborative, we identified key communication and workflow challenges across educators and administrators.<br><br>
+                The system needed to support three primary functions:
+                <ol>
+                    <li>Communication between educators and coordinators</li>
+                    <li>Centralized resource sharing</li>
+                    <li>Scheduling and coordination workflows</li>
+                </ol>
+                <br>
+                Core needs included improved communication channels, centralized resource sharing, and better coordination of scheduling and attendance tracking.`
             },
             {
                 type: "image",
@@ -510,8 +518,12 @@ export const pages = {
                 alt: "Portland Maine ESOL Collaborative logo"
             },
             {
-                heading: "Communication",
-                text: "The application's home feed serves as the central hub of communication. Users can create new posts, tag others, like and comment, and save post to bookmarks. The trending topics sidebar updates hourly based on the most frequently used hashtags. Clicking on a hashtag redirects users to a dedicated page that filters posts containing the selected keyword and features corresponding content.",
+                heading: "Design Approach",
+                text: "I focused on designing a unified, social-like interface that balanced familiarity with functional communication tools. The goal was to reduce friction between educators while supporting structured information sharing, scheduling, and collaboration."
+            },
+            {
+                heading: "Communication System",
+                text: "The home feed acts as the central hub for educator communication, enabling posts, comments, likes, and saved content. Hashtags and trending topics help surface relevant discussions, while filtering allows users to explore specific educational themes."
             },
             {
                 type: "image",
@@ -520,7 +532,7 @@ export const pages = {
             },
             {
                 heading: "Resource Sharing",
-                text: `File uploads for posts are supported via <a href="https://uploadthing.com/" target="_blank" style="color: #00c3ff">UploadThing</a>, allowing a maximum file size of 4MB for images and 64MB for videos. Uploading can be achieved by clicking the attachments button or drag-and-dropping media files onto a post. A daily cron job automatically clears any unused or orphaned media files.`,
+                text: "The platform supports image and video uploads to enable educators to share classroom materials and resources. A drag-and-drop interface simplifies uploading, while backend file handling ensures efficient storage and cleanup of unused media."
             },
             {
                 type: "image",
@@ -533,14 +545,22 @@ export const pages = {
                 alt: "Screenshot of posts with picture and video attachments"
             },
             {
-                heading: "Scheduling",
-                text: `Direct messaging allows users to correspond synchronously and schedule meetings. This is achieved through <a href="https://getstream.io/chat/sdk/" target="_blank" style="color: #00c3ff">Stream Chat SDK</a> via API, which provides free access for eligible small teams and early-stage projects.`,
+                heading: "Scheduling & Messaging",
+                text: "Real-time messaging enables direct communication between educators and coordinators, supporting coordination and scheduling discussions. This system was built using a third-party chat SDK to enable scalable, reliable messaging functionality."
             },
             {
                 type: "image",
                 src: "/images/esol-chat.png",
                 alt: "Screenshot of users chatting in messages using the Stream Chat software development kit"
             },
+            {
+                heading: "Technical Implementation",
+                text: "The application integrates third-party services for real-time chat, file uploads, and media handling. UploadThing was used for secure media uploads, while Stream Chat SDK powered real-time messaging functionality. Automated background processes handle cleanup of unused media to maintain system efficiency."
+            },
+            {
+                heading: "Reflection",
+                text: "This project highlighted the importance of designing for real users within organizational workflows rather than abstract personas. Working with stakeholders helped define clear functional requirements, and building a full-stack communication system reinforced the importance of balancing UX design with scalable technical architecture."
+            }
         ]
     }
 }
