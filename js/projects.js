@@ -6,8 +6,8 @@ export const projects = [
     category: "Project",
     skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
     desc: "Translating user data into actionable wellness insights.",
-    topImg: "/images/navi-top.png",
-    bottomImg: "/images/navi-bottom.png",
+    topImg: "/images/navi-top.webp",
+    bottomImg: "/images/navi-bottom.webp",
     reverse: false,
     page: "navimental.html"
   },
@@ -18,8 +18,8 @@ export const projects = [
     category: "Case Study",
     skills: ["Product Design", "User Research", "UX/UI", "Design Systems"],
     desc: "Improving recipe discovery and meal planning management.",
-    topImg: "/images/pocketchef-1.png",
-    bottomImg: "/images/pocketchef-2.png",
+    topImg: "/images/pocketchef-1.webp",
+    bottomImg: "/images/pocketchef-2.webp",
     reverse: false,
     page: "pocketchef.html"
   },
@@ -30,8 +30,8 @@ export const projects = [
     category: "Project",
     skills: ["Product Design", "UX/UI", "AI", "Branding", "Web Development"],
     desc: "Building an AI-powered conversational product discovery experience.",
-    topImg: "/images/chatbot-1.png",
-    bottomImg: "/images/chatbot-2.png",
+    topImg: "/images/chatbot-1.webp",
+    bottomImg: "/images/chatbot-2.webp",
     reverse: false,
     page: "via.html"
   },
@@ -42,8 +42,8 @@ export const projects = [
     category: "Case Study",
     skills: ["Product Design", "UX/UI", "Branding"],
     desc: "Streamlining financial tracking and budgeting through mobile-first design.",
-    topImg: "/images/canopy-1.png",
-    bottomImg: "/images/canopy-2.png",
+    topImg: "/images/canopy-1.webp",
+    bottomImg: "/images/canopy-2.webp",
     reverse: false,
     page: "canopy.html"
   },
@@ -54,7 +54,7 @@ export const projects = [
     category: "Case Study",
     skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
     desc: "Simplifying home solar energy monitoring through real-time data visualization.",
-    singleImg: "/images/solana.png",
+    singleImg: "/images/solana.webp",
     reverse: false,
     page: "solana.html"
   },
@@ -65,8 +65,8 @@ export const projects = [
     category: "Project",
     skills: ["Product Design", "User Research", "UX/UI", "Full-Stack Development"],
     desc: "Supporting multilingual learning through accessible educator communication workflows.",
-    topImg: "/images/esol-top.png",
-    bottomImg: "/images/esol-bottom.png",
+    topImg: "/images/esol-top.webp",
+    bottomImg: "/images/esol-bottom.webp",
     reverse: false,
     page: "esol.html"
   },
@@ -330,14 +330,14 @@ showMoreBtn.addEventListener("click", () => {
 
     showMoreBtn.innerHTML = `
       Show Less
-      <img src="/images/chevron-down.png" class="chevron rotate"/>
+      <img src="/images/chevron-down.webp" class="chevron rotate"/>
     `;
   } else {
     renderProjects(projects.slice(0, 4));
 
     showMoreBtn.innerHTML = `
       Show More Projects
-      <img src="/images/chevron-down.png" class="chevron"/>
+      <img src="/images/chevron-down.webp" class="chevron"/>
     `;
 
     projectsContainer.scrollIntoView({

@@ -251,7 +251,7 @@ nav.navbar {
 }
 
 .cover-img {
-  width: clamp(250px, 32vw, 950px);
+  width: clamp(250px, 32vw, 600px);
   height: auto;
 }
 

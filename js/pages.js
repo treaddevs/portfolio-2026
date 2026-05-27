@@ -2,12 +2,12 @@ export const pages = {
     navimental: {
         tabImg: "/svg/tab.svg",
         title: "Navimental -<br>Mental Health Dashboard",
-        heroImage: "/images/navi-gradient.png",
+        heroImage: "/images/navi-gradient.webp",
         heroDesc: "As Product Designer, I focused on designing the journal dashboard<br>experience, improving usability across key wellness tracking workflows.",
         role: "Product Designer",
         context: "Freelance Work",
         timeline: "Sept 2024 – June 2025",
-        logo: "/images/navi-logo.png",
+        logo: "/images/navi-logo.webp",
         logoAlt: "Navimental stars logo",
         heroLink: "https://navimental.com",
         sections: [
@@ -44,7 +44,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/navi-journal-entry.png",
+                src: "/images/navi-journal-entry.webp",
                 alt: "Navimental data entry input form for journal"
             },
             {
@@ -53,7 +53,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/dashboard-wireframe.png",
+                src: "/images/dashboard-wireframe.webp",
                 alt: "Data dashboard wireframe"
             },
             {
@@ -62,7 +62,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/lumio-ui-kit.png",
+                src: "/images/lumio-ui-kit.webp",
                 alt: "Lumio - Mood Tracker App UI Kit on Figma"
             },
             {
@@ -71,7 +71,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/navi-design-iterations.png",
+                src: "/images/navi-design-iterations.webp",
                 alt: "Average mood dial component design iterations"
             },
             {
@@ -84,12 +84,12 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/navi-streak.png",
+                src: "/images/navi-streak.webp",
                 alt: "Hot streak for posting journal entries"
             },
             {
                 type: "image",
-                src: "/images/navi-dashboard.png",
+                src: "/images/navi-dashboard.webp",
                 alt: "Navimental journal data dashboard"
             },
             {
@@ -99,10 +99,10 @@ export const pages = {
             {
                 type: "carousel",
                 images: [
-                    "/images/navi-peer-sessions.png",
-                    "/images/navi-care-plan.png",
-                    "/images/navi-parent-community.png",
-                    "/images/navi-guides.png"
+                    "/images/navi-peer-sessions.webp",
+                    "/images/navi-care-plan.webp",
+                    "/images/navi-parent-community.webp",
+                    "/images/navi-guides.webp"
                 ]
             },
             {
@@ -111,7 +111,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/navi-partners.png",
+                src: "/images/navi-partners.webp",
                 alt: "Partnering with Maine's leading organizations: MaineHealth, Northern Light Health, Maine Venture Fund, Northeastern University's Roux Institute"
             },
             {
@@ -123,12 +123,12 @@ export const pages = {
     pocketchef: {
         tabImg: "/svg/tab.svg",
         title: "PocketChef -<br>Recipe & Meal Planning App",
-        heroImage: "/images/pocketchef-gradient.png",
+        heroImage: "/images/pocketchef-gradient.webp",
         heroDesc: "I conducted user research and designed<br>end-to-end workflows for an AI-powered<br>recipe discovery and meal planning experience.",
         role: "Product Designer",        
         context: "Class Project: AI for HCI",
         timeline: "January – April 2026",
-        logo: "/images/pocketchef-logo.png",
+        logo: "/images/pocketchef-logo.webp",
         logoAlt: "PocketChef logo",
         heroLink: "https://www.figma.com/board/n8u8GrEO1MFhT2TAbzrohC/PocketChef-%E2%80%93-Recipe---Meal-Planning-App?node-id=0-1&t=O3jq04OkDace7AuQ-1",
         sections: [
@@ -161,7 +161,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/pocketchef-user-journey.png",
+                src: "/images/pocketchef-user-journey.webp",
                 alt: "Recipe and meal planning user journey"
             },
             {
@@ -170,7 +170,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/pocketchef-survey-insights.png",
+                src: "/images/pocketchef-survey-insights.webp",
                 alt: "PocketChef recipe & meal planning app survey insights"
             },
             {
@@ -183,12 +183,12 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/pocketchef-wireframe-1.png",
+                src: "/images/pocketchef-wireframe-1.webp",
                 alt: "Initial versions of PocketChef UI screens for: logo screen, recipes, recipe details, nutrition, and imports"
             },
             {
                 type: "image",
-                src: "/images/pocketchef-wireframe-2.png",
+                src: "/images/pocketchef-wireframe-2.webp",
                 alt: "Initial versions of PocketChef UI screens for: cookbooks, AI-generated meal plans, diet plans, filter by ingredients, and grocery list"
             },
             {
@@ -197,7 +197,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/pocketchef-app-setup.png",
+                src: "/images/pocketchef-app-setup.webp",
                 alt: "PocketChef setup with user preferences, discovery feed, filter by ingredients, and import screens"
             },
             {
@@ -206,7 +206,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/pocketchef-app-features.png",
+                src: "/images/pocketchef-app-features.webp",
                 alt: "PocketChef core features including Recipes with a description, nutrition information, step-by-step instructions and guided mode, and Meal Planner and Grocery List features"
             },
             {
@@ -215,7 +215,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/pocketchef-design-system.png",
+                src: "/images/pocketchef-design-system.webp",
                 alt: "PocketChef design system"
             },
             {
@@ -227,12 +227,12 @@ export const pages = {
     via: {
         tabImg: "/svg/tab.svg",
         title: "Boredom-Blaster -<br>AI-Powered Chatbot",
-        heroImage: "/images/chatbot-gradient.png",
+        heroImage: "/images/chatbot-gradient.webp",
         heroDesc: "As a Creative Technology Intern at The<br>VIA Agency, I developed web components<br>for the redesigned company website, and<br>built a chatbot for a client.",
         role: "Creative Technology Intern",
         context: "Internship",
         timeline: "May – August 2024",
-        logo: "/images/chatbot-logo.png",
+        logo: "/images/chatbot-logo.webp",
         logoAlt: "Boredom-Blaster chatbot robot head logo",
         heroLink: "https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=4c581baa-e3ee-47c6-a7e3-604474bb3b8f",
         sections: [
@@ -256,7 +256,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/chatbot-poster.png",
+                src: "/images/chatbot-poster.webp",
                 alt: "Image of full chatbot robot logo with chat bubbles next to the chatbot user interface displayed on an iPhone screen"
             },
             {
@@ -265,7 +265,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/chatbot-flowchart.png",
+                src: "/images/chatbot-flowchart.webp",
                 alt: "Flowchart diagram of user flow using Botpress chatbot"
             },
             {
@@ -274,7 +274,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/chatbot-figma.png",
+                src: "/images/chatbot-figma.webp",
                 alt: "Chatbot mockup design in Figma"
             },
             {
@@ -283,7 +283,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/botpress.png",
+                src: "/images/botpress.webp",
                 alt: "Screenshot of building on Botpress platform"
             },
             {
@@ -309,12 +309,12 @@ export const pages = {
     canopy: {
         tabImg: "/svg/tab.svg",
         title: "Canopy -<br>Mobile Banking App",
-        heroImage: "/images/canopy-gradient.png",
+        heroImage: "/images/canopy-gradient.webp",
         heroDesc: "I designed end-to-end onboarding,<br>account access, and transaction flows for<br>a mobile banking application.",
         role: "Product Designer",
         context: "Solo Project",
         timeline: "January – February 2026",
-        logo: "/images/canopy-logo.png",
+        logo: "/images/canopy-logo.webp",
         logoAlt: "Canopy Banking logo",
         heroLink: "https://www.figma.com/board/WUE8RneYcQNQmPTElQTUuo/Canopy-Banking-App?node-id=0-1&t=ZhAkmDOMkfc4gNzJ-1",
         sections: [
@@ -333,7 +333,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/canopy-debit-card.png",
+                src: "/images/canopy-debit-card.webp",
                 alt: "Canopy debit card"
             },
             {
@@ -346,7 +346,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/canopy-onboarding.png",
+                src: "/images/canopy-onboarding.webp",
                 alt: "Canopy onboarding screens including sign up and sign in interfaces"
             },
             {
@@ -355,7 +355,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/canopy-checking.png",
+                src: "/images/canopy-checking.webp",
                 alt: "Canopy account screens including account balance, checking, and spending insights screens"
             },
             {
@@ -364,7 +364,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/canopy-savings.png",
+                src: "/images/canopy-savings.webp",
                 alt: "Canopy account screens including account balance, savings, and spending goal screens"
             },
             {
@@ -373,12 +373,12 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/canopy-nav.png",
+                src: "/images/canopy-nav.webp",
                 alt: "Navbar buttons for deposit, transfer, bill pay, insights, and card"
             },
             {
                 type: "image",
-                src: "/images/canopy-transactions.png",
+                src: "/images/canopy-transactions.webp",
                 alt: "Transaction screens for depositing checks, transferring money, bill pay, card managment, and menu settings"
             },
             {
@@ -390,12 +390,12 @@ export const pages = {
     solana: {
         tabImg: "/svg/tab.svg",
         title: "Solana Solar -<br>Home Energy Dashboard",
-        heroImage: "/images/solana-gradient.png",
+        heroImage: "/images/solana-gradient.webp",
         heroDesc: "I created a solar dashboard to display<br>controls and check on system operations.",
         role: "UX/UI Designer",
         context: "Solo Project",
         timeline: "August 2024",
-        logo: "/images/solana-logo.png",
+        logo: "/images/solana-logo.webp",
         logoAlt: "Solar home logo",
         heroLink: "https://www.figma.com/board/sEIZQN6ilYyNPCUMOeAWxs/Home-Solar-App?node-id=0-1&t=tJj9TqlUsaUHv2B5-1",
         sections: [
@@ -405,7 +405,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/solana.png",
+                src: "/images/solana.webp",
                 alt: "Dashboard display with controls as widgets in user interface"
             },
             {
@@ -414,7 +414,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/home-energy-monitor.png",
+                src: "/images/home-energy-monitor.webp",
                 alt: "Home energy monitor device"
             },
             {
@@ -427,7 +427,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/dashboard-wireframe.png",
+                src: "/images/dashboard-wireframe.webp",
                 alt: "Data dashboard wireframe"
             },
             {
@@ -436,7 +436,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/solar-worker.png",
+                src: "/images/solar-worker.webp",
                 alt: "Photo of man installing solar panels on the roof of a multi-unit building"
             },
             {
@@ -456,7 +456,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/solar-carport.png",
+                src: "/images/solar-carport.webp",
                 alt: "Solar panels over a carport with a white SUV parked underneath"
             },
             {
@@ -465,7 +465,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/solar-farm.png",
+                src: "/images/solar-farm.webp",
                 alt: "Solar panels on farmland with Fall foliage in background"
             },
             {
@@ -477,12 +477,12 @@ export const pages = {
     esol: {
         tabImg: "/svg/tab.svg",
         title: "Communication<br>App for Language<br>Educators",
-        heroImage: "/images/esol-gradient.png",
+        heroImage: "/images/esol-gradient.webp",
         heroDesc: "I led this Capstone project to design and<br>develop a centralized communication<br>platform for Portland, Maine’s ESOL<br>Collaborative.",
         role: "Fullstack Developer",
         context: "Capstone Project",
         timeline: "September 2024 – April 2025",
-        logo: "/images/esol-logo.png",
+        logo: "/images/esol-logo.webp",
         logoAlt: "Portland Maine ESOL Collaborative chat bubbles logo",
         heroLink: "https://github.com/treaddevs/esol-app/tree/main",
         sections: [
@@ -513,7 +513,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/esol-collaborative.png",
+                src: "/images/esol-collaborative.webp",
                 alt: "Portland Maine ESOL Collaborative logo"
             },
             {
@@ -526,7 +526,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/esol-home.png",
+                src: "/images/esol-home.webp",
                 alt: "Screenshot of app homepage feed"
             },
             {
@@ -535,12 +535,12 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/esol-drag-drop.png",
+                src: "/images/esol-drag-drop.webp",
                 alt: "Screenshot of drag-and-drop file behavior for uploading"
             },
             {
                 type: "image",
-                src: "/images/esol-media.png",
+                src: "/images/esol-media.webp",
                 alt: "Screenshot of posts with picture and video attachments"
             },
             {
@@ -549,7 +549,7 @@ export const pages = {
             },
             {
                 type: "image",
-                src: "/images/esol-chat.png",
+                src: "/images/esol-chat.webp",
                 alt: "Screenshot of users chatting in messages using the Stream Chat software development kit"
             },
             {
