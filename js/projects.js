@@ -1,17 +1,5 @@
 export const projects = [
   {
-    type: "laptop",
-    tabImg: "/svg/tab.svg",
-    title: "Navimental -<br>Mental Health<br>Dashboard",
-    category: "Project",
-    skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
-    desc: "Translating user data into actionable wellness insights.",
-    topImg: "/images/navi-top.webp",
-    bottomImg: "/images/navi-bottom.webp",
-    reverse: false,
-    page: "navimental.html"
-  },
-  {
     type: "phone",
     tabImg: "/svg/tab.svg",
     title: "PocketChef -<br>Recipe & Meal<br>Planning App",
@@ -36,6 +24,18 @@ export const projects = [
     page: "via.html"
   },
   {
+    type: "laptop",
+    tabImg: "/svg/tab.svg",
+    title: "Navimental -<br>Mental Health<br>Dashboard",
+    category: "Project",
+    skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
+    desc: "Translating user data into actionable wellness insights.",
+    topImg: "/images/navi-top.webp",
+    bottomImg: "/images/navi-bottom.webp",
+    reverse: false,
+    page: "navimental.html"
+  },
+  {
     type: "phone",
     tabImg: "/svg/tab.svg",
     title: "Canopy -<br>Mobile Banking App",
@@ -47,18 +47,7 @@ export const projects = [
     reverse: false,
     page: "canopy.html"
   },
-  {
-    type: "desktop",
-    tabImg: "/svg/tab.svg",
-    title: "Solana Solar -<br>Home Energy<br>Dashboard",
-    category: "Case Study",
-    skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
-    desc: "Simplifying home solar energy monitoring through real-time data visualization.",
-    singleImg: "/images/solana.webp",
-    reverse: false,
-    page: "solana.html"
-  },
-  {
+    {
     type: "laptop",
     tabImg: "/svg/tab.svg",
     title: "Communication App for Language Educators",
@@ -70,6 +59,17 @@ export const projects = [
     reverse: false,
     page: "esol.html"
   },
+  {
+    type: "desktop",
+    tabImg: "/svg/tab.svg",
+    title: "Solana Solar -<br>Home Energy<br>Dashboard",
+    category: "Case Study",
+    skills: ["Product Design", "UX/UI", "Dashboard Design", "Data Visualization"],
+    desc: "Simplifying home solar energy monitoring through real-time data visualization.",
+    singleImg: "/images/solana.webp",
+    reverse: false,
+    page: "solana.html"
+  }
 ];
 
 let expanded = false;

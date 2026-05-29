@@ -213,7 +213,7 @@
 
 .section-text {
   font-family: "Urbanist";
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 24px);
   color: var(--font-color-secondary);
   width: 75%;
 }
