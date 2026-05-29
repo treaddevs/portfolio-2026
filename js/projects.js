@@ -11,18 +11,6 @@ export const projects = [
     reverse: false,
     page: "pocketchef.html"
   },
-    {
-    type: "phone",
-    tabImg: "/svg/tab.svg",
-    title: "Boredom-Blaster -<br>AI-Powered Chatbot",
-    category: "Project",
-    skills: ["Product Design", "UX/UI", "AI", "Branding", "Web Development"],
-    desc: "Building an AI-powered conversational product discovery experience.",
-    topImg: "/images/chatbot-1.webp",
-    bottomImg: "/images/chatbot-2.webp",
-    reverse: false,
-    page: "via.html"
-  },
   {
     type: "laptop",
     tabImg: "/svg/tab.svg",
@@ -38,6 +26,18 @@ export const projects = [
   {
     type: "phone",
     tabImg: "/svg/tab.svg",
+    title: "Boredom-Blaster -<br>AI-Powered Chatbot",
+    category: "Project",
+    skills: ["Product Design", "UX/UI", "AI", "Branding", "Web Development"],
+    desc: "Building an AI-powered conversational product discovery experience.",
+    topImg: "/images/chatbot-1.webp",
+    bottomImg: "/images/chatbot-2.webp",
+    reverse: false,
+    page: "via.html"
+  },
+  {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
     title: "Canopy -<br>Mobile Banking App",
     category: "Case Study",
     skills: ["Product Design", "UX/UI", "Branding"],
@@ -47,7 +47,7 @@ export const projects = [
     reverse: false,
     page: "canopy.html"
   },
-    {
+  {
     type: "laptop",
     tabImg: "/svg/tab.svg",
     title: "Communication App for Language Educators",
