@@ -1,17 +1,5 @@
 export const projects = [
   {
-    type: "phone",
-    tabImg: "/svg/tab.svg",
-    title: "PocketChef -<br>Recipe & Meal<br>Planning App",
-    category: "Case Study",
-    skills: ["Product Design", "User Research", "UX/UI", "Design Systems"],
-    desc: "Improving recipe discovery and meal planning management.",
-    topImg: "/images/pocketchef-1.webp",
-    bottomImg: "/images/pocketchef-2.webp",
-    reverse: false,
-    page: "pocketchef.html"
-  },
-  {
     type: "laptop",
     tabImg: "/svg/tab.svg",
     title: "Navimental -<br>Mental Health<br>Dashboard",
@@ -22,6 +10,18 @@ export const projects = [
     bottomImg: "/images/navi-bottom.webp",
     reverse: false,
     page: "navimental.html"
+  },
+  {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
+    title: "PocketChef -<br>Recipe & Meal<br>Planning App",
+    category: "Case Study",
+    skills: ["Product Design", "User Research", "UX/UI", "Design Systems"],
+    desc: "Improving recipe discovery and meal planning management.",
+    topImg: "/images/pocketchef-1.webp",
+    bottomImg: "/images/pocketchef-2.webp",
+    reverse: false,
+    page: "pocketchef.html"
   },
   {
     type: "phone",
