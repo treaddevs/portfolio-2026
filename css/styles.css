@@ -240,20 +240,6 @@ nav.navbar {
   filter: blur(2px);
 }
 
-.cover-img-container {
-  position: absolute;
-  pointer-events: none;
-  display: flex;
-  z-index: 999;
-  bottom: 0;
-  right: 10vw;
-}
-
-.cover-img {
-  width: clamp(250px, 32vw, 600px);
-  height: auto;
-}
-
 .home::after {
   content: "";
   position: absolute;
@@ -697,7 +683,7 @@ nav.navbar {
   flex: 1;
   position: relative;
   justify-self: center;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .headshot-img img {
@@ -707,7 +693,7 @@ nav.navbar {
   object-fit: cover;
   opacity: 0;
   transition: opacity 1.8s ease-in-out;
-  border-radius: 12px;
+  border-radius: 30px;
   box-shadow: 0 0 75px rgba(0, 123, 255, 0.75);
 }
 
