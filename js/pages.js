@@ -130,7 +130,7 @@ export const pages = {
         timeline: "January – April 2026",
         logo: "/images/pocketchef-logo.webp",
         logoAlt: "PocketChef logo",
-        heroLink: "https://www.figma.com/board/n8u8GrEO1MFhT2TAbzrohC/PocketChef-%E2%80%93-Recipe---Meal-Planning-App?node-id=0-1&t=O3jq04OkDace7AuQ-1",
+        heroLink: "https://www.figma.com/proto/LuysxxgvINMgyiW4gxUMeo/Pocket-Chef---Recipe---Meal-Planning-App?node-id=243-3138&p=f&t=5rxyoYshYqfZrGcp-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
         sections: [
             {
                 heading: "Responsibilities",
@@ -178,21 +178,25 @@ export const pages = {
                 text: "One of the primary challenges was balancing feature depth with usability. Because the platform combined recipe discovery, meal planning, grocery management, and AI-assisted recommendations, the experience risked becoming overly complex. The design process focused heavily on simplifying navigation, reducing cognitive load, and maintaining clarity across interconnected workflows."
             },
             {
-                heading: "Design Exploration",
-                text: "Early design exploration focused on simplifying the complexity of meal planning into a more approachable and modular experience. I iterated on navigation structure, recipe discovery flows, planner layouts, and grocery management interactions to reduce friction across the end-to-end cooking workflow while maintaining flexibility for different user behaviors."
+                heading: "Wireframing & Information Architecture",
+                text: "Early wireframes focused on organizing PocketChef's interconnected workflows into a structure that felt approachable rather than overwhelming. Because the product combined recipe discovery, meal planning, grocery management, and AI-assisted recommendations, I explored multiple navigation patterns, screen hierarchies, and task flows to determine how users could move efficiently between planning, shopping, and cooking activities. These low-fidelity concepts helped validate feature organization and identify opportunities to reduce friction before investing in high-fidelity design."
             },
             {
                 type: "image",
-                src: "/images/pocketchef-wireframe-1.webp",
-                alt: "Initial versions of PocketChef UI screens for: logo screen, recipes, recipe details, nutrition, and imports"
+                src: "/images/pocketchef-wireframes.webp",
+                alt: "Initial versions of PocketChef UI screens for: logo screen, recipes, recipe details, nutrition, imports, cookbooks, AI-generated meal plans, diet plans, filter by ingredients, and grocery list"
+            },
+            {
+                heading: "Interactive Components",
+                text: "As the product evolved, I focused on creating reusable interface patterns that could scale across the experience. Interactive components such as recipe cards, dietary filters, navigation states, grocery checklist items, planner modules, and onboarding selections were designed as reusable building blocks rather than one-off screens. This approach improved consistency, accelerated iteration, and helped establish a foundation for a scalable design system that could support future product growth."
             },
             {
                 type: "image",
-                src: "/images/pocketchef-wireframe-2.webp",
-                alt: "Initial versions of PocketChef UI screens for: cookbooks, AI-generated meal plans, diet plans, filter by ingredients, and grocery list"
+                src: "/images/pocketchef-components.webp",
+                alt: "Interactive Figma components used in the app's architecture"
             },
             {
-                heading: `Final Design: Onboarding & Discovery`,
+                heading: `Onboarding & Discovery`,
                 text: `The onboarding experience personalizes recommendations through dietary preferences, allergies, and cooking skill level to tailor recipe discovery from the start. Discovery focuses on intention-based browsing through filters like Fast, Easy, Healthy, and Stocked, helping users quickly find contextually relevant meals. Ingredient-based search and recipe imports further simplify discovery by centralizing recipes typically scattered across websites, screenshots, and social media.`,
             },
             {
@@ -201,7 +205,7 @@ export const pages = {
                 alt: "PocketChef setup with user preferences, discovery feed, filter by ingredients, and import screens"
             },
             {
-                heading: `Final Design: Core Features`,
+                heading: `Core Features`,
                 text: `PocketChef centers around recipe saving, personalized cookbooks, meal planning, and guided cooking workflows. Recipe pages include ingredient lists, nutrition information, and adjustable serving sizes, while guided cooking mode improves readability through larger text, timers, and read-aloud instructions. The Meal Planner provides a visual weekly overview for organizing breakfast, lunch, and dinner, while the Grocery List automatically compiles ingredients into categorized, checkable shopping lists to streamline planning and execution.`,
             },
             {
