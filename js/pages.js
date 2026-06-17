@@ -122,9 +122,9 @@ export const pages = {
     },
     pocketchef: {
         tabImg: "/svg/tab.svg",
-        title: "PocketChef -<br>Recipe & Meal Planning App",
+        title: "PocketChef -<br>Recipe & Meal<br>Planning App",
         heroImage: "/images/pocketchef-gradient.webp",
-        heroDesc: "I conducted user research and designed<br>end-to-end workflows for an AI-powered<br>recipe discovery and meal planning experience.",
+        heroDesc: "I led research and designed end-to-end<br>workflows for an AI-powered meal planning experience.",
         role: "Product Designer",        
         context: "Class Project: AI for HCI",
         timeline: "January – April 2026",

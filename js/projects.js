@@ -1,5 +1,17 @@
 export const projects = [
   {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
+    title: "PocketChef -<br>Recipe & Meal<br>Planning App",
+    category: "Case Study",
+    skills: ["Product Design", "User Research", "UX/UI", "Design Systems"],
+    desc: "Improving recipe discovery and meal planning management.",
+    topImg: "/images/pocketchef-1.webp",
+    bottomImg: "/images/pocketchef-2.webp",
+    reverse: false,
+    page: "pocketchef.html"
+  },
+  {
     type: "laptop",
     tabImg: "/svg/tab.svg",
     title: "Navimental -<br>Mental Health<br>Dashboard",
@@ -14,18 +26,6 @@ export const projects = [
   {
     type: "phone",
     tabImg: "/svg/tab.svg",
-    title: "PocketChef -<br>Recipe & Meal<br>Planning App",
-    category: "Case Study",
-    skills: ["Product Design", "User Research", "UX/UI", "Design Systems"],
-    desc: "Improving recipe discovery and meal planning management.",
-    topImg: "/images/pocketchef-1.webp",
-    bottomImg: "/images/pocketchef-2.webp",
-    reverse: false,
-    page: "pocketchef.html"
-  },
-  {
-    type: "phone",
-    tabImg: "/svg/tab.svg",
     title: "Boredom-Blaster -<br>AI-Powered Chatbot",
     category: "Project",
     skills: ["Product Design", "UX/UI", "AI", "Branding", "Web Development"],
@@ -34,18 +34,6 @@ export const projects = [
     bottomImg: "/images/chatbot-2.webp",
     reverse: false,
     page: "via.html"
-  },
-  {
-    type: "phone",
-    tabImg: "/svg/tab.svg",
-    title: "Canopy -<br>Mobile Banking App",
-    category: "Case Study",
-    skills: ["Product Design", "UX/UI", "Branding"],
-    desc: "Streamlining financial tracking and budgeting through mobile-first design.",
-    topImg: "/images/canopy-1.webp",
-    bottomImg: "/images/canopy-2.webp",
-    reverse: false,
-    page: "canopy.html"
   },
   {
     type: "laptop",
@@ -58,6 +46,18 @@ export const projects = [
     bottomImg: "/images/esol-bottom.webp",
     reverse: false,
     page: "esol.html"
+  },
+  {
+    type: "phone",
+    tabImg: "/svg/tab.svg",
+    title: "Canopy -<br>Mobile Banking App",
+    category: "Case Study",
+    skills: ["Product Design", "UX/UI", "Branding"],
+    desc: "Streamlining financial tracking and budgeting through mobile-first design.",
+    topImg: "/images/canopy-1.webp",
+    bottomImg: "/images/canopy-2.webp",
+    reverse: false,
+    page: "canopy.html"
   },
   {
     type: "desktop",

@@ -1,11 +1,11 @@
-const primaryEl = document.querySelector(".primary-role");
+const primaryEl = document.querySelector(".primary-title");
 const primaryWipeEl = document.querySelector(".primary-wipe");
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function animatePrimaryRoleOnce() {
+async function animatePrimaryTitleOnce() {
     primaryWipeEl.style.animation = "wipe-in-out 2s ease forwards";
     primaryEl.style.opacity = 0;
 
@@ -17,7 +17,7 @@ async function animatePrimaryRoleOnce() {
     void primaryWipeEl.offsetWidth;
 }
 
-animatePrimaryRoleOnce();
+animatePrimaryTitleOnce();
 
 document.querySelectorAll(".animate-block").forEach((block) =>{
     const wipe = block.querySelector(".wipe");
