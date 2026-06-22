@@ -9,7 +9,9 @@ const lightDarkMode = document.getElementById("theme-toggle");
 const savedTheme = localStorage.getItem("theme") || "dark";
 let isDarkMode = savedTheme === "dark";
 
-updateVideoSource();
+updateHeaderBackground();
+updateArrow();
+updateUXEngineer();
 updateNavbarToggler();
 
 lightDarkMode.addEventListener("click", toggleTheme);
@@ -22,7 +24,9 @@ function toggleTheme() {
     document.querySelector('#theme-toggle')?.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 
-    updateVideoSource();
+    updateHeaderBackground();
+    updateArrow();
+    updateUXEngineer();
     updateNavbarToggler();
 }
 
@@ -39,16 +43,40 @@ function updateNavbarToggler() {
     }
 }
 
-function updateVideoSource() {
-    const videoSource = document.getElementById('video-source');
-    const video = document.getElementById('bg-video');
-    if (!videoSource || !video) return;
+function updateHeaderBackground() {
+    const imageSource = document.getElementById('header-background');
+    const image = document.getElementById('background-img');
+    if (!imageSource || !image) return;
 
-    const newSrc = isDarkMode ? '/videos/golden-dust.mp4' : '/videos/golden-dust-negate.mp4'
+    const newSrc = isDarkMode ? '/images/header-background-negative.webp' : '/images/header-background.webp'
 
-    if (video.src !== new URL(newSrc, window.location.href).href) {
-        videoSource.src = newSrc;
-        video.load();
+    if (image.src !== new URL(newSrc, window.location.href).href) {
+        image.src = newSrc;
+    }
+}
+
+function updateArrow() {
+    const imageSource = document.getElementById('arrow');
+    const image = document.getElementById('arrow-img');
+    if (!imageSource || !image) return;
+
+    const newSrc = isDarkMode ? '/images/dotted-arrow-white.webp' : '/images/dotted-arrow-black.webp'
+
+    if (image.src !== new URL(newSrc, window.location.href).href) {
+        image.src = newSrc;
+    }
+}
+
+
+function updateUXEngineer() {
+    const imageSource = document.getElementById('ux-engineer');
+    const image = document.getElementById('ux-engineer-img');
+    if (!imageSource || !image) return;
+
+    const newSrc = isDarkMode ? '/images/ux-engineer-dark-mode.webp' : '/images/ux-engineer-light-mode.webp'
+
+    if (image.src !== new URL(newSrc, window.location.href).href) {
+        image.src = newSrc;
     }
 }
 

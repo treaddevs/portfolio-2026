@@ -1,5 +1,5 @@
 const nameElement = document.getElementById('name');
-const finalName = 'SAM TREADWELL | PRODUCT DESIGNER';
+const finalName = 'SAM TREADWELL';
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const animationSpeed = 10; // ms for randomizations
 const framesPerLetter = 5; // how many random letters before settling
