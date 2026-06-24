@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | PocketChef – Recipe & Meal Planning App</title>
-    
+    <title>Contact Me</title>
+
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/theme.css">
-    <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="icon" href="/images/favicon.webp" type="image/webp"/>
     <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-<body class="canopy-page">
+<body>
     <div class="sticky-nav">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="navbar-container">
@@ -27,8 +28,8 @@
                     <div class="navbar-nav">
                         <a class="nav-link" href="index.html#home" data-target="#home">Home</a>
                         <a class="nav-link" href="index.html#projects" data-target="#projects">Projects</a>
-                        <a class="nav-link" href="index.html#about.html" data-target="#about">About</a>
-                        <a class="nav-link" href="index.html#contact.html" data-target="#contact">Contact</a>
+                        <a class="nav-link" href="about.html" data-target="#about">About</a>
+                        <a class="nav-link" href="contact.html" data-target="#contact">Contact</a>
                         <a class="nav-link resume" href="/files/Sam-Treadwell-Resume.pdf" target="_blank" title="Resume">
                             <svg class="resume-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path d="M 13 4 C 10.250484 4 8 6.2504839 8 9 L 8 40 C 8 42.749516 10.250484 45 13 45 L 35 45 C 37.749516 45 40 42.749516 40 40 L 40 20 A 1.0001 1.0001 0 1 0 38 20 L 38 40 C 38 41.668484 36.668484 43 35 43 L 13 43 C 11.331516 43 10 41.668484 10 40 L 10 9 C 10 7.3315161 11.331516 6 13 6 L 26.757812 6 C 26.848824 6 26.910938 6.0874954 27 6.0996094 L 27 13 C 27 15.197334 28.802666 17 31 17 L 39 17 A 1.0001 1.0001 0 0 0 39.707031 15.292969 L 29.585938 5.171875 C 28.836398 4.4210018 27.818469 4 26.757812 4 L 13 4 z M 29 7.4140625 L 36.585938 15 L 31 15 C 29.883334 15 29 14.116666 29 13 L 29 7.4140625 z M 16 24 A 1.0001 1.0001 0 1 0 16 26 L 32 26 A 1.0001 1.0001 0 1 0 32 24 L 16 24 z M 16 29 A 1.0001 1.0001 0 1 0 16 31 L 32 31 A 1.0001 1.0001 0 1 0 32 29 L 16 29 z M 16 34 A 1.0001 1.0001 0 1 0 16 36 L 26 36 A 1.0001 1.0001 0 1 0 26 34 L 16 34 z"/></svg>
                         </a>
@@ -91,25 +92,112 @@
             </div>
         </nav>
     </div>
-    
-    <div class="home" id="home">
-        <div class="hero-container"></div>
-        <img class="hero" alt="background gradient" alt="Background gradient color"/>
-    </div>
 
-    <div class="page-body">
-        <div class="container"></div>
-        <section class="back-container">
-          <a href="index.html#projects" class="back-btn">← Back to projects</a>
-        </section>
-    </div>
+    <main class="about-page">
+        <div class="about-content"> 
+            <div class="spacer"></div>
+            <div class="top-content">
+                <div class="slideshow">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="/images/northeastern-university-roux-institute.jpg"/>
+                            <img class="swiper-slide" src="/images/katahdin-hike.jpg"/>
+                            <img class="swiper-slide" src="/images/katahdin-dabbing.jpg"/>
+                            <img class="swiper-slide" src="/images/sequoia.jpg"/>
+                            <img class="swiper-slide" src="/images/wndr-boston.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-title">
+                    <h2 class="about-title-text">Sam Treadwell</h2>
+                    <p class="about-text">
+                        I'm Sam, a product designer who enjoys turning ideas into products people actually want to use.
+                        Combining UX design and frontend development, I focus on creating clear, accessible experiences
+                        that help users accomplish their goals with less friction and more confidence.<br><br>
 
-    <div class="footer">
-      <div class="copyright">
-        <p>&copy; <span id="current-year"></span> Sam Treadwell</p>
-      </div>
-    </div>
+                        Recently, I designed features for a SaaS platform supporting parents of children with mental 
+                        and behavioral health challenges, and built a chatbot experience using Botpress to improve product
+                        discovery and user engagement.<br><br>
 
+                        Outside of work, I enjoy outdoor adventures, cooking, and building side projects that explore new ideas in product
+                        design and interaction.
+                    </p>
+                </div> 
+            </div>
+            <section class="experience">
+                <h2 class="experience-title">Experience</h2>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <h3>Navimental</h3>
+                            <p>Product Designer (Freelance)</p>
+                        </div>
+                        <div class="header-right">
+                            <p class="timeline">Sep 2024 - Jun 2025</p>
+                            <p class="accordion-icon">+</p>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Partnered with two co-founders to prototype and shape an early-stage product,
+                            creating reusable UI components and scalable design patterns. Designed a journal
+                            dashboard with data visualizations that surfaced actionable user insights and built
+                            a resource discovery experience using search, tagging, and bookmarking to improve 
+                            content discoverability and engagement.
+                        </p>
+                    </div>
+                    <div class="accordion-divider"></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <h3>Tyler Technologies</h3>
+                            <p>Software Developer (Co-Op)</p>
+                        </div>
+                        <div class="header-right">
+                            <p class="timeline">Jan 2025 - Apr 2025</p>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Improved the HUB portal experience by resolving a critical navigation issue that reduced
+                            workflow friction and refining form validation patterns to enhance usability and reliability
+                            across seven production releases.
+                        </p>
+                    </div>
+                    <div class="accordion-divider"></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <h3>The VIA Agency</h3>
+                            <p>Creative Technology Intern</p>
+                        </div>
+                        <div class="header-right">
+                            <p class="timeline">May 2024 - Aug 2024</p>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Pitched and developed an AI-powered chatbot to enhance product discovery and user engagement, 
+                            built a reusable interactive carousel component to improve content visibility and storytelling
+                            across web experiences, and created digital assets for a $25K regional marketing campaign that
+                            expanded brand visibility and audience reach.
+                        </p>
+                    </div>
+                    <div class="accordion-divider"></div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Sam Treadwell</p>
+            </div>
+        </div>   
+    </main>
+   
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const currentTheme = localStorage.getItem("theme") || "dark";
@@ -117,9 +205,18 @@
         });
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/js/index.js" defer></script>
     <script type="module" src="/js/theme.js" defer></script>
-    <script type="module" src="/js/page.js" defer></script>
+    <script type="module" src="/js/about.js" defer></script>
   </body>
 </html>

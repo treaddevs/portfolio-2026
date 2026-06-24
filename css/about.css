@@ -1,0 +1,277 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.spacer {
+    height: 15vh;
+}
+
+.swiper {
+    width: clamp(250px, 20vw, 350px);
+    filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+}
+
+.top-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 6rem;
+    margin-bottom: 40px;
+}
+
+.about-title-text {
+    font-family: 'Urbanist';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.about-text {
+    font-family: 'Urbanist';
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience-title {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.header-left h3 {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-left p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--font-color-secondary);
+}
+
+.timeline {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    color: var(--font-color-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-icon {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.accordion-content p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--font-color-secondary);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+.accordion-header {
+    display: flex;
+    width: 100%;
+    color: var(--font-color);
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;  
+    margin: 0;
+}
+
+.accordion-item > div {
+    position: relative;
+    flex: 1;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.accordion-icon {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-divider {
+    height: 1px;
+    background: var(--font-color-secondary);
+    opacity: 0.2;
+    transform: scaleX(0.95);
+    transform-origin: left;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-divider {
+    transform: scaleX(1);
+}
+
+@media (max-width: 1750px) {
+    .about-title-text {
+        font-size: 46px;
+    }
+
+    .about-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1650px) {
+    .about-title-text {
+        font-size: 42px;
+    }
+
+    .about-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-title-text {
+        font-size: 36px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .header-left h3 {
+        font-size: 22px;
+    }
+
+    .header-left p {
+        font-size: 16px;
+    }
+
+    .timeline {
+        font-size: 16px;
+    }
+
+    .accordion-icon {
+        height: 26px;
+        width: 26px;
+        font-size: 16px;
+    }
+
+    .accordion-content p {
+        font-size: 16px;
+    }
+
+    .about-title-text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 900px) {
+    .top-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        width: 80vw;
+    }
+}

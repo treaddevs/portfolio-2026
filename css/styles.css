@@ -266,37 +266,6 @@ nav.navbar {
   color: var(--font-color);
 }
 
-.page-content {
-  background-color: var(--bg-color);
-}
-
-.work-type {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 250px;
-  background-color: var(--bg-color);
-}
-
-.work-type h2 {
-  font-family: 'Urbanist';
-  font-weight: 700;
-  opacity: 0;
-  transition: opacity 2.5s ease, transform 2.5s ease;
-  font-size: clamp(36px, 10vw, 85px);
-}
-
-.work-type h2.show {
-  opacity: 1;
-  transition-delay: 0.3s;
-}
-
-.plus-text {
-  color: #00c3ff;
-}
-
 .projects {
   position: relative;
   align-items: stretch;
@@ -639,7 +608,7 @@ nav.navbar {
   transition-delay: 0.5s;
 }
 
-.about {
+/* .about {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -664,9 +633,9 @@ nav.navbar {
   font-weight: 400;
   font-size: 24px;
   color: var(--font-color-secondary);
-}
+} */
 
-.contact-btn {
+/* .contact-btn {
   font-family: 'Urbanist';
   font-weight: 400;
   color: black;
@@ -722,7 +691,7 @@ nav.navbar {
 
 .headshot-img.revealed .wipe {
   display: none;
-}
+} */
 
 .contact-container {
   position: relative;

@@ -97,6 +97,11 @@ export const pages = {
                 text: "Insights gathered through user interviews and feedback that helped shape and refine the final product experience."
             },
             {
+                type: "image",
+                src: "/images/navimental-website.webp",
+                alt: "Navimental website: navigate your child's mental health journey with confidence"
+            },
+            {
                 type: "carousel",
                 images: [
                     "/images/navi-peer-sessions.webp",
