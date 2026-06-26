@@ -2,6 +2,24 @@ const thisYear = document.getElementById("current-year");
 const thisDate = new Date();
 thisYear.textContent = thisDate.getFullYear();
 
+function updateTime() {
+    const now = new Date();
+
+    const time = new Intl.DateTimeFormat("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true,
+        timeZone: "America/New_York"
+    }).format(now);
+
+    document.getElementById("current-time").textContent = 
+        `${time} ET`
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
 // Theme initialization
 const lightDarkMode = document.getElementById("theme-toggle");
 
@@ -158,7 +176,6 @@ window.addEventListener("resize", () => {
     }
 });
 
-const emailBtn = document.querySelector(".email");
 const toast = document.querySelector("#toast");
 
 function showToast(message) {
@@ -170,16 +187,20 @@ function showToast(message) {
   }, 1500);
 }
 
-emailBtn.addEventListener("click", async (e) => {
-  e.preventDefault();
-
-  const email = "s.treadwell11@gmail.com";
-
+async function handleCopy(text) {
   try {
-    await navigator.clipboard.writeText(email);
+    await navigator.clipboard.writeText(text);
     showToast("Email copied!");
   } catch (err) {
     console.error("Copy failed", err);
     showToast("Failed to copy");
   }
+}
+
+document.addEventListener("click", (e) => {
+    const el = e.target.closest("[data-copy]");
+    if (!el) return;
+
+    const value = el.dataset.copy;
+    handleCopy(value);
 });

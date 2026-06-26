@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const heroImg = document.querySelector(".hero");
-    if (heroImg) heroImg.src = pageData.heroImage;
+    if (heroImg) heroImg.style.backgroundImage = pageData.heroBackgroundColor;
 
     document.title = `Projects | ${pageData.title.replace(/<br>/g, " ")}`;
 
@@ -60,9 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
         homeSection.appendChild(intro);
     }
 
+    const bodyColor = document.querySelector("body");
+    if (bodyColor) bodyColor.style.backgroundColor = pageData.backgroundColor;
+
     // Container for sections
     const pageBody = document.querySelector(".page-body .container");
-
+    
     // Build the content sections video, image, heading/text
     pageData.sections.forEach((section) => {
         const sectionEl = document.createElement("section");
@@ -182,6 +185,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         pageBody.appendChild(sectionEl);
     });
+
+    const footerColor = document.querySelector(".project-footer");
+    if (footerColor) footerColor.style.backgroundColor = pageData.backgroundColor;
     
     // Intersection Observer for Tab
     const tabAnimation = new IntersectionObserver(

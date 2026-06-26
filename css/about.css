@@ -11,6 +11,7 @@
     align-items: center;
     width: 60vw;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 .spacer {
@@ -93,9 +94,22 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 40px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .experience-title {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.education-title {
     font-family: 'Urbanist';
     font-weight: 600;
     text-decoration: underline;
@@ -154,12 +168,39 @@
 
 .accordion-header {
     display: flex;
-    width: 100%;
+    width: 60vw;
     color: var(--font-color);
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;  
+    margin: 0;
+    transition: color 0.25s ease;
+}
+
+.accordion-header:hover .header-left h3,
+.accordion-header:hover .header-left p,
+.accordion-header:hover .timeline {
+    opacity: 0.6;
+}
+
+.accordion-item.active .header-left h3,
+.accordion-item.active .header-left p,
+.accordion-item.active .timeline {
+    opacity: 1;
+    color: var(--font-color);
+}
+
+.education-header {
+    display: flex;
+    width: 60vw;
+    color: var(--font-color);
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
     background: none;
     border: none;
     padding: 0;  
@@ -192,6 +233,10 @@
 
 .accordion-item.active .accordion-icon {
     transform: rotate(45deg);
+}
+
+.accordion-header:hover .accordion-icon {
+    transform: rotate(22.5deg);
 }
 
 .accordion-divider {
@@ -272,6 +317,14 @@
 
 @media (max-width: 768px) {
     .about-content {
+        width: 80vw;
+    }
+
+    .accordion-header {
+        width: 80vw;
+    }
+
+    .education-header {
         width: 80vw;
     }
 }

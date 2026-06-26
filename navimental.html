@@ -27,12 +27,12 @@
                     <div class="navbar-nav">
                         <a class="nav-link" href="index.html#home" data-target="#home">Home</a>
                         <a class="nav-link" href="index.html#projects" data-target="#projects">Projects</a>
-                        <a class="nav-link" href="index.html#about.html" data-target="#about">About</a>
-                        <a class="nav-link" href="index.html#contact.html" data-target="#contact">Contact</a>
+                        <a class="nav-link" href="about.html" data-target="#about">About</a>
+                        <a class="nav-link" href="contact.html" data-target="#contact">Contact</a>
                         <a class="nav-link resume" href="/files/Sam-Treadwell-Resume.pdf" target="_blank" title="Resume">
                             <svg class="resume-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path d="M 13 4 C 10.250484 4 8 6.2504839 8 9 L 8 40 C 8 42.749516 10.250484 45 13 45 L 35 45 C 37.749516 45 40 42.749516 40 40 L 40 20 A 1.0001 1.0001 0 1 0 38 20 L 38 40 C 38 41.668484 36.668484 43 35 43 L 13 43 C 11.331516 43 10 41.668484 10 40 L 10 9 C 10 7.3315161 11.331516 6 13 6 L 26.757812 6 C 26.848824 6 26.910938 6.0874954 27 6.0996094 L 27 13 C 27 15.197334 28.802666 17 31 17 L 39 17 A 1.0001 1.0001 0 0 0 39.707031 15.292969 L 29.585938 5.171875 C 28.836398 4.4210018 27.818469 4 26.757812 4 L 13 4 z M 29 7.4140625 L 36.585938 15 L 31 15 C 29.883334 15 29 14.116666 29 13 L 29 7.4140625 z M 16 24 A 1.0001 1.0001 0 1 0 16 26 L 32 26 A 1.0001 1.0001 0 1 0 32 24 L 16 24 z M 16 29 A 1.0001 1.0001 0 1 0 16 31 L 32 31 A 1.0001 1.0001 0 1 0 32 29 L 16 29 z M 16 34 A 1.0001 1.0001 0 1 0 16 36 L 26 36 A 1.0001 1.0001 0 1 0 26 34 L 16 34 z"/></svg>
                         </a>
-                        <a class="nav-link email" target="_blank" title="Copy Email">
+                        <a class="nav-link" data-copy="s.treadwell11@gmail.com" title="Copy Email">
                             <svg class="email-icon" fill="currentColor" height="24px" width="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 493.497 493.497" xml:space="preserve" stroke="currentColor">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -93,22 +93,94 @@
     </div>
     
     <div class="home" id="home">
-      <div class="hero-container">
-        <img class="hero" alt="background gradient" alt="Background gradient color"/>
-      </div>
+        <div class="hero-container"></div>
+        <div class="hero" alt="background gradient" alt="Background gradient color"></div>
     </div>
 
     <div class="page-body">
-      <div class="container"></div>
-      <section class="back-container">
-          <a href="index.html#projects" class="back-btn">← Back to projects</a>
-      </section>
+        <div class="container"></div>
+        <section class="back-container">
+            <a href="index.html#projects" class="back-btn">← Back to projects</a>
+        </section>
     </div>
 
-    <div class="footer">
-      <div class="copyright">
-        <p>&copy; <span id="current-year"></span> Sam Treadwell</p>
-      </div>
+    <div class="divider"></div>
+    
+    <div class="project-footer">
+        <div class="footer-top">
+            <div class="left-footer">
+                <h2>Let's make it<br>happen!</h2>
+                <div class="footer-cta-buttons">
+                    <a class="footer-cta-btn-1" href="contact.html" data-target="#projects">Message me</a>
+                    <a class="footer-cta-btn-2" href="https://calendar.app.google/mHmn5qZxF3LPCuDVA">Book a call</a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="navigate">
+                    <h2 class="navigate-title">NAVIGATE</h2>
+                    <div class="navigate-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="navigate-item" href="index.html#home" data-target="index.html#home">Home</a>
+                    </div>
+                    <div class="navigate-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="navigate-item" href="index.html#projects" data-target="index.html#projects">Projects</a>
+                    </div>
+                    <div class="navigate-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="navigate-item" href="about.html" data-target="#about">About</a>
+                    </div>
+                    <div class="navigate-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="navigate-item" href="contact.html" data-target="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="resources">
+                    <h2>RESOURCES</h2>
+                    <div class="resources-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="resources-item" data-copy="s.treadwell11@gmail.com">
+                            Email 
+                            <a class="copy-icon" data-copy="s.treadwell11@gmail.com" title="Copy Email">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.77 122.88" style="enable-background:new 0 0 115.77 122.88" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M89.62,13.96v7.73h12.19h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02v0.02 v73.27v0.01h-0.02c-0.01,3.84-1.57,7.33-4.1,9.86c-2.51,2.5-5.98,4.06-9.82,4.07v0.02h-0.02h-61.7H40.1v-0.02 c-3.84-0.01-7.34-1.57-9.86-4.1c-2.5-2.51-4.06-5.98-4.07-9.82h-0.02v-0.02V92.51H13.96h-0.01v-0.02c-3.84-0.01-7.34-1.57-9.86-4.1 c-2.5-2.51-4.06-5.98-4.07-9.82H0v-0.02V13.96v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07V0h0.02h61.7 h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02V13.96L89.62,13.96z M79.04,21.69v-7.73v-0.02h0.02 c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v64.59v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h12.19V35.65 v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07v-0.02h0.02H79.04L79.04,21.69z M105.18,108.92V35.65v-0.02 h0.02c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v73.27v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h61.7h0.02 v0.02c0.91,0,1.75-0.39,2.37-1.01c0.61-0.61,1-1.46,1-2.37h-0.02V108.92L105.18,108.92z"/></g></svg>
+                            </a>
+                        </a>
+                    </div>
+                    <div id="toast" class="toast"></div>
+                    <div class="resources-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="resources-item" href="/files/Sam-Treadwell-Resume.pdf" target="_blank" title="Resume">Resume</a>
+                    </div>
+                    <div class="resources-list">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <a class="resources-item" href="/files/Sam-Treadwell-Resume.pdf" target="_blank" title="Resume">Tech Stack</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p class="all-rights-reserved">ALL RIGHTS RESERVED.</p>
+                <p class="copyright-name">&copy; <span id="current-year"></span> Sam Treadwell</p>
+            </div>
+            <div class="footer-bottom-right">
+                <div class="local-time-container">
+                    <h2>LOCAL TIME</h2>
+                    <div class="local-time">
+                        <img class="asterisk" src="/images/asterisk.webp" alt="Asterisk">
+                        <span id="current-time"></span>
+                    </div>
+                </div>
+                <div class="scroll-up">
+                    <a href="#home" data-target="#home">
+                        <img class="scroll-up-arrow" src="/images/scroll-up-arrow.webp" alt="Scroll up arrow"> 
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>

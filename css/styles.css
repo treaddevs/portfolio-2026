@@ -258,14 +258,6 @@ nav.navbar {
   z-index: -1;
 }
 
-.copyright p {
-  margin: 0px 10px;
-}
-
-.copyright #current-year {
-  color: var(--font-color);
-}
-
 .projects {
   position: relative;
   align-items: stretch;
@@ -290,7 +282,7 @@ nav.navbar {
 .show-more-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin: 64px 0px 150px 0px;
 }
 
 #show-more-btn {
@@ -700,7 +692,7 @@ nav.navbar {
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 118px);
-  margin-top: 64px;
+  margin: 64px 0px 150px 0px;
 }
 
 .contact-form {
@@ -850,16 +842,214 @@ nav.navbar {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.divider {
+  height: 4px;
+  width: 100%;
+  opacity: 0.2;
+  background-color: var(--font-color-secondary);
+}
+
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10vw;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 100px;
+}
+
+.copy-icon {
+  display: flex;
+  fill: var(--font-color);
+  height: 16px;
+  width: 16px;
+  transform: scaleX(-1);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-divider {
+  height: 2px;
+  width: 100%;
+  opacity: 0.2;
+  background: var(--font-color-secondary);
+  margin: 40px 0px;
+}
+
+.left-footer h2 {
+  font-family: 'Horizon';
+  font-size: clamp(28px, 6vw, 55px);
+  font-weight: 700;
+}
+
+.footer-cta-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 16px;
+    gap: 0.75rem;
+}
+
+.footer-cta-btn-1 {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--font-color);
+    font-size: clamp(14px, 2.5vw, 24px);
+    text-decoration: none;
+    background-color: #00c3ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.footer-cta-btn-2 {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--font-color);
+    font-size: clamp(14px, 2.5vw, 24px);
+    text-decoration: none;
+    border: 2px solid var(--font-color);
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.footer-cta-btn-1:hover,
+.footer-cta-btn-2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.navigate h2,
+.resources h2,
+.local-time-container h2 {
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.navigate-list,
+.resources-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 15px 0px 15px 0px;
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  font-family: 'Montserrat';
+  justify-content: flex-start;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.local-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.asterisk {
+  width: 24px;
+}
+
+.navigate-item,
+.resources-item,
+.local-time {
+  position: relative;
+  display: inline-block;
+  font-family: 'Urbanist';
   font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.navigate-item::after,
+.resources-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--font-color);
+  transform: scaleX(0);
+  transition: left;
+  transition: transform 0.25s ease;
+}
+
+.navigate-item:hover::after,
+.resources-item:hover::after {
+  transform: scaleX(1);
+}
+
+.footer-bottom-right {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.all-rights-reserved {
+  font-family: 'Urbanist';
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  color: var(--font-color-secondary);
+}
+
+.copyright-name {
+  font-family: 'Urbanist';
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#current-time {
+  display: inline-block;
+  font-family: 'Urbanist';
+  font-weight: 400;
+  width: 11ch;
+  font-variant-numeric: tabular-nums;
+}
+
+.scroll-up-arrow {
+  width: 50px;
+}
+
+.scroll-up-arrow:hover {
+  opacity: 0.85;
 }
 
 @media (max-width: 1512px) {
@@ -932,4 +1122,16 @@ nav.navbar {
     overflow: hidden;
     position: fixed;
   }
+}
+
+@media (max-width: 768px) {
+    .footer-cta-buttons {
+        gap: 0.5rem;
+    }
+
+    .footer-bottom-right {
+      width: 100%;
+      justify-content: space-between;
+      gap: 0;
+    }
 }

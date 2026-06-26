@@ -2,7 +2,8 @@ export const pages = {
     navimental: {
         tabImg: "/svg/tab.svg",
         title: "Navimental -<br>Mental Health Dashboard",
-        heroImage: "/images/navi-gradient.webp",
+        heroBackgroundColor: "linear-gradient(to bottom, #BFBBAF, #647BFF)",
+        backgroundColor: "#647BFF",
         heroDesc: "As Product Designer, I focused on designing the journal dashboard<br>experience, improving usability across key wellness tracking workflows.",
         role: "Product Designer",
         context: "Freelance Work",
@@ -128,7 +129,8 @@ export const pages = {
     pocketchef: {
         tabImg: "/svg/tab.svg",
         title: "PocketChef -<br>Recipe & Meal<br>Planning App",
-        heroImage: "/images/pocketchef-gradient.webp",
+        heroBackgroundColor: "linear-gradient(to bottom, #BFBBAF, #CE9A00)",
+        backgroundColor: "#CE9A00",
         heroDesc: "I led research and designed end-to-end<br>workflows for an AI-powered meal planning experience.",
         role: "Product Designer",        
         context: "Class Project: AI for HCI",
@@ -236,7 +238,8 @@ export const pages = {
     via: {
         tabImg: "/svg/tab.svg",
         title: "Boredom-Blaster -<br>AI-Powered Chatbot",
-        heroImage: "/images/chatbot-gradient.webp",
+        heroBackgroundColor: "linear-gradient(to bottom, #BFBBAF, #E79003)",
+        backgroundColor: "#E79003",
         heroDesc: "As a Creative Technology Intern at The<br>VIA Agency, I developed web components<br>for the redesigned company website, and<br>built a chatbot for a client.",
         role: "Creative Technology Intern",
         context: "Internship",
@@ -318,7 +321,8 @@ export const pages = {
     canopy: {
         tabImg: "/svg/tab.svg",
         title: "Canopy -<br>Mobile Banking App",
-        heroImage: "/images/canopy-gradient.webp",
+        heroBackgroundColor: "linear-gradient(to bottom, #BFBBAF, #468A24)",
+        backgroundColor: "#468A24",
         heroDesc: "I designed end-to-end onboarding,<br>account access, and transaction flows for<br>a mobile banking application.",
         role: "Product Designer",
         context: "Solo Project",
@@ -399,7 +403,8 @@ export const pages = {
     solana: {
         tabImg: "/svg/tab.svg",
         title: "Solana Solar -<br>Home Energy Dashboard",
-        heroImage: "/images/solana-gradient.webp",
+        heroBackgroundColor: "linear-gradient(to bottom, #BFBBAF, #27898A)",
+        backgroundColor: "#27898A",
         heroDesc: "I created a solar dashboard to display<br>controls and check on system operations.",
         role: "UX/UI Designer",
         context: "Solo Project",
@@ -486,7 +491,8 @@ export const pages = {
     esol: {
         tabImg: "/svg/tab.svg",
         title: "Communication<br>App for Language<br>Educators",
-        heroImage: "/images/esol-gradient.webp",
+        heroBackgroundColor: "linear-gradient(to bottom, #30A5B6, #017579)",
+        backgroundColor: "#017579",
         heroDesc: "I led this Capstone project to design and<br>develop a centralized communication<br>platform for Portland, Maine’s ESOL<br>Collaborative.",
         role: "Fullstack Developer",
         context: "Capstone Project",
