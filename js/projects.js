@@ -181,7 +181,11 @@ function renderProjects(projectArray) {
         <button class="project-btn" data-page="${project.page}">
           <div class="project-btn-wrapper">
             <span>${project.category}</span>
-            <img class="new-window" src="/svg/new-window.svg" alt="New window icon">
+            <div class="new-window" alt="New window">
+              <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12V6C5 5.44772 5.44772 5 6 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H12M8.11111 12H12M12 12V15.8889M12 12L5 19" stroke="#464455" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
           </div>
         </button>
       </div>

@@ -446,9 +446,15 @@ nav.navbar {
   gap: 0.4em;
 }
 
-.project-btn .new-window {
-  width: 1em;
-  height: 1em;
+.new-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-btn .new-window svg path {
+  stroke: black;
   transition: transform 0.2s ease;
 }
 
@@ -985,6 +991,10 @@ nav.navbar {
   width: 24px;
 }
 
+.new-window-icon svg path {
+  stroke: var(--font-color);
+}
+
 .navigate-item,
 .resources-item,
 .local-time {
@@ -1019,7 +1029,7 @@ nav.navbar {
 .footer-bottom-right {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 89.75px;
 }
 
 .all-rights-reserved {
@@ -1040,7 +1050,7 @@ nav.navbar {
   display: inline-block;
   font-family: 'Urbanist';
   font-weight: 400;
-  width: 11ch;
+  width: 12ch;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1133,5 +1143,14 @@ nav.navbar {
       width: 100%;
       justify-content: space-between;
       gap: 0;
+    }
+
+    .navigate-list,
+    .resources-list {
+      gap: 0.12rem;
+    }
+
+    .local-time {
+      gap: 0.12rem;
     }
 }
