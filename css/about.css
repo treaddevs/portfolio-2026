@@ -18,6 +18,10 @@
     height: 15vh;
 }
 
+.slideshow {
+    z-index: 0;
+}
+
 .swiper {
     width: clamp(250px, 20vw, 350px);
     filter: drop-shadow(0 4px 16px rgba(30, 30, 30, 0.3));

@@ -30,7 +30,6 @@ let isDarkMode = savedTheme === "dark";
 updateHeaderBackground();
 updateArrow();
 updateUXEngineer();
-updateNavbarToggler();
 
 lightDarkMode.addEventListener("click", toggleTheme);
 
@@ -45,20 +44,6 @@ function toggleTheme() {
     updateHeaderBackground();
     updateArrow();
     updateUXEngineer();
-    updateNavbarToggler();
-}
-
-function updateNavbarToggler() {
-    const navbar = document.querySelector('.navbar');
-    const navbarToggler = document.querySelector('.navbar-toggler');
-
-    if (navbar) {
-        navbar.style.backgroundColor = 'var(--nav-bg-color)';
-    }
-
-    if (navbarToggler) {
-        navbarToggler.style.backgroundColor = 'var(--toggler-bg-color)';
-    }
 }
 
 function updateHeaderBackground() {
