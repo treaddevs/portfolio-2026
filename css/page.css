@@ -270,7 +270,7 @@
 iframe[name="webchat"],
 iframe[name="fab"],
 #fab-root {
-  z-index: 1;
+  z-index: 0;
 }
 
 .project-footer {

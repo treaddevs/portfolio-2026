@@ -76,7 +76,6 @@ nav.navbar {
   background-color: var(--toggler-bg-color);
   backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px); 
-  box-shadow: 0 8px 32px var(--nav-bg-color);
   z-index: 2;
 }
 
@@ -103,7 +102,6 @@ nav.navbar {
   backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px); 
   border-radius: 20px;
-  box-shadow: 0 8px 32px var(--nav-bg-color);
   z-index: 9999;
 }
 
@@ -172,7 +170,6 @@ nav.navbar {
   background-color: transparent !important; 
   backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px); 
-  box-shadow: 0 8px 32px var(--nav-bg-color);
 }
 
 .social-icon {
@@ -518,6 +515,7 @@ nav.navbar {
   order: 2;
   box-sizing: border-box;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .phone-wrapper {
