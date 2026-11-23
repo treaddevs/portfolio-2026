@@ -20,6 +20,13 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 
+function updateThemeToggle() {
+    document.querySelector('#theme-toggle')?.setAttribute(
+        'data-theme',
+        isDarkMode ? 'dark' : 'light'
+    );
+}
+
 // Theme initialization
 const lightDarkMode = document.getElementById("theme-toggle");
 
@@ -27,9 +34,12 @@ const lightDarkMode = document.getElementById("theme-toggle");
 const savedTheme = localStorage.getItem("theme") || "dark";
 let isDarkMode = savedTheme === "dark";
 
+updateThemeToggle();
 updateHeaderBackground();
 updateArrow();
+updatePenTool();
 updateUXEngineer();
+updateNavimentalLogo();
 
 lightDarkMode.addEventListener("click", toggleTheme);
 
@@ -41,9 +51,12 @@ function toggleTheme() {
     document.querySelector('#theme-toggle')?.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 
+    updateThemeToggle();
     updateHeaderBackground();
     updateArrow();
+    updatePenTool();
     updateUXEngineer();
+    updateNavimentalLogo();
 }
 
 function updateHeaderBackground() {
@@ -59,17 +72,19 @@ function updateHeaderBackground() {
 }
 
 function updateArrow() {
-    const imageSource = document.getElementById('arrow');
     const image = document.getElementById('arrow-img');
-    if (!imageSource || !image) return;
+    if (!image) return;
 
-    const newSrc = isDarkMode ? '/images/dotted-arrow-white.webp' : '/images/dotted-arrow-black.webp'
+    const newSrc = isDarkMode
+        ? '/images/dotted-arrow-white.gif'
+        : '/images/dotted-arrow-black.gif';
+
+    image.dataset.src = newSrc;
 
     if (image.src !== new URL(newSrc, window.location.href).href) {
         image.src = newSrc;
     }
 }
-
 
 function updateUXEngineer() {
     const imageSource = document.getElementById('ux-engineer');
@@ -81,6 +96,32 @@ function updateUXEngineer() {
     if (image.src !== new URL(newSrc, window.location.href).href) {
         image.src = newSrc;
     }
+}
+
+function updatePenTool() {
+    const image = document.getElementById('pen-tool-img');
+    if (!image) return;
+
+    const newSrc = isDarkMode
+        ? '/images/pen-tool-white.png'
+        : '/images/pen-tool-black.png';
+
+    image.dataset.src = newSrc;
+
+    if (image.src !== new URL(newSrc, window.location.href).href) {
+        image.src = newSrc;
+    }
+}
+
+function updateNavimentalLogo() {
+    const logos = document.querySelectorAll('.navimental-logo');
+    const newSrc = isDarkMode
+        ? '/images/navimental-logo-white.webp'
+        : '/images/navimental-logo.webp';
+
+    logos.forEach(logo => {
+        logo.src = newSrc;
+    });
 }
 
 document.addEventListener("DOMContentLoaded", () => {

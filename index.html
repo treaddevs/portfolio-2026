@@ -131,9 +131,14 @@
       <div class="sticky-note">
         <img src="/images/sticky-note.webp" fetchpriority="high" alt="Sticky note message: I design for function. I build for people."/>
       </div>
-      <!-- <div id="arrow">
-        <img id="arrow-img" fetchpriority="high" alt="Dotted arrow pointing to Explore Projects and Let's Talk buttons"/>
-      </div> -->
+      <div id="arrow">
+          <img
+              id="arrow-img"
+              data-src="images/dotted-arrow-white.gif"
+              fetchpriority="high"
+              alt="Dotted arrow pointing to Explore Projects and Let's Talk buttons"
+          />
+      </div>
       <div class="title-container">
         <div class="top-content">
           <div class="name-container">
@@ -144,18 +149,49 @@
               <span class="primary-wipe"></span>
               <span class="title-text">Product<br>Designer</span>
             </span>
+            <div id="pen-tool">
+              <img
+                id="pen-tool-img"
+                src="images/pen-tool-white.png"
+                fetchpriority="high"
+                alt="Pen tool icon"
+              />
+            </div>
           </h2>
           <div class="sub-logos">
             <p class="previously">Previously</p>
-            <a class="logo-link" href="https://navimental.com" target="_blank">
-              <img class="logo" src="/images/navimental-logo.webp" alt="Navimental logo + web link">
-            </a>
-            <a class="logo-link" href="https://www.tylertech.com" target="_blank">
-              <img class="logo" src="/images/tyler-technologies-logo.webp" alt="Tyler Technologies logo + web link"> 
-            </a>
-            <a class="logo-link" href="https://www.theviaagency.com" target="_blank">
-              <img class="logo"src="/images/the-via-agency-logo.webp" alt="The VIA Agency logo + web link">
-            </a>
+            <div class="logo-marquee">
+              <div class="logo-track">
+                <a class="logo-link" href="https://navimental.com" target="_blank">
+                  <img class="logo navimental-logo" src="/images/navimental-logo-white.webp" alt="Navimental logo + web link">
+                </a>
+                <a class="logo-link" href="https://www.tylertech.com" target="_blank">
+                  <img class="logo" src="/images/tyler-technologies-logo.webp" alt="Tyler Technologies logo + web link"> 
+                </a>
+                <a class="logo-link" href="https://www.portlandmaine.gov/esol-collaborative" target="_blank">
+                  <img class="logo" src="/images/esol-collaborative-logo.webp" alt="Portland ESOL Collaborative logo + web link"> 
+                </a>
+                <a class="logo-link" href="https://www.theviaagency.com" target="_blank">
+                  <img class="logo"src="/images/the-via-agency-logo.webp" alt="The VIA Agency logo + web link">
+                </a>
+                <!-- Duplicated logos for seamless looping -->
+                <a class="logo-link" href="https://navimental.com" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                    <img class="logo navimental-logo" src="/images/navimental-logo-white.webp" alt="">
+                </a>
+
+                <a class="logo-link" href="https://www.tylertech.com" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                    <img class="logo" src="/images/tyler-technologies-logo.webp" alt="">
+                </a>
+
+                <a class="logo-link" href="https://www.portlandmaine.gov/esol-collaborative" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                    <img class="logo" src="/images/esol-collaborative-logo.webp" alt="">
+                </a>
+
+                <a class="logo-link" href="https://www.theviaagency.com" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                    <img class="logo" src="/images/the-via-agency-logo.webp" alt="">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="cta-buttons">

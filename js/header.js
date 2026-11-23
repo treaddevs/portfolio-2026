@@ -22,8 +22,16 @@ const arrowAnimation = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-                arrowAnimation.unobserve(entry.target);
+                const arrow = entry.target;
+
+                // Start GIF animation
+                arrow.src = arrow.dataset.src;
+
+                // Reveal arrow
+                arrow.classList.add("show");
+
+                // Run only once
+                arrowAnimation.unobserve(arrow);
             }
         });
     },
@@ -31,11 +39,41 @@ const arrowAnimation = new IntersectionObserver(
 );
 
 const arrow = document.querySelector("#arrow-img");
-if (arrow) arrowAnimation.observe(arrow);
+
+if (arrow) {
+    arrowAnimation.observe(arrow);
+
+    // Retrigger GIF on hover
+    arrow.addEventListener("mouseenter", () => {
+        const src = arrow.dataset.src;
+        arrow.src = `${src}?t=${Date.now()}`;
+    });
+}
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+// Intersection Observer for #pen-tool-img
+const penToolAnimation = new IntersectionObserver(
+    async (entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                const penTool = entry.target;
+
+                penToolAnimation.unobserve(penTool);
+
+                await delay(800); // Delay before revealing
+
+                penTool.classList.add("show");
+            }
+        }
+    },
+    { threshold: 0.5 }
+);
+
+const penTool = document.querySelector("#pen-tool-img");
+if (penTool) penToolAnimation.observe(penTool);
 
 // Intersection Observer for .name
 const nameAnimation = new IntersectionObserver(
